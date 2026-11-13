@@ -5,6 +5,3 @@ data/
 *.db
 *.db-wal
 *.db-shm
-docs/*.md
-evals/*
-!evals/FINDINGS.md
