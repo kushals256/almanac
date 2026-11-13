@@ -1,7 +1,7 @@
 
 # DESIGN
 
-**Brief:** a chat agent whose only tool is web search. It should answer fast, get things right, and remember what you asked and when.
+**Brief:** a verified query system whose only tool is web search. It should answer fast, get things right, and remember what you asked and when.
 **Answer in one line:** models propose, code decides, and a small probability-scoring judge ([Jev](https://openrouter.ai/typesafe/jev-1.14)) arbitrates the evidence. Details: [`ARCHITECTURE.md`](ARCHITECTURE.md). Tests: [`TESTING.md`](TESTING.md). Raw log: [`evals/FINDINGS.md`](evals/FINDINGS.md) (F-1 to F-126).
 
 ## The three requirements, and what carries each

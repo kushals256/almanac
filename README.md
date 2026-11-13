@@ -1,7 +1,7 @@
 
-# chat-agent
+# Almanac
 
-A chat agent with **one tool, web search**, that answers fast, checks its own work, and remembers **what you asked and when**.
+A verified query engine with **one tool, web search**, that answers fast, checks its own work, and remembers **what you asked and when**.
 
 It is written in TypeScript on Node, runs from a single SQLite file, and starts with `npm install && npm run dev`.
 
@@ -87,7 +87,7 @@ First token arrives in about **2.2 s** at the median on the last full run (p95 a
 
 ## What sets this architecture apart
 
-Most web-search chat agents on the internet follow a single-route ReAct loop (e.g. LangChain / AutoGPT) with an LLM-as-judge. In real-world multi-turn conversations, that pattern breaks down on temporal ambiguity, multi-intent turns, and hallucinated table comparisons.
+Most web-search systems on the internet follow a single-route ReAct loop (e.g. LangChain / AutoGPT) with an LLM-as-judge. In real-world multi-turn conversations, that pattern breaks down on temporal ambiguity, multi-intent turns, and hallucinated table comparisons.
 
 Here is how this architecture fundamentally sets itself apart:
 

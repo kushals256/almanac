@@ -54,7 +54,7 @@ export const PlanSchema = z.object({
 });
 export type Plan = Omit<z.infer<typeof PlanSchema>, "route"> & { route: Route };
 
-const SYSTEM = `You are the query planner for a chat agent that has ONE tool: live web search. You do not answer; you plan.
+const SYSTEM = `You are the query planner for a system that has ONE tool: live web search. You do not answer; you plan.
 Return ONLY a JSON object:
 {"route": "chat|memory|quick|research|recheck",
  "queries": [{"q": "3-8 word search query", "objective": "what this search must find: which pages should rank first, what to exclude, which facts or figures to pull"}],

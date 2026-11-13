@@ -181,6 +181,6 @@ function friendlyError(e: Error): string {
 setInterval(() => store.evictCache(now()), 60 * 60_000).unref();
 
 serve({ fetch: app.fetch, port: cfg.PORT, hostname: cfg.HOST }, (info) => {
-  console.log(`chat agent ready → http://${info.address}:${info.port}`);
+  console.log(`almanac ready → http://${info.address}:${info.port}`);
   for (const d of degradedFeatures(cfg)) console.log(`  degraded — ${d}`);
 });
