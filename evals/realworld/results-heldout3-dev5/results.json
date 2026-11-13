@@ -1,0 +1,1080 @@
+[
+ {
+  "scenario": "heldout3",
+  "label": "award_time|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-w3-assistant_past",
+  "msg": "you said soai was the only winner of the chemistry nobel this year, what was the discovery",
+  "history": false,
+  "sources": [
+   "nobelprize.org (fetched)",
+   "nobelprize.org 2026-10-07",
+   "academie-sciences.fr (fetched)",
+   "apnews.com 2026-10-07",
+   "nobelprize.org (fetched)"
+  ],
+  "text": "On Sun 9 Aug you asked: “Is a 7-day Japan Rail pass worth it for Tokyo, Kyoto and Osaka only?”\n\nThat doesn't hold up — sources don't show that soai was the only winner of the chemistry nobel this year [5][1].\n\nI couldn’t find any source confirming that Soai was the sole Chemistry Nobel laureate in 2026, nor details about a related discovery. If you have a different question or need information on the actual 2026 Chemistry Nobel winners, let me know.",
+  "checks": [
+   "judge: The answer incorrectly references an unrelated past conversation (Japan Rail pass) instead of addressing the user's premise about the 2026 Chemistry Nobel Prize"
+  ],
+  "route": "memory",
+  "ttftMs": 5847,
+  "totalMs": 6538,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=127 in=1291"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The answer incorrectly references an unrelated past conversation (Japan Rail pass) instead of addressing the user's premise about the 2026 Chemistry Nobel Prize.",
+    "It fails to correct the premise with the verified facts: the 2026 Nobel Prize in Chemistry was shared by Henri B. Kagan and Kenso Soai for the discovery of non-linear effects and autocatalysis in asymmetric organic synthesis.",
+    "The response does not state the narrower true version from the gold facts, nor does it properly qualify the overreach in the user's premise.",
+    "It claims inability to find sources despite gold facts being provided in the expectation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|true|third_party|dev",
+  "at": "2026-11-12T05:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l2-third_party",
+  "msg": "my nephew says the switch 2 already came out last year?? is that true, when exactly",
+  "history": false,
+  "sources": [
+   "store.nintendo.com 2021-07-20",
+   "nintendo.com 2025-04-02",
+   "engadget.com 2025-04-18",
+   "nintendosoup.com 2025-05-29",
+   "zeldawiki.wiki 2025-11-05",
+   "en.wikipedia.org 2026-11-05",
+   "nintendo.com (fetched)",
+   "nintendo.com (fetched)",
+   "gamefaqs.gamespot.com (fetched)",
+   "nintendo.co.jp (fetched)"
+  ],
+  "text": "The Nintendo Switch 2 was officially released on 5 June 2025 worldwide [6]. It launched in most markets on that date, with later dates in certain regions (e.g., 26 June 2025 in Singapore, Thailand, and the Philippines; 10 July 2025 in Taiwan) [6]. Thus it did not come out \"last year\" (2024); it debuted in mid‑2025.",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4159,
+  "totalMs": 5023,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=118 in=2708"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "price_policy|narrower|presupposed|dev",
+  "at": "2026-11-12T05:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-p3-presupposed",
+  "msg": "Since OpenAI made ChatGPT Go free for everyone, is there any reason left to pay for it?",
+  "history": false,
+  "sources": [
+   "openai.com 2026-01-16",
+   "felloai.com 2026-04-24",
+   "christopheralarcon.com 2026-07-27",
+   "umatechnology.org 2026-08-16",
+   "aitooljungle.com 2026-10-16",
+   "help.openai.com (fetched)",
+   "help.openai.com (fetched)",
+   "help.openai.com (fetched)",
+   "chatgpt.com (fetched)",
+   "help.openai.com (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that openAI made ChatGPT Go free for everyone [7][5].\n\nThe premise “OpenAI made ChatGPT Go free for everyone” is false; ChatGPT Go remains a paid plan costing $8 per month [1][2].  \n\nReasons to pay for Go (vs. the free tier):\n* **Higher usage limits** – more messages, more image creations, more file uploads, and longer memory than the free plan [6].\n* **Expanded tool access** – the free plan has limited tool usage, while Go gives higher limits for eligible tools [6].\n* **No ads** – free and Go users can see ads, whereas paid plans (Plus, Pro, Business, Enterprise) are ad‑free [3].\n* **Better performance during high traffic** – Go subscribers get priority access during busy periods, reducing interruptions compared to free users [8].\n\nThese benefits can be valuable for users who need more capacity or a smoother experience, even though the plan is relatively inexpensive.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 4,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 5
+  },
+  "flagged": [
+   {
+    "id": "c4",
+    "line": 8,
+    "status": "unsupported",
+    "score": 0.06,
+    "missingNumbers": [],
+    "text": "Better performance during high traffic – Go subscribers get priority access during busy periods, reducing interruptions compared to free users ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3983,
+  "totalMs": 5492,
+  "searches": 4,
+  "costUsd": 0.024999999999999998,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=220 in=2830"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout3",
+  "label": "price_policy|narrower|third_party|dev",
+  "at": "2026-11-12T05:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-p3-third_party",
+  "msg": "Someone on Reddit says ChatGPT Go is free worldwide for a whole year. Is that correct?",
+  "history": false,
+  "sources": [
+   "indianexpress.com 2025-11-04",
+   "techradar.com 2025-11-04",
+   "business-standard.com 2025-12-19",
+   "dqindia.com 2026-01-02",
+   "openai.com 2026-01-16",
+   "theverge.com 2026-01-16",
+   "aicreatorhub.net 2026-10-29",
+   "timesnownews.com 2026-11-10",
+   "help.openai.com (fetched)",
+   "studentoffers.co (fetched)"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that chatGPT Go is free worldwide for a year [8][7].\n\nThe claim is incorrect. OpenAI’s free one‑year ChatGPT Go offer was limited to India only and ended for new users on 21 January 2026; after that the plan is paid worldwide at $8 per month [7][6]. As of 12 November 2026, ChatGPT Go is available in all supported countries but is no longer free.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3151,
+  "totalMs": 4738,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=125 in=2732"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|false|assistant_past|dev",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u1-assistant_past",
+  "msg": "You said Sony released the PlayStation 6 last month. How much does it cost?",
+  "history": false,
+  "sources": [
+   "gen6specs.com 2026-04-11",
+   "pushsquare.com 2026-05-08",
+   "shattered.io 2026-07-14",
+   "gamerant.com 2026-10-02",
+   "tech.yahoo.com 2026-10-18",
+   "polygon.com 2026-10-22",
+   "pro-gamer.gg 2026-10-30",
+   "en.eloutput.com 2026-11-05",
+   "indy100.com 2026-11-06",
+   "tweaktown.com (fetched)"
+  ],
+  "text": "I have no conversation with you from Thu 1 Oct – Sat 31 Oct, so I can't say what we discussed then.\n\nThat doesn't hold up — sources don't show that sony released the PlayStation 6 last month [4][1].\n\nSony has **not** released a PlayStation 6; the console’s launch date and official pricing are still undecided by Sony [2][7][10].  \n\n- Sony officials have said they have not yet set a retail price or release timing for the PS6 [2][7][10].  \n- Analyst and leaker estimates place a potential price around **$1,000 USD** (or €1,000) but this is not confirmed and is based on component‑cost speculation [1][5][6][8].",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4374,
+  "totalMs": 5785,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=152 in=2870"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|narrower|presupposed|dev",
+  "at": "2026-11-12T05:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u3-presupposed",
+  "msg": "Where can I buy the OpenAI gadget Jony Ive designed, now that it's out?",
+  "history": false,
+  "sources": [
+   "phonearena.com 2026-02-10",
+   "gadgetscout.co.uk 2026-06-19",
+   "thenextweb.com 2026-07-15",
+   "thenextweb.com 2026-08-07",
+   "binarybriefing.com 2026-08-08",
+   "pondero.ai 2026-08-09",
+   "openai.com (fetched)",
+   "openai.com (fetched)",
+   "openai.com (fetched)",
+   "leica-camera.com (fetched)"
+  ],
+  "text": "I can’t confirm any retail or purchase location yet—OpenAI’s Jony Ive‑designed gadget hasn’t been released for sale, with reports indicating a launch slated for 2027 [4][5][6].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 3112,
+  "totalMs": 3746,
+  "searches": 5,
+  "costUsd": 0.032,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=84 in=2894"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|true|assistant_past|dev",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l2-assistant_past",
+  "msg": "You told me the Switch 2 came out in June 2025. Was that a record launch for Nintendo?",
+  "history": false,
+  "sources": [
+   "store.nintendo.com 2021-07-20",
+   "nintendo.com 2025-04-02",
+   "nintendo.com 2025-06-05",
+   "nintendo.com 2025-06-11",
+   "nintendolife.com 2025-06-14",
+   "en.wikipedia.org 2026-11-05",
+   "nintendo.com (fetched)",
+   "nintendo.com (fetched)",
+   "nintendo.co.jp (fetched)",
+   "statista.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Nintendo Switch 2.\n\nYes, the Nintendo Switch 2’s June 5 2025 launch set a record as the fastest‑selling Nintendo hardware ever, moving over 3.5 million units worldwide in its first four days[4] (and achieving the all‑time US launch‑week record with > 1.1 million units sold[5]).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3258,
+  "totalMs": 4375,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=103 in=2734"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|false|third_party|dev",
+  "at": "2026-11-12T05:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u1-third_party",
+  "msg": "My cousin says he already bought a PS6. Is the PS6 actually out?",
+  "history": false,
+  "sources": [
+   "wccftech.com 2026-02-21",
+   "gearinstock.com 2026-05-14",
+   "tech-insider.org 2026-06-24",
+   "polygon.com 2026-10-22",
+   "nextplayintel.com 2026-11-02",
+   "videogameschronicle.com 2026-11-05",
+   "techoper.com 2026-11-08",
+   "tech.yahoo.com 2026-11-10",
+   "shattered.io 2026-11-11",
+   "how-to-pedia.org 2026-11-11"
+  ],
+  "text": "The PlayStation 6 has not been officially announced or released as of 12 Nov 2026. Sony has only stated that development is “progressing as scheduled” and has not set a launch date, price, or other details [5][6][9].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3396,
+  "totalMs": 3940,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=77 in=2704"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "price_policy|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-p3-assistant_past",
+  "msg": "u told me chatgpt go is free for a year for everyone. how do i claim it in the US",
+  "history": false,
+  "sources": [
+   "youtube.com 2026-01-01",
+   "androidauthority.com 2026-01-16",
+   "glbgpt.com 2026-01-27",
+   "layer3labs.io 2026-10-01",
+   "whizi.io 2026-10-25",
+   "kingy.ai 2026-11-07",
+   "help.openai.com (fetched)",
+   "chatgpt.com (fetched)",
+   "chatgpt.com (fetched)",
+   "help.openai.com (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that chatGPT Go is free for a year for everyone [5][3].\n\nChatGPT Go isn’t universally free for a year; only limited promotions exist, not a blanket free‑for‑everyone offer.  \n\nIn the US you can claim a free‑year of ChatGPT Go via the Revolut partnership – open Revolut, locate the ChatGPT benefit, follow the link to OpenAI’s reward page, and press “Claim free” [5] (as of 12 Nov 2026).  Otherwise the standard US Go plan costs $8 per month [2].",
+  "checks": [
+   "judge: First sentence does not correct the overreach with the narrower true fact (India-only, Nov 2025 promo); it only says sources don't show it.; Answer invents a US"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 4,
+    "status": "weak",
+    "score": 0.33,
+    "missingNumbers": [],
+    "text": "In the US you can claim a free‑year of ChatGPT Go via the Revolut partnership – open Revolut, locate the ChatGPT benefit, follow the link to OpenAI’s reward page, and press “Claim free” (as of 12 Nov "
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 4422,
+  "totalMs": 10569,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=171 in=2647"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "First sentence does not correct the overreach with the narrower true fact (India-only, Nov 2025 promo); it only says sources don't show it.",
+    "Answer invents a US Revolut partnership free-year claim not supported by the gold facts or cited sources.",
+    "Fails to state the verified narrower truth: free 12-month ChatGPT Go was for users in India only during a limited promo starting 4 Nov 2025.",
+    "Does not address the user's false memory of a prior conversation (should note no record of it)."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|narrower|third_party|dev",
+  "at": "2026-11-12T05:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u3-third_party",
+  "msg": "My coworker says the Jony Ive OpenAI device came out last month. Is it actually out?",
+  "history": false,
+  "sources": [
+   "businessinsider.com 2026-02-10",
+   "t3.com 2026-02-13",
+   "mactrast.com 2026-02-20",
+   "9to5google.com 2026-02-20",
+   "macrumors.com 2026-02-20",
+   "aiweekly.co 2026-07-13",
+   "thenextweb.com 2026-07-15",
+   "pymnts.com 2026-07-16",
+   "9to5mac.com 2026-07-30",
+   "theverge.com 2026-08-06"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that A Jony Ive–designed OpenAI device has been released/lancned [2][5].\n\nNo, the Jony Ive‑designed OpenAI device has not yet shipped – it is still slated for a 2027 launch [1][2][3][4][5][6].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3546,
+  "totalMs": 4435,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=68 in=2722"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "award_time|narrower|third_party|dev",
+  "at": "2026-11-12T05:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-w3-third_party",
+  "msg": "A colleague says the 2026 chemistry Nobel went to a single Japanese chemist, Kenso Soai, on his own. Is that accurate?",
+  "history": false,
+  "sources": [
+   "nobelprize.org 2026-10-07",
+   "english.kyodonews.net 2026-10-07",
+   "chemistryworld.com 2026-10-07",
+   "apnews.com 2026-10-12",
+   "nobelprize.org (fetched)",
+   "academie-sciences.fr (fetched)",
+   "www3.nhk.or.jp (fetched)",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)"
+  ],
+  "text": "No. The 2026 Nobel Prize in Chemistry was jointly awarded to Henri B. Kagan and Kenso Soai, and Soai received only half of the prize share. [Kagan and Soai shared the award][1][8] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4554,
+  "totalMs": 5107,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=103 in=2703"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "discontinuation|true|presupposed|dev",
+  "at": "2026-11-12T05:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-d2-presupposed",
+  "msg": "What happened to my Skype contacts after Microsoft shut Skype down?",
+  "history": false,
+  "sources": [
+   "learn.microsoft.com 2025-09-07",
+   "learn.microsoft.com 2026-01-04",
+   "en.wikipedia.org 2026-11-03",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "answers.microsoft.com (fetched)"
+  ],
+  "text": "Your Skype contacts were automatically moved to Microsoft Teams Free when Skype was retired on 5 May 2025; you’ll see them in Teams after signing in with the same Microsoft account [4][6][7] (as of 12 Nov 2026).  \n\nIf you don’t see some contacts, it’s usually because you signed into Teams with a different Microsoft account or an older Skype‑only name, in which case you need to sign in with the original account to view the migrated contacts [7].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.37,
+    "missingNumbers": [],
+    "text": "Your Skype contacts were automatically moved to Microsoft Teams Free when Skype was retired on 5 May 2025; you’ll see them in Teams after signing in with the same Microsoft account (as of 12 Nov 2026)"
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 4150,
+  "totalMs": 4822,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=165 in=2578"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|true|presupposed|dev",
+  "at": "2026-11-12T05:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l2-presupposed",
+  "msg": "How many Switch 2 consoles did Nintendo sell in the first few days after launch?",
+  "history": false,
+  "sources": [
+   "technave.com 2025-06-11",
+   "tomshardware.com 2025-06-11",
+   "gamesradar.com 2025-06-11",
+   "theverge.com 2025-06-11",
+   "nbcnews.com 2025-06-11",
+   "nintendo.com 2025-06-11",
+   "gameluster.com 2025-06-12",
+   "thefamicast.com 2025-06-13",
+   "perfectly-nintendo.com 2025-06-16",
+   "investing.com (fetched)"
+  ],
+  "text": "Nintendo sold more than 3.5 million Switch 2 units worldwide in the first four days after launch (June 5‑9, 2025) [6][10] (as of 12 Nov 2026).  \n\nThis figure comes from Nintendo’s own announcement and subsequent reporting by the investing.com article.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2390,
+  "totalMs": 2945,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=101 in=2646"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|false|assistant_past|dev",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l1-assistant_past",
+  "msg": "Last week you said Windows 12 had been released. Is it a free upgrade from Windows 11?",
+  "history": false,
+  "sources": [
+   "learn.microsoft.com 2023-10-16",
+   "tomshardware.com 2025-06-29",
+   "theunitysoft.com 2025-07-09",
+   "pcworld.com 2026-03-02",
+   "evezone.evetech.co.za 2026-06-28",
+   "laptopjudge.com 2026-11-03",
+   "theverge.com 2026-11-05",
+   "windowslatest.com 2026-11-06",
+   "microsoft.com (fetched)",
+   "dir.md (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Windows 12 release and upgrade policy (Mon 2 Nov – Sun 8 Nov).\n\nThat doesn't hold up — sources don't show that windows 12 is a free upgrade from Windows 11 [4][3].\n\nWindows 12 has not been released, and there is no free upgrade path from Windows 11 because the operating system does not exist as an official product yet [3][4][5][10] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3544,
+  "totalMs": 8861,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=99 in=2737"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u3-assistant_past",
+  "msg": "you told me openai's jony ive gadget already shipped, how much does it cost",
+  "history": false,
+  "sources": [
+   "linkedin.com 2026-08-06",
+   "theverge.com 2026-08-06",
+   "engadget.com 2026-08-06",
+   "9to5mac.com 2026-08-06",
+   "cnbctv18.com 2026-08-07",
+   "gizmodo.com 2026-08-07",
+   "channelinsider.com 2026-08-10",
+   "itechguides.com 2026-08-18",
+   "applescoop.org 2026-09-24",
+   "flash24.org 2026-11-06"
+  ],
+  "text": "I can't find any conversation of ours about OpenAI Jony Ive gadget release status.\n\nThat doesn't hold up — sources don't show that openAI's Jony Ive gadget has already shipped/launched [8][10].\n\nOpenAI’s Jony Ive‑designed gadget has **not** shipped yet. According to the latest reports it is expected to launch in 2027 and is projected to cost between $300 and $400 [1][2][3][4][5][6][7][10] (as of 12 Nov 2026).",
+  "checks": [
+   "judge: First sentence does not correct the premise; it only says no prior conversation exists.; Answer claims a 2027 launch and $300–400 price, but gold facts state ex"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3027,
+  "totalMs": 4134,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=98 in=2733"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "First sentence does not correct the premise; it only says no prior conversation exists.",
+    "Answer claims a 2027 launch and $300–400 price, but gold facts state expected early 2027 at roughly $200–300 and that OpenAI has not confirmed final price or launch date.",
+    "Cites sources [1]–[7], [10] that are not in the provided gold sources; gold sources are the two MacRumors links only."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout3",
+  "label": "discontinuation|true|third_party|dev",
+  "at": "2026-11-12T05:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-d2-third_party",
+  "msg": "My grandma says Skype doesn't exist anymore. Did Microsoft really shut it down?",
+  "history": false,
+  "sources": [
+   "techcommunity.microsoft.com 2025-01-15",
+   "microsoft.com 2025-02-28",
+   "arstechnica.com 2025-02-28",
+   "aljazeera.com 2025-05-05",
+   "apnews.com 2025-05-06",
+   "en.wikipedia.org 2026-11-03",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "learn.microsoft.com (fetched)"
+  ],
+  "text": "**Yes, Microsoft retired Skype in May 2025** — the service was fully shut down on 5 May 2025 and users were directed to Microsoft Teams [2][3][4][6][7].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 5056,
+  "totalMs": 5674,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=83 in=2748"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "award_time|narrower|presupposed|dev",
+  "at": "2026-11-12T05:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-w3-presupposed",
+  "msg": "Why did Kenso Soai get this year's Nobel Prize in Chemistry all to himself?",
+  "history": false,
+  "sources": [
+   "nobelprize.org 2026-10-07",
+   "wsj.com 2026-10-07",
+   "aljazeera.com 2026-10-07",
+   "tus.ac.jp 2026-10-08",
+   "nobelprize.org (fetched)",
+   "axial.acs.org (fetched)",
+   "academic.oup.com (fetched)",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)",
+   "kva.se (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that kenso Soai received the 2026 Nobel Prize in Chemistry as a sole laureate [1][8].\n\nKenso Soai did not receive the 2026 Nobel Prize in Chemistry alone; he was one of two laureates, sharing the prize with Henri B. Kagan for their joint work on nonlinear effects and autocatalysis in asymmetric synthesis [1][2][3][8].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 3277,
+  "totalMs": 4432,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=85 in=2708"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|false|third_party|dev",
+  "at": "2026-11-12T05:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l1-third_party",
+  "msg": "My dad says Windows 12 is out and he should upgrade his PC to it. Is he right?",
+  "history": false,
+  "sources": [
+   "windowscentral.com 2026-03-04",
+   "techbloat.com 2026-08-08",
+   "windowscentral.com 2026-11-09",
+   "learn.microsoft.com (fetched)",
+   "learn.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "learn.microsoft.com (fetched)",
+   "dir.md (fetched)"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that windows 12 has been released/launched [2][10].\n\nNo, Windows 12 has not been released—there is no official Windows 12 edition, ISO, or upgrade path as of 12 Nov 2026 [2][10]. Your dad would need to stay with Windows 11 (e.g., the 26H2 update) and upgrade through Windows Update if his PC meets the requirements.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2368,
+  "totalMs": 4145,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=115 in=2636"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "discontinuation|true|assistant_past|dev",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-d2-assistant_past",
+  "msg": "you said skype was shut down — when was that exactly, and what replaced it?",
+  "history": false,
+  "sources": [
+   "globcall.com 2026-06-11",
+   "learn.microsoft.com 2026-08-21",
+   "kinvophone.com 2026-09-09",
+   "bestskypealternative.com 2026-10-17",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "learn.microsoft.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Skype service status.\n\nSkype was retired on May 5 2025 and users were migrated to Microsoft Teams Free [4][5] (as of 12 Nov 2026).  \nMicrosoft Teams (with its “Teams Phone” add‑on for PSTN calls) is the official replacement for Skype’s free and paid calling features, while other free chat‑video options include Zoom, Google Meet, WhatsApp, etc.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4961,
+  "totalMs": 6433,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=113 in=2598"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|false|presupposed|dev",
+  "at": "2026-11-12T05:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l1-presupposed",
+  "msg": "What are the best new features in Windows 12 since it came out last month?",
+  "history": false,
+  "sources": [
+   "pureinfotech.com 2026-09-15",
+   "pcworld.com 2026-11-04",
+   "windowslatest.com 2026-11-06",
+   "windowscentral.com 2026-11-08",
+   "techrepublic.com 2026-11-11",
+   "techradar.com 2026-11-11",
+   "wccftech.com 2026-11-11",
+   "digitaltrends.com 2026-11-12",
+   "wccftech.com 2026-11-12",
+   "learn.microsoft.com (fetched)"
+  ],
+  "text": "**No confirmed information is available about Windows 12 or its features, as the sources only discuss Windows 11 updates released in November 2026.**",
+  "checks": [],
+  "route": "research",
+  "ttftMs": 1945,
+  "totalMs": 2068,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=77 in=2778"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|false|presupposed|dev",
+  "at": "2026-11-12T05:20:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u1-presupposed",
+  "msg": "Is the PS6 that came out this year backwards compatible with PS5 games?",
+  "history": false,
+  "sources": [
+   "psu.com 2026-04-16",
+   "talkesport.com 2026-04-16",
+   "stuff.tv 2026-04-16",
+   "technobezz.com 2026-04-19",
+   "gamerant.com 2026-09-14",
+   "polygon.com 2026-10-22",
+   "shattered.io 2026-11-11",
+   "playstation.com (fetched)",
+   "notebookcheck.net (fetched)",
+   "notebookcheck.net (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that the PS6 was released in 2026 [5][3].\n\nThe PlayStation 6 has not been released in 2026, so no official backward‑compatibility details exist for a 2026 launch — the console’s release is still unannounced and expected no earlier than late 2027 or possibly 2028 [5][6][7].\n\nLeaked documents and rumors do say the yet‑to‑be‑released PS6 is planned to support PS5 (and PS4) games [1][2][3][4].",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4320,
+  "totalMs": 6851,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=153 in=2857"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "en.wikipedia.org (fetched)",
+   "youtube.com (fetched)",
+   "herodevs.com (fetched)",
+   "liquidweb.com (fetched)",
+   "stackoverflow.com (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published 25 Oct 2026 [5] (as of 12 Nov 2026).  \nIt is a point‑release bug‑fix update in the 3.15 series; the 3.15 line will continue to receive updates until its end‑of‑life in 2034.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3456,
+  "totalMs": 4076,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=172 in=3021"
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-10-11",
+   "liquidweb.com (fetched)",
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "stackoverflow.com (fetched)",
+   "docs.python.org (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "pythondotorg.ingress.us-east-2.psfhosted.computer (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published 25 Oct 2026 [7] (as of 12 Nov 2026). The 3.15 series is in bug‑fix maintenance; Python 3.16 remains a pre‑release [4][8].",
+  "checks": [
+   "slow first token 6091 ms"
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6091,
+  "totalMs": 8170,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=73 in=3161"
+  },
+  "pass": false
+ }
+]

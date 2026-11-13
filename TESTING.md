@@ -134,7 +134,7 @@ State these before relying on any figure:
 3. **Tuned-against dev set.** The 44 cases are not a generalisation measure. Numbers like 39/44 were reached by fixing that set's failures.
 4. **Grader bugs and bias.** An LLM judge produced false failures (F-26, F-41, F-42, F-64) and one false pass (F-51). Grading on the same Groq quota competed with the app (F-27) and inflated latencies. Fixes: a stronger grader first, a judge given the real history, and a custom retry client (F-28).
 5. **Date drift in public datasets.** FreshQA gold answers date from Apr 2026 and the test clock is Nov 2026 (F-77). Those "failures" are the dataset's age.
-6. **Jev is an alpha endpoint with no SLA.** Published accuracy figures for Jev are the vendor's own and I have not verified them. `scripts/calibrate-jev.ts` is a small script that scores hand-labelled true and false claims against two passages (numbers masked) to pick a support threshold; **I never ran it, and it is too small to be a real calibration.** The thresholds in `src/agent/needs.ts` (`T`) came from iterating on the dev and held-out runs, not from a calibration set.
+6. **Jev is an alpha endpoint with no SLA.** Published accuracy figures for Jev are the vendor's own and I have not verified them. The thresholds in `src/agent/needs.ts` (`T`) came from iterating on the dev and held-out runs, not from a dedicated calibration set.
 7. **No concurrency or load test.** One user at a time, paced. There is no multi-user soak.
 8. **No human evaluation.** All grading was code rules plus a model judge. I did not run a user study.
 
@@ -143,8 +143,8 @@ State these before relying on any figure:
 - A **planner-degradation arm**: the same frozen set with the planner forced to its weakest fallback, to quantify how much code-side validation rescues.
 - A **per-component ablation table** (needs routing, premise gate, recheck v2, post-answer verification, Jev vs LLM judge), each on the same frozen set, on a paid model tier.
 - **Larger frozen sets** (n ≥ 150) so differences of 5 points become detectable.
-- Running `calibrate-jev.ts` and publishing the reliability curve.
+- Measuring Jev's calibration curve on a dedicated labelled dataset.
 
 ## 8. Reproducing, honestly
 
-You can reproduce layer 1 exactly. For layers 2 and 3 you would need to rebuild the harness. In short, it was: (a) a small in-process runner that plants history on simulated past days with a test clock (`setNow` in `src/util/clock.ts`), asks the questions, and records answer, route, searches and timings; (b) code rules plus a judge model given the gold facts and the planted history; (c) a search tape (`SEARCH_TAPE=record|replay`, kept in `src/search/tape.ts`) so two builds can be compared on the same recorded web. `scripts/eval-brief.ts` runs the brief's own sample questions over simulated days against live providers (`npx tsx --env-file=.env scripts/eval-brief.ts`).
+You can reproduce layer 1 exactly. For layers 2 and 3 you would need to rebuild the harness. In short, it was: (a) a small in-process runner that plants history on simulated past days with a test clock (`setNow` in `src/util/clock.ts`), asks the questions, and records answer, route, searches and timings; (b) code rules plus a judge model given the gold facts and the planted history; (c) a search tape (`SEARCH_TAPE=record|replay`, kept in `src/search/tape.ts`) so two builds can be compared on the same recorded web.

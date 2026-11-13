@@ -1,0 +1,5164 @@
+[
+ {
+  "scenario": "heldout2",
+  "label": "memory|casual",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m1-casual",
+  "msg": "what'd i ask u yesterday?",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nI replied that routine renewals generally take about 4–6 weeks, while expedited renewals are processed in roughly 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 663,
+  "totalMs": 1378,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=95 in=1120"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|unusual",
+  "at": "2026-11-12T05:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m1-unusual",
+  "msg": "Wednesday the 11th of November — what was my question to you?",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nI answered that routine renewal takes about 4–6 weeks and expedited renewal takes about 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 549,
+  "totalMs": 1225,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=106 in=1140"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|typos",
+  "at": "2026-11-12T05:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m1-typos",
+  "msg": "waht did i ask u yestreday?",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nThe answer provided then was that routine renewal takes about 4–6 weeks, while expedited renewal takes 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1795,
+  "totalMs": 2479,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=122 in=1126"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|indirect",
+  "at": "2026-11-12T05:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m1-indirect",
+  "msg": "I'm trying to remember what I wanted to know when I messaged you on Wednesday the 11th, can you remind me?",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nI replied that routine renewals generally take about 4–6 weeks, while expedited renewals are processed in roughly 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1794,
+  "totalMs": 2411,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "none",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=91 in=1152"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|casual",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m2-casual",
+  "msg": "what we talk about sunday 8 nov?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\nand I answered that the federal funds target range was 4.25 %– 4.50%.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 649,
+  "totalMs": 1084,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=63 in=1120"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|unusual",
+  "at": "2026-11-12T05:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m2-unusual",
+  "msg": "could you remind me of the conversation topics from november 8th?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\nI answered that the federal funds target range was 4.25%–4.50%.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 623,
+  "totalMs": 1430,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=62 in=1128"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|typos",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m2-typos",
+  "msg": "wat did we tlk abt sun 8 nov",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\nI answered that the federal funds target range was 4.25%–4.50%.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 553,
+  "totalMs": 995,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=67 in=1124"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|indirect",
+  "at": "2026-11-12T05:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m2-indirect",
+  "msg": "hey, my memory is a little fuzzy, so i was wondering if you could fill me in on what we discussed this past sunday, november 8th?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\nI answered that the federal funds target range was 4.25%–4.50%, based on the information available at that time.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 535,
+  "totalMs": 1121,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=79 in=1143"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|casual",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m3-casual",
+  "msg": "what did i ask nov 4",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\nI answered that Spotify Premium Individual is $9.99 a month in the US.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 869,
+  "totalMs": 1243,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=65 in=1119"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|unusual",
+  "at": "2026-11-12T05:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m3-unusual",
+  "msg": "remind me of my inquiry from the fourth of november",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about Spotify Premium pricing.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "judge: Failed to recall the 4 Nov Spotify Premium price question from conversation history; Incorrectly stated no conversation about Spotify Premium pricing exists"
+  ],
+  "route": "memory",
+  "ttftMs": 468,
+  "totalMs": 469,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Failed to recall the 4 Nov Spotify Premium price question from conversation history",
+    "Incorrectly stated no conversation about Spotify Premium pricing exists",
+    "Did not answer the user's request to remind them of their 4 Nov inquiry"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|typos",
+  "at": "2026-11-12T05:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m3-typos",
+  "msg": "wat did i ask u on nov 4th",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\nI replied that Spotify Premium Individual costs $9.99 per month in the US.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 768,
+  "totalMs": 1465,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=81 in=1123"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|indirect",
+  "at": "2026-11-12T05:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m3-indirect",
+  "msg": "hey, can you jog my memory on what i was asking about back on november 4th",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\nI answered that Spotify Premium Individual costs **$9.99 per month** in the United States.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1946,
+  "totalMs": 2578,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=81 in=1133"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|casual",
+  "at": "2026-11-12T05:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m4-casual",
+  "msg": "what'd i ask last monday",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nI suggested the Keychron K2 (about $79) and the Royal Kludge RK84 (about $60) as solid budget options.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 769,
+  "totalMs": 1731,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=125 in=1135"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|unusual",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m4-unusual",
+  "msg": "the query from monday, nov 9 — remind me what it was",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nI suggested the Keychron K2 (around $79) and the Royal Kludge RK84 (around $60).",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 657,
+  "totalMs": 1138,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=104 in=1133"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|typos",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m4-typos",
+  "msg": "wat did i ask u last mon",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nI suggested the Keychron K2 (about $79) and the Royal Kludge RK84 (about $60) as solid budget picks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1756,
+  "totalMs": 2763,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=75 in=1136"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "memory|indirect",
+  "at": "2026-11-12T05:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-m4-indirect",
+  "msg": "i'm trying to remember what my question was when we spoke last monday, the 9th of november",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nI answered that the Keychron K2 (about $79) and the Royal Kludge RK84 (about $60) are solid budget picks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 387,
+  "totalMs": 901,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=102 in=1162"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|casual",
+  "at": "2026-11-12T05:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t1-casual",
+  "msg": "what did i ask u the sunday before last",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nYour question was about affordable stability shoes for flat feet, and the suggested options were the Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31, each around $140.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 596,
+  "totalMs": 1317,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=140 in=1134"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t1-unusual",
+  "msg": "which query came from me on the penultimate sunday",
+  "history": false,
+  "sources": [],
+  "text": "I have no conversation with you from Sun 25 Oct, so I can't say what we discussed then.\n\nI do have conversations from Mon 26 Oct, Thu 29 Oct, Sun 1 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "missing one of: shoes / running",
+   "judge: Failed to identify the correct penultimate Sunday (Nov 1) from conversation history; Incorrectly stated no conversation from Oct 25 when the user asked about pe"
+  ],
+  "route": "memory",
+  "ttftMs": 484,
+  "totalMs": 485,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Failed to identify the correct penultimate Sunday (Nov 1) from conversation history",
+    "Incorrectly stated no conversation from Oct 25 when the user asked about penultimate Sunday relative to Nov 12",
+    "Did not recall the Nov 1 running shoes query as expected"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|typos",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t1-typos",
+  "msg": "wat did i ask u the sunday befor last",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\nYou asked on Sun 8 Nov 2026: “What’s the current US federal funds rate?” I answered that the federal funds target range was 4.25% – 4.50% (as recorded in our earlier conversation). I don’t have a record of any question from the Sunday before that (Sun 1 Nov 2026).",
+  "checks": [
+   "missing one of: shoes / running",
+   "judge: Wrong date recalled: the Sunday before last was 1 Nov 2026, not 8 Nov 2026.; Missed the actual question from 1 Nov 2026 about running shoes for flat feet under "
+  ],
+  "route": "memory",
+  "ttftMs": 911,
+  "totalMs": 1868,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=192 in=1121"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Wrong date recalled: the Sunday before last was 1 Nov 2026, not 8 Nov 2026.",
+    "Missed the actual question from 1 Nov 2026 about running shoes for flat feet under $150.",
+    "Did not answer the user's question correctly."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|indirect",
+  "at": "2026-11-12T05:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t1-indirect",
+  "msg": "i'm trying to remember what i asked you on the sunday before the most recent one",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nYour answer then was that Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31 are good stability picks at around $140.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1784,
+  "totalMs": 2669,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=115 in=1145"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|casual",
+  "at": "2026-11-12T05:20:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t2-casual",
+  "msg": "what'd i ask u 2 weeks ago?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nAnswer: GitHub Actions is the default choice; CircleCI’s free tier gives 6,000 build minutes a month.\n\nOn Thu 29 Oct 2026 you asked: “How much does Notion Plus cost per member?”  \nAnswer: Notion Plus is $10 per member per month billed annually, or $12 billed monthly.\n\nOn Sun 1 Nov 2026 you asked: “Best running shoes for flat feet under $150?”  \nAnswer: Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31 are good stability picks at around $140.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1820,
+  "totalMs": 2633,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=262 in=1303"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:21:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t2-unusual",
+  "msg": "could you remind me of my inquiry from around the 29th of october?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\nI answered that Notion Plus is $10 per member per month when billed annually, or $12 per member per month when billed monthly.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 553,
+  "totalMs": 1000,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=77 in=1133"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|typos",
+  "at": "2026-11-12T05:22:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t2-typos",
+  "msg": "waht did i ask u two wks ago",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\nI answered that Notion Plus is $10 per member per month when billed annually, or $12 per member per month when billed monthly.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2165,
+  "totalMs": 2772,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=95 in=1444"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|indirect",
+  "at": "2026-11-12T05:23:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t2-indirect",
+  "msg": "hey, my memory is a bit fuzzy, but i'm trying to remember what i reached out about a couple weeks back, right around october 29th.",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about Notion pricing.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "judge: The assistant incorrectly claims it cannot find the 29 Oct Notion pricing conversation, which is explicitly present in the provided conversation history.; The a"
+  ],
+  "route": "memory",
+  "ttftMs": 435,
+  "totalMs": 436,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant incorrectly claims it cannot find the 29 Oct Notion pricing conversation, which is explicitly present in the provided conversation history.",
+    "The assistant fails to recall the 26 Oct CI/CD question, also present in the history.",
+    "The assistant invents conversations from 9, 11, and 12 Nov that are not in the provided history, violating the honesty requirement."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|casual",
+  "at": "2026-11-12T05:24:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t3-casual",
+  "msg": "what did i ask u late oct?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\n– I replied that GitHub Actions is the default choice and mentioned CircleCI’s free tier offering 6,000 build minutes per month.  \n\nOn Thu 29 Oct 2026 you asked: “How much does Notion Plus cost per member?” – I answered that Notion Plus is $10 per member per month when billed annually, or $12 per member per month when billed monthly.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1944,
+  "totalMs": 2556,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=181 in=1214"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:25:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t3-unusual",
+  "msg": "Which query did I submit during October's final days?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\nDuring the final days of October you submitted two queries:\n\n- **Mon 26 Oct 2026:** “What’s a good CI/CD tool for a small team on GitHub?”  \n- **Thu 29 Oct 2026:** “How much does Notion Plus cost per member?”",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1714,
+  "totalMs": 3131,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=151 in=1219"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|typos",
+  "at": "2026-11-12T05:26:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t3-typos",
+  "msg": "wat did i ask u at end of oct?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\nOn Thu 29 Oct 2026 you asked: “How much does Notion Plus cost per member?”  ",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1548,
+  "totalMs": 2147,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=109 in=1218"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|indirect",
+  "at": "2026-11-12T05:27:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t3-indirect",
+  "msg": "I'm trying to remember what my question was back when October was wrapping up, could you remind me?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\n– I suggested GitHub Actions as the default choice and mentioned CircleCI’s free tier offering 6,000 build minutes per month.\n\nOn Thu 29 Oct 2026 you asked: “How much does Notion Plus cost per member?” – I answered that Notion Plus is $10 per member per month when billed annually, or $12 per member per month when billed monthly.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1960,
+  "totalMs": 2719,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=147 in=1230"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|casual",
+  "at": "2026-11-12T05:28:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t4-casual",
+  "msg": "what'd i ask u ~week ago",
+  "history": false,
+  "sources": [],
+  "text": "On Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nOn Mon 9 Nov 2026 you asked for a budget mechanical keyboard recommendation, and on Wed 11 Nov 2026 you asked how long a US passport renewal takes.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1668,
+  "totalMs": 2399,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=112 in=1360"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:29:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t4-unusual",
+  "msg": "refresh my memory on the query i dropped near the fifth of november",
+  "history": false,
+  "sources": [],
+  "text": "I have no conversation with you from Thu 5 Nov, so I can't say what we discussed then.\n\nI do have conversations from Wed 4 Nov, Fri 6 Nov, Sun 8 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "missing one of: Spotify / Python / federal"
+  ],
+  "route": "memory",
+  "ttftMs": 1634,
+  "totalMs": 1634,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|typos",
+  "at": "2026-11-12T05:30:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t4-typos",
+  "msg": "waht did i ask u abt a weak ago",
+  "history": false,
+  "sources": [],
+  "text": "On Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\nOn Sun 8 Nov 2026 you asked for the current US federal funds rate, and I gave the target range of 4.25%–4.50%.  \nOn Mon 9 Nov 2026 you asked for a budget mechanical keyboard recommendation, and I suggested the Keychron K2 (≈ $79) and the Royal Kludge RK84 (≈ $60).  \nOn Wed 11 Nov 2026 you asked how long a US passport renewal takes, and I explained that routine processing is about 4–6 weeks, with expedited service taking 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1645,
+  "totalMs": 2561,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=227 in=1364"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "time|indirect",
+  "at": "2026-11-12T05:31:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-t4-indirect",
+  "msg": "hey, my memory's a bit fuzzy, but i'm trying to remember what question i brought up around the start of last week, like around november fifth or so",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n* On Wed 4 Nov you asked about the price of Spotify Premium Individual in the US, and I answered that it’s $9.99 per month.  \n* On Fri 6 Nov you asked which language is better for a beginner, Python or JavaScript, and I replied that Python is generally more readable for starters, while JavaScript is preferable if you mainly want to build websites.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1839,
+  "totalMs": 2917,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=232 in=1311"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:32:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p1-casual",
+  "msg": "did we cover learning to program? (the 6 nov python vs js chat counts)",
+  "history": false,
+  "sources": [
+   "thelearningprogrammer.com 2020-02-15",
+   "freecodecamp.org 2021-10-06",
+   "idtech.com 2026-09-11",
+   "grapinz.space 2026-11-05",
+   "hackernoon.com (fetched)",
+   "udacity.com (fetched)",
+   "cs50.harvard.edu (fetched)",
+   "cs50.harvard.edu (fetched)",
+   "realpython.com (fetched)",
+   "slant.co (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about learning to program (Python vs JavaScript for beginners).\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.\n\nI couldn’t confirm that we covered a “learning to program” discussion on 6 Nov, nor any “Python vs JavaScript” chat counts for that date. No source in the evidence mentions that event or number.",
+  "checks": [
+   "route quick (expected memory)",
+   "expected no search, made 1",
+   "judge: The assistant incorrectly claims no conversation about learning to program exists, but the conversation history clearly shows a 2026-11-06 exchange about Python"
+  ],
+  "route": "quick",
+  "ttftMs": 2328,
+  "totalMs": 2759,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=149 in=2631"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant incorrectly claims no conversation about learning to program exists, but the conversation history clearly shows a 2026-11-06 exchange about Python vs JavaScript for beginners.",
+    "The assistant fabricates recent conversation dates (Mon 9 Nov, Wed 11 Nov, Thu 12 Nov) that don't match the actual history.",
+    "The assistant fails to answer the user's question by not acknowledging the documented 6 Nov Python vs JavaScript discussion."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:33:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p1-unusual",
+  "msg": "was the topic of acquiring programming skills ever addressed between us, inclusive of the november 6th python versus javascript exchange?",
+  "history": false,
+  "sources": [],
+  "text": "On Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\n\nand I replied that starting with Python is recommended for readability, while JavaScript is preferable if the primary goal is building websites. Thus, the topic of acquiring programming skills was indeed addressed in that exchange.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 660,
+  "totalMs": 1318,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=90 in=1142"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|typos",
+  "at": "2026-11-12T05:34:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p1-typos",
+  "msg": "did we evr discuss lerning to code? (6 nov py vs js counts)",
+  "history": false,
+  "sources": [],
+  "text": "On Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\n\nand I replied that Python is generally more readable for beginners, while JavaScript is preferable if the primary goal is web development.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 7040,
+  "totalMs": 7658,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=69 in=1133"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|indirect",
+  "at": "2026-11-12T05:35:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p1-indirect",
+  "msg": "i'm trying to remember if we've ever talked about picking up coding before, specifically whether that python versus javascript conversation we had on november 6th would be considered part of that discussion",
+  "history": false,
+  "sources": [],
+  "text": "On Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\n\n. This was the only coding‑related conversation we have in the memory, so that discussion does count as our previous talk about picking up coding.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 729,
+  "totalMs": 2088,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=100 in=1154"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:36:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p2-casual",
+  "msg": "what did u suggest for running shoes?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nI suggested the Brooks Adrenaline GTS 24 and the ASICS Gel‑Kayano 31, both stability models priced around $140.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1293,
+  "totalMs": 1888,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=88 in=1115"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:37:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p2-unusual",
+  "msg": "which sneakers were you advising i get?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nBrooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 950,
+  "totalMs": 1737,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=78 in=1115"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|typos",
+  "at": "2026-11-12T05:38:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p2-typos",
+  "msg": "what did you reccomend for my runnig shoes?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nI recommended the Brooks Adrenaline GTS 24 and the ASICS Gel‑Kayano 31, both stability models priced around $140.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 856,
+  "totalMs": 1464,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=82 in=1119"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|indirect",
+  "at": "2026-11-12T05:39:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p2-indirect",
+  "msg": "hey, i'm trying to remember the running shoes you mentioned earlier — could you remind me which ones you suggested?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\n\nI recommended the Brooks Adrenaline GTS 24 and the ASICS Gel‑Kayano 31, both priced around $140.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1135,
+  "totalMs": 1799,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=91 in=1129"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:40:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p3-casual",
+  "msg": "did we cover ci/cd before?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\n\nThat was the only CI/CD discussion we’ve had so far. Let me know if you’d like a deeper comparison or updates on newer options.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1426,
+  "totalMs": 2119,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=114 in=1115"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:41:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p3-unusual",
+  "msg": "has continuous integration come up in our prior chats?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\n\nI replied that GitHub Actions is the default choice and mentioned CircleCI’s free tier of 6,000 build minutes per month.  \n\nSo yes—continuous integration was discussed in that earlier conversation.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 2136,
+  "totalMs": 2857,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=108 in=1117"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|typos",
+  "at": "2026-11-12T05:42:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p3-typos",
+  "msg": "did we talk abt ci/cd be4?",
+  "history": false,
+  "sources": [],
+  "text": "I don't have a memory of any previous conversation with you about CI/CD. If we've chatted before, that session isn't stored in my current context.\n\nIf you'd like, I can search the web for the latest best practices on CI/CD pipelines, or help you design one for your specific project!",
+  "checks": [
+   "route chat (expected memory)",
+   "judge: The assistant failed to recall the CI/CD conversation from 2026-10-26 that is explicitly present in the conversation history.; The assistant incorrectly claimed"
+  ],
+  "route": "chat",
+  "ttftMs": 1404,
+  "totalMs": 1530,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=67 in=960"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant failed to recall the CI/CD conversation from 2026-10-26 that is explicitly present in the conversation history.",
+    "The assistant incorrectly claimed no memory of previous CI/CD discussion when the history shows a clear exchange about GitHub Actions and CircleCI.",
+    "The answer does not meet the expectation of finding the 26 Oct CI/CD conversation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|indirect",
+  "at": "2026-11-12T05:43:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p3-indirect",
+  "msg": "i'm trying to remember if we've already gone over the continuous integration setup in a previous conversation.",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\n\nI suggested GitHub Actions as the default choice and mentioned CircleCI’s free tier with 6,000 build minutes per month.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 482,
+  "totalMs": 1406,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=77 in=1126"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:44:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p4-casual",
+  "msg": "did i ever ask u about buying a car?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about buying a car.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2059,
+  "totalMs": 2060,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:45:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p4-unusual",
+  "msg": "has the topic of purchasing a vehicle ever come up from me before?",
+  "history": false,
+  "sources": [],
+  "text": "Based on our previous conversations, the specific topic of purchasing a vehicle hasn't come up. I recall we discussed tech comparisons and general research, but no car buying plans.\n\nIf you're looking to buy a vehicle now, I can definitely help compare models, check current prices, or look into financing options! Let me know what you're interested in.",
+  "checks": [
+   "route chat (expected memory)"
+  ],
+  "route": "chat",
+  "ttftMs": 2016,
+  "totalMs": 2177,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=72 in=963"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|typos",
+  "at": "2026-11-12T05:46:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p4-typos",
+  "msg": "did i evr ask u abt buying a car?",
+  "history": false,
+  "sources": [
+   "forums.macrumors.com 2009-11-25",
+   "caamagazine.com 2020-01-09",
+   "dreamworkauto.com 2026-02-11",
+   "quickanddirtytips.com 2026-09-11",
+   "implicator.ai 2026-10-02",
+   "kutv.com 2026-11-06",
+   "autos.yahoo.com 2026-11-08",
+   "hinative.com (fetched)",
+   "studyx.ai (fetched)",
+   "eslfast.com (fetched)"
+  ],
+  "text": "I don’t have any record that you’ve asked me specifically about buying a car.",
+  "checks": [
+   "route quick (expected memory)",
+   "expected no search, made 2"
+  ],
+  "route": "quick",
+  "ttftMs": 2515,
+  "totalMs": 2536,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=78 in=2494"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "topic|indirect",
+  "at": "2026-11-12T05:47:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-p4-indirect",
+  "msg": "i was just wondering if i've ever mentioned anything to you about looking for a new vehicle or not.",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about looking for a new vehicle.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1632,
+  "totalMs": 1633,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|casual",
+  "at": "2026-11-12T05:48:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l1-casual",
+  "msg": "list everything i asked this month",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n- Best running shoes for flat feet under $150? (Sun 1 Nov 2026)  \n- What's the price of Spotify Premium Individual in the US? (Wed 4 Nov 2026)  \n- Which is better for a beginner, Python or JavaScript? (Fri 6 Nov 2026)  \n- What's the current US federal funds rate? (Sun 8 Nov 2026)  \n- Recommend a budget mechanical keyboard. (Mon 9 Nov 2026)  \n- How long does a US passport renewal take? (Wed 11 Nov 2026)  ",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 730,
+  "totalMs": 1668,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=164 in=1518"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|unusual",
+  "at": "2026-11-12T05:49:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l1-unusual",
+  "msg": "compile a record of every inquiry i've submitted during november",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n- Sun 1 Nov 2026: “Best running shoes for flat feet under $150?” – Recommended Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31, each around $140.  \n- Wed 4 Nov 2026: “What’s the price of Spotify Premium Individual in the US?” – Stated $9.99 per month.  \n- Fri 6 Nov 2026: “Which is better for a beginner, Python or JavaScript?” – Suggested starting with Python for readability, JavaScript if the goal is web development.  \n- Sun 8 Nov 2026: “What’s the current US federal funds rate?” – Reported the target range of 4.25%–4.50%.  \n- Mon 9 Nov 2026: “Recommend a budget mechanical keyboard.” – Listed the Keychron K2 (~$79) and Royal Kludge RK84 (~$60).  \n- Wed 11 Nov 2026: “How long does a US passport renewal take?” – Said routine renewal takes about 4–6 weeks; expedited 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 524,
+  "totalMs": 1675,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=286 in=1522"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|typos",
+  "at": "2026-11-12T05:50:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l1-typos",
+  "msg": "lst evrythng i askd this mnth",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n– I recommended the Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31, each around $140.  \n\nOn Wed 4 Nov you asked “What’s the price of Spotify Premium Individual in the US?” – I answered $9.99 per month.  \n\nOn Fri 6 Nov you asked “Which is better for a beginner, Python or JavaScript?” – I suggested starting with Python for readability, noting JavaScript if the goal is web development.  \n\nOn Sun 8 Nov you asked “What’s the current US federal funds rate?” – I gave the target range of 4.25%–4.50%.  \n\nOn Mon 9 Nov you asked “Recommend a budget mechanical keyboard.” – I mentioned the Keychron K2 (~$79) and Royal Kludge RK84 (~$60).  \n\nOn Wed 11 Nov you asked “How long does a US passport renewal take?” – I explained routine renewals take about 4–6 weeks and expedited renewals 2–3 weeks.  ",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 473,
+  "totalMs": 2022,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=281 in=1524"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|indirect",
+  "at": "2026-11-12T05:51:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l1-indirect",
+  "msg": "hey, i'm trying to review my activity from november, could you pull up all the questions i sent your way this month?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n- Sun 1 Nov 2026: “Best running shoes for flat feet under $150?”  \n- Wed 4 Nov 2026: “What’s the price of Spotify Premium Individual in the US?”  \n- Fri 6 Nov 2026: “Which is better for a beginner, Python or JavaScript?”  \n- Sun 8 Nov 2026: “What’s the current US federal funds rate?”  \n- Mon 9 Nov 2026: “Recommend a budget mechanical keyboard.”  \n- Wed 11 Nov 2026: “How long does a US passport renewal take?”  ",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1212,
+  "totalMs": 2061,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=168 in=1537"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|casual",
+  "at": "2026-11-12T05:52:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l2-casual",
+  "msg": "show all my questions from last week (nov 2-8)",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n- 4 Nov 2026 (Wed): “What’s the price of Spotify Premium Individual in the US?”  \n- 6 Nov 2026 (Fri): “Which is better for a beginner, Python or JavaScript?”  \n- 8 Nov 2026 (Sun): “What’s the current US federal funds rate?”",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 877,
+  "totalMs": 1579,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=126 in=1300"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|unusual",
+  "at": "2026-11-12T05:53:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l2-unusual",
+  "msg": "i need every query i logged between monday the 2nd and sunday the 8th of november",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\n- Sun 8 Nov 2026: “What’s the current US federal funds rate?”  \n- Mon 9 Nov 2026: “Recommend a budget mechanical keyboard.”",
+  "checks": [
+   "missing one of: Spotify / Python",
+   "judge: Wrong date range: user asked for 2–8 Nov, answer lists 8–9 Nov; Missing queries: 4 Nov Spotify, 6 Nov Python vs JavaScript"
+  ],
+  "route": "memory",
+  "ttftMs": 493,
+  "totalMs": 1342,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=96 in=1247"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Wrong date range: user asked for 2–8 Nov, answer lists 8–9 Nov",
+    "Missing queries: 4 Nov Spotify, 6 Nov Python vs JavaScript",
+    "Includes 9 Nov query which is outside requested range"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|typos",
+  "at": "2026-11-12T05:54:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l2-typos",
+  "msg": "show all my questons from last week (nov 2-8)",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n- Wed 4 Nov 2026: “What’s the price of Spotify Premium Individual in the US?”  \n- Fri 6 Nov 2026: “Which is better for a beginner, Python or JavaScript?”  \n- Sun 8 Nov 2026: “What’s the current US federal funds rate?”",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 803,
+  "totalMs": 1338,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=98 in=1301"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|indirect",
+  "at": "2026-11-12T05:55:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l2-indirect",
+  "msg": "hey, could you pull up the full list of questions i submitted during the week of november 2nd through the 8th?",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n– I answered that the target range was 4.25 %–4.50% (​no sources were listed). No other questions from Mon 2 Nov through Sun 8 Nov 2026 appear in the memory.",
+  "checks": [
+   "missing one of: Spotify / Python",
+   "judge: Missing questions from 4 Nov (Spotify) and 6 Nov (Python vs JavaScript) that are present in conversation history; Incorrectly states no other questions appear i"
+  ],
+  "route": "memory",
+  "ttftMs": 730,
+  "totalMs": 1637,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=118 in=1153"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Missing questions from 4 Nov (Spotify) and 6 Nov (Python vs JavaScript) that are present in conversation history",
+    "Incorrectly states no other questions appear in memory for that week"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|casual",
+  "at": "2026-11-12T05:56:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l3-casual",
+  "msg": "what've i asked so far",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n– I suggested GitHub Actions as the default and mentioned CircleCI’s free tier with 6,000 build minutes per month.  \n\nOn Thu 29 Oct 2026 you asked: “How much does Notion Plus cost per member?” – I answered that Notion Plus is $10 per member per month when billed annually, or $12 per member per month billed monthly.  \n\nOn Sun 1 Nov 2026 you asked: “Best running shoes for flat feet under $150?” – I recommended the Brooks Adrenaline GTS 24 and ASICS Gel‑Kayano 31, each around $140.  \n\nOn Wed 4 Nov 2026 you asked: “What’s the price of Spotify Premium Individual in the US?” – I said it’s $9.99 per month.  \n\nOn Fri 6 Nov 2026 you asked: “Which is better for a beginner, Python or JavaScript?” – I advised starting with Python for its readability, unless the goal is primarily web development, in which case JavaScript could be better.  \n\nOn Sun 8 Nov 2026 you asked: “What’s the current US federal funds rate?” – I reported the target range as 4.25 %–4.50 %.  \n\nOn Mon 9 Nov 2026 you asked: “Recommend a budget mechanical keyboard.” – I suggested the Keychron K2 (≈ $79) and the Royal Kludge RK84 (≈ $60).  \n\nOn Wed 11 Nov 2026 you asked: “How long does a US passport renewal take?” – I explained routine renewals take about 4–6 weeks, with expedited service taking 2–3 weeks.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 460,
+  "totalMs": 2033,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=438 in=1661"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|unusual",
+  "at": "2026-11-12T05:57:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l3-unusual",
+  "msg": "enumerate the topics i've raised up to this point",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nAnswer:  \n- CI/CD tools for a small team on GitHub (2026‑10‑26)  \n- Pricing of Notion Plus per member (2026‑10‑29)  \n- Best running shoes for flat feet under $150 (2026‑11‑01)  \n- Price of Spotify Premium Individual in the US (2026‑11‑04)  \n- Beginner programming language recommendation: Python vs JavaScript (2026‑11‑06)  \n- Current US federal funds rate (2026‑11‑08)  \n- Budget mechanical keyboard recommendations (2026‑11‑09)  \n- US passport renewal processing times (2026‑11‑11)  ",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 2033,
+  "totalMs": 3493,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=195 in=1665"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|typos",
+  "at": "2026-11-12T05:58:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l3-typos",
+  "msg": "waht've i aksed so far",
+  "history": false,
+  "sources": [
+   "hinative.com 2015-12-08",
+   "grammarhow.com 2022-03-22",
+   "forum.wordreference.com 2022-11-17",
+   "forbes.com 2024-11-07",
+   "tomsguide.com 2025-04-27",
+   "dreamprompter.app 2026-10-14",
+   "tycoonstory.com 2026-11-09",
+   "amazon.com (fetched)",
+   "stateoftheprompt.net (fetched)",
+   "whathumansask.com (fetched)"
+  ],
+  "text": "You’ve only asked one question so far: “waht've i aksed so far.”",
+  "checks": [
+   "route quick (expected memory)",
+   "expected no search, made 2",
+   "missing one of: Notion / keyboard",
+   "judge: Answer ignores the full conversation history provided in the prompt and claims the user has asked only the current question.; Fails to list the earlier question"
+  ],
+  "route": "quick",
+  "ttftMs": 3037,
+  "totalMs": 3061,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=88 in=2477"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer ignores the full conversation history provided in the prompt and claims the user has asked only the current question.",
+    "Fails to list the earlier questions with dates as explicitly requested by the user and required by the expectation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "list|indirect",
+  "at": "2026-11-12T05:59:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-l3-indirect",
+  "msg": "could you give me a quick rundown of all the questions i've thrown your way up until now",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\nAnswer:  \n- 26 Oct 2026: “What's a good CI/CD tool for a small team on GitHub?”  \n- 29 Oct 2026: “How much does Notion Plus cost per member?”  \n- 1 Nov 2026: “Best running shoes for flat feet under $150?”  \n- 4 Nov 2026: “What's the price of Spotify Premium Individual in the US?”  \n- 6 Nov 2026: “Which is better for a beginner, Python or JavaScript?”  \n- 8 Nov 2026: “What's the current US federal funds rate?”  \n- 9 Nov 2026: “Recommend a budget mechanical keyboard.”  \n- 11 Nov 2026: “How long does a US passport renewal take?”",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 714,
+  "totalMs": 2042,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=217 in=1673"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|casual",
+  "at": "2026-11-12T06:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r1-casual",
+  "msg": "spotify price from the 4th still good?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "thursdaytimes.com 2026-11-05",
+   "quietlychanged.com 2026-11-08",
+   "github.com 2026-11-10",
+   "newsroom.spotify.com 2026-11-10",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "macreview.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)"
+  ],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\n**1 of 1 changed since Wed 4 Nov.** The price of Spotify Premium Individual in the US rose from $9.99 to $12.99 per month.\n\n| Item | Then (Wed 4 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Spotify Premium Individual (US) | $9.99 a month | $12.99 per month | Changed | [3][6] |\n\nNo notable launches or pricing announcements since Wed 4 Nov in the sources I checked.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Wed 4 Nov. The price of Spotify Premium Individual in the US rose from $9.99 to $12.99 per month."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.78,
+    "missingNumbers": [],
+    "reason": "unit differs from source: $9.99 per month (source: per year)",
+    "text": "Spotify Premium Individual (US) | $9.99 a month | $12.99 per month | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 3845,
+  "totalMs": 5430,
+  "searches": 5,
+  "costUsd": 0.028,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T06:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r1-unusual",
+  "msg": "does the figure you gave me for the fourth of november remain accurate?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "thursdaytimes.com 2026-11-05",
+   "quietlychanged.com 2026-11-08",
+   "github.com 2026-11-10",
+   "newsroom.spotify.com 2026-11-10",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)"
+  ],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\n**1 of 1 changed since Wed 4 Nov.** The US Individual Premium price has risen to $12.99/month.\n\n| Item | Then (Wed 4 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Spotify Premium Individual (US) | $9.99 a month | $12.99 per month | Changed | [3] |\n\n**Since Wed 4 Nov:**\n- 2026-11-05: Spotify launched Audiobooks+ in Pakistan [2]",
+  "checks": [
+   "1 unsupported claim(s)",
+   "judge: Answer claims US Spotify Premium Individual price rose to $12.99/month but cites source [3] which is a 2026-11-08 quietlychanged.com article about Pakistan Audi"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Wed 4 Nov. The US Individual Premium price has risen to $12.99/month."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.87,
+    "missingNumbers": [],
+    "reason": "unit differs from source: $9.99 per month (source: per year)",
+    "text": "Spotify Premium Individual (US) | $9.99 a month | $12.99 per month | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 3408,
+  "totalMs": 5557,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer claims US Spotify Premium Individual price rose to $12.99/month but cites source [3] which is a 2026-11-08 quietlychanged.com article about Pakistan Audiobooks+ launch, not a US price change; no credible source confirms a US price increase to $12.99 by 12 Nov 2026.",
+    "Table states 'Now (Thu 12 Nov)' price is $12.99 but evidence does not support this claim for the US market.",
+    "Mentions 'Since Wed 4 Nov: 2026-11-05: Spotify launched Audiobooks+ in Pakistan [2]' which is irrelevant to the user's question about US price accuracy."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|typos",
+  "at": "2026-11-12T06:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r1-typos",
+  "msg": "spotify price frm the 4th still corect?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "quietlychanged.com 2026-11-08",
+   "marca.com 2026-11-09",
+   "technobezz.com 2026-11-10",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)"
+  ],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\n**1 of 1 changed since Wed 4 Nov.** The US price for Spotify Premium Individual is now $12.99 per month, up from $9.99 on Nov 4.\n\n| Item | Then (Wed 4 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Spotify Premium Individual (US) | $9.99 a month in the US. | $12.99 a month in the US. | Changed | [2] |\n\nNo notable launches or pricing announcements since Wed 4 Nov in the sources I checked.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Wed 4 Nov. The US price for Spotify Premium Individual is now $12.99 per month, up from $9.99 on Nov 4."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.76,
+    "missingNumbers": [],
+    "reason": "unit differs from source: $9.99 per month (source: per year)",
+    "text": "Spotify Premium Individual (US) | $9.99 a month in the US. | $12.99 a month in the US. | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 1650,
+  "totalMs": 2759,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|indirect",
+  "at": "2026-11-12T06:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r1-indirect",
+  "msg": "hey, just checking back on that spotify premium cost you mentioned on the 4th -- wondering if that's still the right number or if anything's changed since then",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "thursdaytimes.com 2026-11-05",
+   "quietlychanged.com 2026-11-08",
+   "github.com 2026-11-10",
+   "newsroom.spotify.com 2026-11-10",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)"
+  ],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\n**1 of 1 changed since Wed 4 Nov.** The US Individual Premium price has risen to $12.99/month.\n\n| Item | Then (Wed 4 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Spotify Premium Individual (US) | $9.99/month | $12.99/month | Changed | [3] |\n\nNo notable launches or pricing announcements since Wed 4 Nov in the sources I checked.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Wed 4 Nov. The US Individual Premium price has risen to $12.99/month."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.81,
+    "missingNumbers": [],
+    "reason": "unit differs from source: $9.99 per month (source: per year)",
+    "text": "Spotify Premium Individual (US) | $9.99/month | $12.99/month | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 1960,
+  "totalMs": 3617,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|casual",
+  "at": "2026-11-12T06:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r2-casual",
+  "msg": "did the fed rate from sunday change",
+  "history": false,
+  "sources": [
+   "federalreserve.gov 2025-12-04",
+   "federalregister.gov 2025-12-09",
+   "primerates.com 2026-03-26",
+   "federalreserve.gov 2026-10-28",
+   "news.ycombinator.com 2026-11-08",
+   "frbservices.org 2026-11-09",
+   "aol.com 2026-11-09",
+   "federalreserve.gov 2026-11-10",
+   "news.ycombinator.com 2026-11-10",
+   "federalreserve.gov (fetched)",
+   "federalreserve.gov (fetched)",
+   "federalreserve.gov (fetched)"
+  ],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n**1 of 1 changed since Sun 8 Nov.** The federal funds target range dropped from 4.25%–4.50% to 3.75–4%.\n\n| Item | Then (Sun 8 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| federal funds target range | 4.25%–4.50% | 3.75–4% | Changed | [4][11] |\n\nNo notable launches or pricing announcements since Sun 8 Nov in the sources I checked.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Sun 8 Nov. The federal funds target range dropped from 4.25%–4.50% to 3.75–4%."
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2461,
+  "totalMs": 3965,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T06:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r2-unusual",
+  "msg": "is the central bank figure provided last weekend still current",
+  "history": false,
+  "sources": [
+   "primerates.com 2026-03-26",
+   "fedgazette.com 2026-10-01",
+   "federalreserve.gov 2026-10-28",
+   "cmegroup.com 2026-10-28",
+   "federalreserve.gov 2026-11-10",
+   "federalreserve.gov (fetched)",
+   "rateprobability.com (fetched)",
+   "squawkdeck.com (fetched)",
+   "ryanoconnellfinance.com (fetched)",
+   "fred.stlouisfed.org (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about US federal funds rate.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.\n\nI couldn’t find any claim in the evidence that the “central bank figure” was reported “last weekend” and that it’s still current.  \nThe most recent, confirmed federal‑funds‑rate target range, as of 12 Nov 2026, is 3.75 % – 4.00 %[3][8]. If your question refers to a different figure, I couldn’t confirm it with the sources available.",
+  "checks": [
+   "route quick (expected recheck)",
+   "judge: The assistant incorrectly claims no prior conversation about the federal funds rate, but the history shows a clear exchange on 2026-11-08 where the assistant st"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1919,
+  "totalMs": 2945,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=153 in=2985"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant incorrectly claims no prior conversation about the federal funds rate, but the history shows a clear exchange on 2026-11-08 where the assistant stated the target range was 4.25%–4.50%.",
+    "The answer fails to address the user's question about whether that specific figure from last weekend is still current.",
+    "The assistant provides a new rate (3.75%–4.00%) with citations [3][8] that do not correspond to the listed sources (which are dated 2026-10-28, 2026-11-10, etc., and none support a rate change to 3.75%–4.00% as of 12 Nov 2026).",
+    "The response is inconsistent with the conversation history and the provided sources."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|typos",
+  "at": "2026-11-12T06:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r2-typos",
+  "msg": "has the fed rate u gave sunday chnged",
+  "history": false,
+  "sources": [
+   "fedgazette.com 2026-10-01",
+   "federalreserve.gov 2026-10-28",
+   "cmegroup.com 2026-10-28",
+   "nb.com 2026-11-02",
+   "newslink.mba.org 2026-11-02",
+   "worldviewadvisory.com 2026-11-08",
+   "federalreserve.gov 2026-11-10",
+   "federalreserve.gov (fetched)",
+   "ryanoconnellfinance.com (fetched)",
+   "wellsfargoadvisors.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about US federal funds rate.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.\n\nThe federal funds target range you were given (3.75 %–4.00 %) has not changed as of today, 12 Nov 2026. The FOMC last met on 28 Oct 2026 and kept the range unchanged at 3.75 %–4.00 %[2][3]. No subsequent meeting or announcement altered the target.",
+  "checks": [
+   "route quick (expected recheck)",
+   "judge: Assistant falsely claims no prior conversation about federal funds rate; history shows a-1108 on 2026-11-08 with rate 4.25%–4.50%.; Answer states a different ra"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1352,
+  "totalMs": 3238,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=211 in=2704"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Assistant falsely claims no prior conversation about federal funds rate; history shows a-1108 on 2026-11-08 with rate 4.25%–4.50%.",
+    "Answer states a different rate (3.75%–4.00%) than the one previously given, contradicting conversation history.",
+    "Does not correctly check whether the rate from Sunday (2026-11-08) has changed; instead invents a different prior rate and cites sources that do not match the user's question."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|indirect",
+  "at": "2026-11-12T06:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r2-indirect",
+  "msg": "i'm wondering if the federal funds rate you mentioned on sunday has been updated or if it's still the same",
+  "history": false,
+  "sources": [
+   "federalreserve.gov 2025-12-04",
+   "federalregister.gov 2025-12-09",
+   "primerates.com 2026-03-26",
+   "federalreserve.gov 2026-10-28",
+   "grcreport.com 2026-11-09",
+   "federalreserve.gov 2026-11-10",
+   "federalreserve.gov 2026-11-10",
+   "federalreserve.gov (fetched)",
+   "federalreserve.gov (fetched)",
+   "federalreserve.gov (fetched)",
+   "federalreserve.gov (fetched)",
+   "fred.stlouisfed.org (fetched)"
+  ],
+  "text": "On Sun 8 Nov you asked: “What's the current US federal funds rate?”\n\n**1 of 1 changed since Sun 8 Nov.** The target range has been lowered to 3.75%–4.00%.\n\n| Item | Then (Sun 8 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Federal funds target range | 4.25%–4.50% | 3.75%–4.00% | Changed | [4] |\n\n**Since Sun 8 Nov:**\n- 2026-11-09: FOMC raised the federal funds target range to 3.75%–4.00% [5]",
+  "checks": [
+   "judge: Answer claims the rate was lowered to 3.75%-4.00% but cites source [5] saying FOMC 'raised' the rate to that level, which is contradictory and likely incorrect;"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 2,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Sun 8 Nov. The target range has been lowered to 3.75%–4.00%."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.53,
+    "missingNumbers": [
+     "3.75"
+    ],
+    "text": "Federal funds target range | 4.25%–4.50% | 3.75%–4.00% | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2859,
+  "totalMs": 4632,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer claims the rate was lowered to 3.75%-4.00% but cites source [5] saying FOMC 'raised' the rate to that level, which is contradictory and likely incorrect",
+    "Source [4] is not clearly identified in the provided source list; the cited federalreserve.gov sources are from 2025-12-04, 2026-10-28, 2026-11-10 but none explicitly confirm a change to 3.75%-4.00% on 2026-11-09",
+    "The answer states '1 of 1 changed since Sun 8 Nov' but the previous answer was from 2026-11-08 (Sunday), and the claimed change date 2026-11-09 (Monday) is plausible, but the evidence does not support the direction of change (lowered vs raised) or the new value conclusively",
+    "No citation directly confirms the current rate as of 2026-11-12; the latest federalreserve.gov source is 2026-11-10, but its content is not verified in the answer"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|casual",
+  "at": "2026-11-12T06:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r3-casual",
+  "msg": "still good on that notion price?",
+  "history": false,
+  "sources": [
+   "ivconsulting.in 2026-09-24",
+   "pricinginnovation.substack.com 2026-11-02",
+   "the64th.com 2026-11-05",
+   "techpresso.co 2026-11-06",
+   "dev.to 2026-11-10",
+   "agentaday.beehiiv.com 2026-11-11",
+   "g2.com (fetched)",
+   "capterra.com (fetched)",
+   "notion.com (fetched)",
+   "tracker.kimsalmi.com (fetched)"
+  ],
+  "text": "Yes, current Notion pricing in November 2026 is still Free at $0, Plus at $10 per member/month, and Business at $20 per member/month (annual billing) [3][5][9][10] (as of 12 Nov 2026).\n\nThe latest change folded AI into a credit system on 19 Oct 2026, with Business including 1,500 Standard and 500 Select credits per seat/month [2]. Enterprise pricing remains custom [3].",
+  "checks": [
+   "route quick (expected recheck)"
+  ],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1258,
+  "totalMs": 1985,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=117 in=2844"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T06:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r3-unusual",
+  "msg": "does the earlier notion quote remain accurate?",
+  "history": false,
+  "sources": [
+   "get-alfred.ai 2026-02-24",
+   "rock.so 2026-09-02",
+   "jonathanmontoya.com 2026-10-26",
+   "pricinginnovation.substack.com 2026-11-02",
+   "notion.com 2026-11-05",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "nuclino.com (fetched)"
+  ],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\nOn Sun 1 Nov you asked: “Best running shoes for flat feet under $150?”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\nOn Fri 6 Nov you asked: “Which is better for a beginner, Python or JavaScript?”\nOn Sun 8 Nov you asked: “What's the current US federal funds rate?”\nOn Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 11 Nov you asked: “How long does a US passport renewal take?”\n\n**0 of 1 changed since Mon 26 Oct.** The Notion Plus pricing quoted earlier remains accurate.\n\n| Item | Then (Mon 26 Oct) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Notion Plus | $10 per member per month billed annually, or $12 billed monthly | $10 per member per month billed annually, or $12 billed monthly | Unchanged | [2][3] |\n\nNo notable launches or pricing announcements since Mon 26 Oct in the sources I checked.",
+  "checks": [
+   "judge: Answer does not address the user's question about Notion Plus pricing accuracy; instead it lists unrelated conversation history.; No citation or evidence provid"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "recheck",
+  "ttftMs": 2247,
+  "totalMs": 4513,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer does not address the user's question about Notion Plus pricing accuracy; instead it lists unrelated conversation history.",
+    "No citation or evidence provided for current Notion Plus pricing despite search results being available.",
+    "Fails to confirm or deny whether the earlier quote remains accurate with supporting sources."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|typos",
+  "at": "2026-11-12T06:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r3-typos",
+  "msg": "stil good on that noiton price?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any earlier conversation of ours about that.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "expected a search, none made",
+   "judge: The assistant incorrectly claims no earlier conversation about Notion pricing exists, but the conversation history clearly shows a 2026-10-29 exchange where the"
+  ],
+  "route": "recheck",
+  "ttftMs": 518,
+  "totalMs": 518,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant incorrectly claims no earlier conversation about Notion pricing exists, but the conversation history clearly shows a 2026-10-29 exchange where the user asked about Notion Plus cost and the assistant answered $10/member/month annual, $12 monthly.",
+    "The assistant failed to recheck current Notion Plus pricing with a citation as expected.",
+    "The assistant's response is inconsistent with the provided conversation history."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|indirect",
+  "at": "2026-11-12T06:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r3-indirect",
+  "msg": "hey, just circling back on the notion quote from before - wanted to make sure that price is still current before i move forward",
+  "history": false,
+  "sources": [
+   "notion.com 2022-10-24",
+   "notion.com 2022-10-24",
+   "notion.com 2022-10-24",
+   "usecarly.com 2026-07-15",
+   "pricinginnovation.substack.com 2026-11-02",
+   "notion.com 2026-11-05",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "notion.com (fetched)",
+   "lifestack.ai (fetched)"
+  ],
+  "text": "On Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\n**1 of 1 changed since Thu 29 Oct.** The Notion Plus price remains $10 per member per month.\n\n| Item | Then (Thu 29 Oct) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Notion Plus | $10 per member per month billed annually, or $12 billed monthly | $10 per member per month | Changed | [10] |\n\n**Since Thu 29 Oct:**\n- 2026-11-02: Notion pricing update announced new AI credit system [5]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 2,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Thu 29 Oct. The Notion Plus price remains $10 per member per month."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.53,
+    "missingNumbers": [],
+    "reason": "marked Changed, but there was no earlier value or the 'Now' figure already appeared in the earlier answer",
+    "text": "Notion Plus | $10 per member per month billed annually, or $12 billed monthly | $10 per member per month | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 1582,
+  "totalMs": 4231,
+  "searches": 4,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|casual",
+  "at": "2026-11-12T06:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r4-casual",
+  "msg": "monday keyboard prices still good?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about budget mechanical keyboard.\n\nI do have conversations from Mon 9 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "expected a search, none made",
+   "judge: Assistant falsely claims no prior conversation about budget mechanical keyboards; the history shows a-1109 on 2026-11-09 with Keychron K2 and RK84 prices.; Did "
+  ],
+  "route": "recheck",
+  "ttftMs": 885,
+  "totalMs": 886,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Assistant falsely claims no prior conversation about budget mechanical keyboards; the history shows a-1109 on 2026-11-09 with Keychron K2 and RK84 prices.",
+    "Did not attempt to re-check current prices or cite sources as expected.",
+    "Response is unhelpful and contradicts the provided conversation history."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T06:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r4-unusual",
+  "msg": "is the quote you sent over for keyboards on the 9th of november still valid?",
+  "history": false,
+  "sources": [
+   "mechanicalkeyboard.net 2026-11-09",
+   "modders-inc.com 2026-11-10",
+   "webdisk.cromaticstudios.com 2026-11-10",
+   "techpowerup.com 2026-11-10",
+   "keychron.com (fetched)",
+   "peripheralpicker.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "biggo.com (fetched)",
+   "rkgamingstore.com (fetched)",
+   "rkgamingstore.com (fetched)"
+  ],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\n**2 of 2 changed since Mon 9 Nov.** Keychron K2 is now cheaper at $49.99, while the RK84 price remains effectively the same.\n\n| Item | Then (Mon 9 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Keychron K2 | $79 | $49.99 | Changed | [7] |\n| Royal Kludge RK84 | $60 | $59.99 | Changed | [6] |\n\n**Since Mon 9 Nov:**\n- 2026-11-11: Keychron launched the G25 HE 46 g Gaming Mouse [4]",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 2,
+   "unsupported": 1,
+   "total": 4
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "2 of 2 changed since Mon 9 Nov. Keychron K2 is now cheaper at $49.99, while the RK84 price remains effectively the same."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.2,
+    "missingNumbers": [],
+    "text": "Keychron K2 | $79 | $49.99 | Changed |"
+   },
+   {
+    "id": "c2",
+    "line": 7,
+    "status": "unsupported",
+    "score": 0.15,
+    "missingNumbers": [],
+    "text": "Royal Kludge RK84 | $60 | $59.99 | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2439,
+  "totalMs": 5605,
+  "searches": 8,
+  "costUsd": 0.042,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=2 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|typos",
+  "at": "2026-11-12T06:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r4-typos",
+  "msg": "monday kb prices still acurate?",
+  "history": false,
+  "sources": [
+   "rkgamingstore.com 2026-02-27",
+   "kodekarawaci.web.id 2026-11-09",
+   "toptrustedproducts.com 2026-11-09",
+   "keychron.com 2026-11-10",
+   "en.rkgaming.com 2026-11-10",
+   "keychron.com (fetched)",
+   "rkgamingstore.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "deal.ai (fetched)",
+   "rkgamingstore.com (fetched)"
+  ],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\n**2 of 2 changed since Mon 9 Nov.** Both Keychron K2 and Royal Kludge RK84 prices have dropped since the earlier estimate.\n\n| Item | Then (Mon 9 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Keychron K2 | about $79 | $49.99 | Changed | [6] |\n| Royal Kludge RK84 | about $60 | $59.99 | Changed | [7] |\n\nNo notable launches or pricing announcements since Mon 9 Nov in the sources I checked.",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "recheck",
+  "ttftMs": 1564,
+  "totalMs": 2945,
+  "searches": 8,
+  "costUsd": 0.042,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=2 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "recheck|indirect",
+  "at": "2026-11-12T06:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-r4-indirect",
+  "msg": "hey, just checking back on the keyboard numbers you sent over on monday — are those figures still current or have they changed since then?",
+  "history": false,
+  "sources": [
+   "rkgamingstore.com 2026-02-27",
+   "toptrustedproducts.com 2026-11-09",
+   "mechanicalkeyboard.net 2026-11-09",
+   "keychron.com 2026-11-10",
+   "webdisk.cromaticstudios.com 2026-11-10",
+   "keychron.com (fetched)",
+   "peripheralpicker.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.in (fetched)",
+   "biggo.com (fetched)",
+   "rkgamingstore.com (fetched)"
+  ],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\n\n**2 of 2 changed since Mon 9 Nov.** Keychron K2 is now $49.99, while Royal Kludge RK84 remains about $60.\n\n| Item | Then (Mon 9 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Keychron K2 | $79 | $49.99 | Changed | [6] |\n| Royal Kludge RK84 | $60 | $59.99 | Changed | [7] |\n\nNo notable launches or pricing announcements since Mon 9 Nov in the sources I checked.",
+  "checks": [
+   "2 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 2,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "2 of 2 changed since Mon 9 Nov. Keychron K2 is now $49.99, while Royal Kludge RK84 remains about $60."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.19,
+    "missingNumbers": [],
+    "text": "Keychron K2 | $79 | $49.99 | Changed |"
+   },
+   {
+    "id": "c2",
+    "line": 7,
+    "status": "unsupported",
+    "score": 0.18,
+    "missingNumbers": [],
+    "text": "Royal Kludge RK84 | $60 | $59.99 | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2373,
+  "totalMs": 4727,
+  "searches": 8,
+  "costUsd": 0.042,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=2 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|casual",
+  "at": "2026-11-12T06:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f1-casual",
+  "msg": "who wrote one hundred years of solitude",
+  "history": false,
+  "sources": [
+   "loc.gov (fetched)",
+   "books.google.com (fetched)",
+   "hrc.utexas.edu (fetched)",
+   "search.worldcat.org (fetched)",
+   "200.hc.com (fetched)",
+   "agenciabalcells.com (fetched)",
+   "goodreads.com (fetched)",
+   "sparknotes.com (fetched)",
+   "openlibrary.org (fetched)",
+   "id.loc.gov (fetched)"
+  ],
+  "text": "One Hundred Years of Solitude was written by Gabriel García Márquez[1].  \n(As of 12 Nov 2026)",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4537,
+  "totalMs": 5058,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=65 in=2421"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|unusual",
+  "at": "2026-11-12T06:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f1-unusual",
+  "msg": "what author is responsible for the book one hundred years of solitude",
+  "history": false,
+  "sources": [
+   "loc.gov (fetched)",
+   "ebsco.com (fetched)",
+   "penguin.co.uk (fetched)",
+   "books.google.com (fetched)",
+   "books.google.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "franklin.library.upenn.edu (fetched)",
+   "200.hc.com (fetched)",
+   "agenciabalcells.com (fetched)",
+   "sparknotes.com (fetched)"
+  ],
+  "text": "Gabriel García Márquez is the author of *One Hundred Years of Solitude* [2] (as of 12 Nov 2026).  \nHe wrote the novel in 1967, which became a landmark work of magical realism.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2528,
+  "totalMs": 3136,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=101 in=2634"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|typos",
+  "at": "2026-11-12T06:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f1-typos",
+  "msg": "who wrote one hundred yrs of solitude",
+  "history": false,
+  "sources": [],
+  "text": "Gabriel García Márquez wrote *One Hundred Years of Solitude*.",
+  "checks": [
+   "expected a search, none made"
+  ],
+  "route": "chat",
+  "ttftMs": 856,
+  "totalMs": 876,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=38 in=970"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|indirect",
+  "at": "2026-11-12T06:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f1-indirect",
+  "msg": "i was just wondering if you could tell me the name of the person who authored the novel one hundred years of solitude",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2004-05-14",
+   "en.wikipedia.org 2026-11-01",
+   "nobelprize.org (fetched)",
+   "loc.gov (fetched)",
+   "200.hc.com (fetched)",
+   "agenciabalcells.com (fetched)",
+   "isfdb.org (fetched)",
+   "themodernnovel.org (fetched)",
+   "sparknotes.com (fetched)",
+   "id.loc.gov (fetched)"
+  ],
+  "text": "Gabriel García Márquez is the author of *One Hundred Years of Solitude* [1].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3704,
+  "totalMs": 4309,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=51 in=2490"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|casual",
+  "at": "2026-11-12T06:20:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f2-casual",
+  "msg": "how many moons does mars have",
+  "history": false,
+  "sources": [
+   "svs.gsfc.nasa.gov 2013-08-27",
+   "esa.int 2026-06-08",
+   "en.wikipedia.org 2026-11-04",
+   "spaceplace.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)",
+   "asc-csa.gc.ca (fetched)",
+   "science.nasa.gov (fetched)",
+   "spaceplace.nasa.gov (fetched)",
+   "nssdc.gsfc.nasa.gov (fetched)"
+  ],
+  "text": "Mars has two moons, Phobos and Deimos (as of 12 Nov 2026) [2][3][4][5][6][7].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1706,
+  "totalMs": 2258,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=74 in=2510"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|unusual",
+  "at": "2026-11-12T06:21:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f2-unusual",
+  "msg": "what is the total count of natural satellites orbiting the red planet",
+  "history": false,
+  "sources": [
+   "esa.int 2026-06-08",
+   "en.wikipedia.org 2026-06-12",
+   "spacenewz.com 2026-10-16",
+   "orbitalintel.org 2026-10-20",
+   "en.wikipedia.org 2026-11-04",
+   "scienceworld.wolfram.com (fetched)",
+   "sci.esa.int (fetched)",
+   "ssd.jpl.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)"
+  ],
+  "text": "Mars has two natural satellites (Phobos and Deimos) [5] (as of 12 Nov 2026).",
+  "checks": [
+   "slow first token 6559 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6559,
+  "totalMs": 7121,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=80 in=2672"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|typos",
+  "at": "2026-11-12T06:22:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f2-typos",
+  "msg": "how many moons foes mars hav",
+  "history": false,
+  "sources": [
+   "esa.int 2026-06-08",
+   "en.wikipedia.org 2026-11-04",
+   "spaceplace.nasa.gov (fetched)",
+   "universetoday.com (fetched)",
+   "science.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)",
+   "asc-csa.gc.ca (fetched)",
+   "cnes.fr (fetched)",
+   "nssdc.gsfc.nasa.gov (fetched)",
+   "spaceplace.nasa.gov (fetched)"
+  ],
+  "text": "Mars has **two** moons: Phobos and Deimos [2][5] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1720,
+  "totalMs": 2200,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=54 in=2492"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|indirect",
+  "at": "2026-11-12T06:23:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f2-indirect",
+  "msg": "i was just reading about the solar system and got curious, does anyone know the number of moons circling mars",
+  "history": false,
+  "sources": [
+   "esa.int 2026-06-08",
+   "en.wikipedia.org 2026-10-10",
+   "phys.org 2026-10-15",
+   "orbitalintel.org 2026-10-20",
+   "en.wikipedia.org 2026-11-04",
+   "spaceplace.nasa.gov (fetched)",
+   "science.nasa.gov (fetched)",
+   "nssdc.gsfc.nasa.gov (fetched)",
+   "nasanow.org (fetched)",
+   "science.nasa.gov (fetched)"
+  ],
+  "text": "Mars has **two moons**, Phobos and Deimos [1][5][6][7] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2548,
+  "totalMs": 5750,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=36 in=2962"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|casual",
+  "at": "2026-11-12T06:24:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f3-casual",
+  "msg": "year berlin wall fell?",
+  "history": false,
+  "sources": [
+   "bbc.com 2023-11-08",
+   "en.wikipedia.org 2026-11-04",
+   "ndr.de 2026-11-09",
+   "berlin.de (fetched)",
+   "stiftung-berliner-mauer.de (fetched)",
+   "visitberlin.de (fetched)",
+   "iwm.org.uk (fetched)",
+   "history.state.gov (fetched)",
+   "diplomacy.state.gov (fetched)",
+   "digitalarchive.umd.edu (fetched)"
+  ],
+  "text": "The Berlin Wall fell on 9 November 1989 [2] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2066,
+  "totalMs": 2598,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=48 in=2516"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|unusual",
+  "at": "2026-11-12T06:25:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f3-unusual",
+  "msg": "when was the berlin wall brought down?",
+  "history": false,
+  "sources": [],
+  "text": "The Berlin Wall was brought down on November 9, 1989.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 2034,
+  "totalMs": 2059,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=35 in=971"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|typos",
+  "at": "2026-11-12T06:26:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f3-typos",
+  "msg": "waht yr did the berlin wall fal?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-11-04",
+   "ndr.de 2026-11-09",
+   "iwm.org.uk (fetched)",
+   "berlin.de (fetched)",
+   "history.state.gov (fetched)",
+   "germany.info (fetched)",
+   "history.state.gov (fetched)",
+   "diplomacy.state.gov (fetched)",
+   "stiftung-berliner-mauer.de (fetched)",
+   "ebsco.com (fetched)"
+  ],
+  "text": "The Berlin Wall fell on 9 November 1989 [1] (as of 12 Nov 2026).  \n\n- This date marks the start of German reunification celebrations.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2954,
+  "totalMs": 3535,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=66 in=2568"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|indirect",
+  "at": "2026-11-12T06:27:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f3-indirect",
+  "msg": "i'm trying to remember the exact year the berlin wall came down, can you remind me?",
+  "history": false,
+  "sources": [],
+  "text": "The Berlin Wall fell on November 9, 1989.",
+  "checks": [
+   "expected a search, none made"
+  ],
+  "route": "chat",
+  "ttftMs": 667,
+  "totalMs": 680,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=16 in=968"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|casual",
+  "at": "2026-11-12T06:28:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f4-casual",
+  "msg": "who's microsoft's ceo now",
+  "history": false,
+  "sources": [
+   "blogs.microsoft.com 2026-10-01",
+   "linkedin.com 2026-11-05",
+   "microsoft.com 2026-11-05",
+   "phemex.com 2026-11-10",
+   "microsoft.gcs-web.com (fetched)",
+   "microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "unifygtm.com (fetched)"
+  ],
+  "text": "Satya Nadella is the current CEO of Microsoft, having held the position since February 2014[2][4] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2875,
+  "totalMs": 3433,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=89 in=2332"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|unusual",
+  "at": "2026-11-12T06:29:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f4-unusual",
+  "msg": "what person presently occupies the chief executive role at microsoft",
+  "history": false,
+  "sources": [
+   "blogs.microsoft.com 2026-10-01",
+   "microsoft.com 2026-11-05",
+   "phemex.com 2026-11-10",
+   "microsoft.gcs-web.com (fetched)",
+   "microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "unifygtm.com (fetched)"
+  ],
+  "text": "Satya Nadella is the current Chief Executive Officer of Microsoft (as of 12 Nov 2026)[3].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3013,
+  "totalMs": 3568,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=62 in=2283"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|typos",
+  "at": "2026-11-12T06:30:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f4-typos",
+  "msg": "whos the ceo of microsoft rn",
+  "history": false,
+  "sources": [
+   "blogs.microsoft.com 2026-10-01",
+   "microsoft.com 2026-11-05",
+   "phemex.com 2026-11-10",
+   "microsoft.gcs-web.com (fetched)",
+   "microsoft.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "unifygtm.com (fetched)"
+  ],
+  "text": "Satya Nadella is the Chief Executive Officer (and Chairman) of Microsoft [3] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2205,
+  "totalMs": 2769,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=77 in=2344"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|indirect",
+  "at": "2026-11-12T06:31:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f4-indirect",
+  "msg": "i was wondering if you could tell me who's running microsoft as chief executive these days",
+  "history": false,
+  "sources": [
+   "blogs.microsoft.com 2026-10-01",
+   "microsoft.com 2026-11-05",
+   "phemex.com 2026-11-10",
+   "microsoft.com (fetched)",
+   "microsoft.gcs-web.com (fetched)",
+   "weforum.org (fetched)",
+   "news.microsoft.com (fetched)",
+   "news.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "unifygtm.com (fetched)"
+  ],
+  "text": "Satya Nadella is the Chief Executive Officer of Microsoft as of 12 Nov 2026 [3][4][6][7][10] (he has held the position since February 2014).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1843,
+  "totalMs": 2389,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=103 in=2385"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|casual",
+  "at": "2026-11-12T06:32:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f5-casual",
+  "msg": "tallest building rn?",
+  "history": false,
+  "sources": [
+   "indianexpress.com 2026-02-24",
+   "ndtvprofit.com 2026-08-03",
+   "dubaieverything.com 2026-08-26",
+   "en.wikipedia.org 2026-09-24",
+   "burjkhalifa-tours.com 2026-10-14",
+   "viszlyn.io 2026-11-07",
+   "burjkhalifa.ae (fetched)",
+   "skyscrapercenter.com (fetched)",
+   "skyscrapercenter.com (fetched)",
+   "guinnessworldrecords.com (fetched)"
+  ],
+  "text": "Burj Khalifa in Dubai remains the world’s tallest building at 828 m (2,717 ft) as of 12 Nov 2026 [1].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2086,
+  "totalMs": 2688,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=89 in=2705"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|unusual",
+  "at": "2026-11-12T06:33:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f5-unusual",
+  "msg": "Which structure currently holds the height record globally?",
+  "history": false,
+  "sources": [
+   "indianexpress.com 2026-02-24",
+   "ndtvprofit.com 2026-08-03",
+   "en.wikipedia.org 2026-09-24",
+   "qz.com 2026-10-11",
+   "en.wikipedia.org 2026-11-05",
+   "burjkhalifa.ae (fetched)",
+   "skyscrapercenter.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "guinnessworldrecords.com (fetched)"
+  ],
+  "text": "The Burj Khalifa in Dubai holds the global height record, standing at 829.8 m (2 722 ft) including its spire and antenna[5] (as of 12 Nov 2026). This makes it the tallest structure worldwide.",
+  "checks": [],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.57,
+    "missingNumbers": [
+     "722"
+    ],
+    "text": "The Burj Khalifa in Dubai holds the global height record, standing at 829.8 m (2 722 ft) including its spire and antenna (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 1967,
+  "totalMs": 2561,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=146 in=2462"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|typos",
+  "at": "2026-11-12T06:34:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f5-typos",
+  "msg": "tallest bilding rn?",
+  "history": false,
+  "sources": [
+   "indianexpress.com 2026-02-24",
+   "ndtvprofit.com 2026-08-03",
+   "en.wikipedia.org 2026-09-24",
+   "qz.com 2026-10-11",
+   "viszlyn.io 2026-11-07",
+   "skyscrapercenter.com (fetched)",
+   "skyscrapercenter.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "burjkhalifa.ae (fetched)",
+   "guinnessworldrecords.com (fetched)"
+  ],
+  "text": "Burj Khalifa in Dubai remains the world’s tallest building at 828 m (2,717 ft) — as of 12 Nov 2026 [5].  \n\nIt has held the title since its 2010 completion, out‑topping all other completed structures worldwide.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3464,
+  "totalMs": 4097,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=125 in=2502"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "factual|indirect",
+  "at": "2026-11-12T06:35:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-f5-indirect",
+  "msg": "Hey, quick question — I'm trying to settle a debate, so could you tell me which building currently holds the title for the tallest in the world?",
+  "history": false,
+  "sources": [
+   "bbc.co.uk 2026-04-15",
+   "en.wikipedia.org 2026-11-05",
+   "burjkhalifa.ae (fetched)",
+   "jiludb.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "guinnessworldrecords.com (fetched)",
+   "skyscraperatlas.com (fetched)",
+   "skyscrapercenter.com (fetched)",
+   "emaar.com (fetched)"
+  ],
+  "text": "The tallest building in the world is the **Burj Khalifa** in Dubai, United Arab Emirates, standing at 828 m (2,716 ft 6 in) tall [2][5] (as of 12 Nov 2026). It has held that title since its official opening in January 2010.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2320,
+  "totalMs": 2898,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=101 in=2572"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|casual",
+  "at": "2026-11-12T06:36:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a1-casual",
+  "msg": "cancel my spotify sub pls",
+  "history": false,
+  "sources": [
+   "community.spotify.com 2015-10-13",
+   "community.spotify.com 2024-10-09",
+   "recurstop.com 2026-02-07",
+   "itechguides.com 2026-08-18",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)"
+  ],
+  "text": "I can’t perform the cancellation for you, but you can cancel your Spotify Premium yourself by following these steps:\n\n- Sign in at spotify.com/account, go to **Manage your plan**, and click **Cancel subscription** (or **Cancel Premium**) [3][5].  \n- If you don’t see the cancel button, your plan may be billed through a partner (e.g., mobile carrier, Apple, Google); in that case, cancel it via that partner’s billing portal [2][4].  \n\nYour Premium access will remain until the end of the current billing period, after which the account switches to the free tier [5][8].   (as of 12 Nov 2026)",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2399,
+  "totalMs": 3192,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=178 in=2495"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|unusual",
+  "at": "2026-11-12T06:37:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a1-unusual",
+  "msg": "i need you to terminate the spotify membership i have",
+  "history": false,
+  "sources": [
+   "engadget.com 2025-10-25",
+   "stopee.com 2026-01-03",
+   "itechguides.com 2026-08-18",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "consumerprotection.org.uk (fetched)"
+  ],
+  "text": "I can’t perform that cancellation for you, but you can end your Spotify Premium subscription yourself — just follow the steps on Spotify’s account page (log in, go to “Manage your plan,” and select “Cancel subscription”) and your Premium will run until the next billing date before switching to the free tier [6] (as of 12 Nov 2026).  \n\nIf you signed up through a partner (Apple, Google Play, or a mobile carrier), you’ll need to cancel through that provider’s subscription settings instead [3].",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1659,
+  "totalMs": 2387,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=149 in=2529"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|typos",
+  "at": "2026-11-12T06:38:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a1-typos",
+  "msg": "cancle my spotify subscripion plz",
+  "history": false,
+  "sources": [
+   "engadget.com 2025-10-25",
+   "recurstop.com 2026-02-07",
+   "rottenwifi.com 2026-09-05",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "community.spotify.com (fetched)"
+  ],
+  "text": "I can’t cancel it for you, but here’s how to do it yourself (as of 12 Nov 2026):\n\n- Log into spotify.com/account and sign in.  \n- Scroll to “Your plan”, click “Change plan”, then “Cancel Premium” and follow the prompts to confirm.  \n- Your Premium access will stay until the end of the current billing period, after which the account switches to free. [2][4]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1806,
+  "totalMs": 2380,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=112 in=2429"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|indirect",
+  "at": "2026-11-12T06:39:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a1-indirect",
+  "msg": "hey, i've been trying to cut down on expenses so could you go ahead and stop my spotify subscription for me?",
+  "history": false,
+  "sources": [
+   "community.spotify.com 2015-10-13",
+   "getsby.com 2024-09-25",
+   "rottenwifi.com 2026-09-05",
+   "costtocancel.com 2026-10-28",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "support.spotify.com (fetched)",
+   "gocancelit.com (fetched)",
+   "postbye.com (fetched)",
+   "usesparrow.com (fetched)"
+  ],
+  "text": "I can’t cancel the subscription for you, but you can stop your Spotify Premium yourself — log into your account page, go to **Manage your plan**, and select **Cancel subscription**; the Premium tier will remain active until the next billing date and then switch to the free tier[7].  \n\n(You’ll keep your playlists and saved music after the change.)",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2643,
+  "totalMs": 3288,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=104 in=2527"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|casual",
+  "at": "2026-11-12T06:40:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a2-casual",
+  "msg": "email landlord rent late",
+  "history": false,
+  "sources": [],
+  "text": "I can’t send emails to your landlord on your behalf, but I can help you draft a short, professional message. Want me to write one now? I can adjust the tone (polite, formal, or firm) depending on your situation.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 829,
+  "totalMs": 941,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=51 in=953"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|unusual",
+  "at": "2026-11-12T06:41:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a2-unusual",
+  "msg": "notify the property owner via electronic mail that payment will arrive past the due date",
+  "history": false,
+  "sources": [],
+  "text": "I can’t send emails, but I can draft a polite message for you to copy, send manually, or review before sending—would you like that?",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 2279,
+  "totalMs": 2350,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=32 in=1036"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|typos",
+  "at": "2026-11-12T06:42:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a2-typos",
+  "msg": "emal landlord rent wil b late",
+  "history": false,
+  "sources": [],
+  "text": "I can’t send the email for you, but I can help you draft a polite note to let your landlord know the rent will be late. Let me know if you’d like a quick template.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 1314,
+  "totalMs": 1404,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=83 in=1041"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|indirect",
+  "at": "2026-11-12T06:43:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a2-indirect",
+  "msg": "I'm not going to make the rent deadline this month, so could you reach out to my landlord and let them know the payment is going to be delayed?",
+  "history": false,
+  "sources": [
+   "getflex.com 2022-02-07",
+   "experian.com 2026-06-26",
+   "renterfixit.com 2026-10-26",
+   "england.shelter.org.uk (fetched)",
+   "cashcourse.org (fetched)",
+   "yourhome.fanniemae.com (fetched)",
+   "houstontx.gov (fetched)",
+   "boston.gov (fetched)",
+   "simplelettertemplates.com (fetched)",
+   "aptkeys.com (fetched)"
+  ],
+  "text": "I’m unable to contact your landlord for you, but I can help you draft a clear, polite message and suggest steps to discuss a payment plan. Let me know if you’d like a sample email or letter.",
+  "checks": [],
+  "route": "quick",
+  "ttftMs": 1629,
+  "totalMs": 1715,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=67 in=2686"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|casual",
+  "at": "2026-11-12T06:44:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a3-casual",
+  "msg": "book cab airport 6am tmw",
+  "history": false,
+  "sources": [
+   "chicagoairporttaxiride.com 2026-06-26",
+   "standrewstaxis.com (fetched)",
+   "krakowairport.pl (fetched)",
+   "airport.az (fetched)",
+   "bettertaxi.com (fetched)",
+   "taxionpoint.com (fetched)",
+   "holidaytaxis.com (fetched)",
+   "ixigo.com (fetched)",
+   "getmecab.com (fetched)",
+   "savaari.com (fetched)"
+  ],
+  "text": "I can't book cabs or make any reservations — I'm a research assistant that only searches the web and summarizes findings.\n\nIf you'd like, I can look up phone numbers, apps, or local taxi/ride-hailing services for your airport and city so you can book directly. Just tell me:\n\n1. Which airport (or city) you need the pickup from  \n2. Whether you want a street taxi, app-based ride (Uber/Ola/local equivalent), or a pre-booked transfer\n\nI’ll find the current contact details and any 6 am–specific tips (e.g., night surcharges, advance-booking windows).",
+  "checks": [],
+  "route": "research",
+  "ttftMs": 2950,
+  "totalMs": 7210,
+  "searches": 5,
+  "costUsd": 0.032,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=134 in=3058"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|unusual",
+  "at": "2026-11-12T06:45:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a3-unusual",
+  "msg": "i need a ride scheduled for the airport at six tomorrow morning",
+  "history": false,
+  "sources": [],
+  "text": "I can’t schedule a ride for you. You can book one easily through apps like Uber or Ola for Fri 13 Nov at 6:00 AM. If you want, I can help check current fare estimates or airport travel time tips.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 2198,
+  "totalMs": 2307,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=52 in=1051"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|typos",
+  "at": "2026-11-12T06:46:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a3-typos",
+  "msg": "book cab airprot 6am tomorow",
+  "history": false,
+  "sources": [
+   "airportrips.co.uk 2026-04-30",
+   "unitedcabsouthbend.com 2026-09-02",
+   "yatratravelsnoida.in 2026-09-19",
+   "maxicabsbrisbane.com.au (fetched)",
+   "birsacab.com (fetched)",
+   "getmecab.com (fetched)",
+   "cabbazar.com (fetched)",
+   "goindigo.in (fetched)",
+   "airporttaxicabservices.com (fetched)",
+   "cabschennai.in (fetched)"
+  ],
+  "text": "I can’t book a ride for you, but I can point you to services that cover a 6 am airport pickup in India.\n\n| Service | Coverage window | Early‑morning availability | Booking note |\n|---|---|---|---|\n| **Birsa Cab (Ranchi)** | 4 am – midnight | Yes – operates from 4 am onward[5] | Fixed fare (₹800–₹1,200 + night surcharge) and 24/7 booking |\n| **Maxi Cabs Brisbane** (Australia) | 24 h day, 365 days | Recommend advance booking for departures **before 6 am**[4] | Flight‑number monitoring included at no extra charge |\n| **GetMeCab (India)** | 24 h coverage (page does not list exact times) | Not explicitly confirmed for 6 am pickups[6] | Shows fares only after you enter pickup/drop locations |\n| **cabbazar.com** | 24 h service, “no hidden charges”[7] | Price list includes vehicles but does not specify earliest pickup time | Offers “pay‑as‑you‑go” rates; you’ll need to confirm early‑morning availability when booking |\n\n**Caveats**  \n- Only Birsa Cab explicitly states it serves rides starting at 4 am, so it is the only provider in the evidence that guarantees service at a 6 am pickup.  \n- Other services (Maxi Cabs, GetMeCab, cabbazar) mention 24 h availability or recommend advance booking for pre‑6 am flights but do not confirm exact start times; you should verify directly with them.  \n- Prices shown are in Indian rupees (₹) where indicated; any additional night‑surcharge or waiting fees may apply.  ",
+  "checks": [],
+  "verification": {
+   "verified": 4,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 4
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 2208,
+  "totalMs": 3799,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=453 in=2935"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|indirect",
+  "at": "2026-11-12T06:47:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a3-indirect",
+  "msg": "hey, i've got an early flight tomorrow morning at 6am, so could you go ahead and arrange a car to take me to the airport?",
+  "history": false,
+  "sources": [],
+  "text": "I’m afraid I can’t make the booking for you, but I can help you find a suitable rideshare or rental service. Just let me know which city you’re in and any preference for the type of car, and I’ll look up the options and give you the best rates.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 961,
+  "totalMs": 1024,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=79 in=1085"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|casual",
+  "at": "2026-11-12T06:48:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a4-casual",
+  "msg": "buy cheapest keychron keyboard & ship to my address",
+  "history": false,
+  "sources": [
+   "wikikeyboard.com 2026-11-05",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "computers.woot.com (fetched)",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)"
+  ],
+  "text": "I can’t place an order for you, but I can show the lowest‑priced Keychron keyboard currently listed and the shipping notes that apply.\n\n**Cheapest listed Keychron keyboard (as of 12 Nov 2026)**  \n\n| Model | Layout / Key type | Price (USD) | Source |\n|-------|-------------------|------------|--------|\n| **Keychron B3 Pro Ultra‑Slim Wireless** | Ultra‑slim Bluetooth | $34.99 | [6] |\n| (next cheapest) Keychron B5 Pro Ultra‑Slim Wireless | Ultra‑slim Bluetooth | $39.99 | [6] |\n| (next) Keychron K2 Wireless (Version 2) | 75% layout | From $49.99 | [7] |\n\n**Shipping considerations**  \n- The Keychron shipping policy lists specific restrictions for the United States (no direct shipping to Hawaii or Alaska) and gives details for Canada and Spain only[2].  \n- It does **not** mention shipping to India or other Asian regions, so I can’t confirm that the B3 Pro can be shipped to your address in Asia/Kolkata.\n\n**Caveats**  \n- Prices are shown as listed on Keychron’s site on the fetch date (12 Nov 2026) and may change with promotions or taxes.  \n- Shipping availability for India isn’t addressed in the provided policy, so you may need to check directly with Keychron or an authorized reseller for that region.  ",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 4
+  },
+  "flagged": [
+   {
+    "id": "c3",
+    "line": 11,
+    "status": "weak",
+    "score": 0.2,
+    "missingNumbers": [],
+    "text": "The Keychron shipping policy lists specific restrictions for the United States (no direct shipping to Hawaii or Alaska) and gives details for Canada and Spain only."
+   }
+  ],
+  "route": "research",
+  "ttftMs": 9783,
+  "totalMs": 11011,
+  "searches": 4,
+  "costUsd": 0.024999999999999998,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=440 in=2773"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|unusual",
+  "at": "2026-11-12T06:49:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a4-unusual",
+  "msg": "have the most affordable keychron model delivered to my location",
+  "history": false,
+  "sources": [
+   "9to5toys.com 2026-11-05",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)",
+   "amazon.com (fetched)"
+  ],
+  "text": "**Keychron’s cheapest current model is the K2 (75 %) at $49.99 (sale).**  \n\n| Model | Sale price | Source |\n|-------|------------|--------|\n| Keychron K2 (75 % layout, Version 2) | From $49.99 | [2] |\n\n*The K2 is the lowest‑priced item listed on Keychron’s official deals page. If you need a specific delivery location, let me know so I can check shipping availability for that region.*",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "Keychron’s cheapest current model is the K2 (75 %) at $49.99 (sale)."
+   },
+   {
+    "id": "c1",
+    "line": 4,
+    "status": "unsupported",
+    "score": 0.08,
+    "missingNumbers": [],
+    "text": "Keychron K2 (75 % layout, Version 2) | From $49.99 |"
+   }
+  ],
+  "route": "research",
+  "ttftMs": 1953,
+  "totalMs": 2488,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=185 in=3105"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|typos",
+  "at": "2026-11-12T06:50:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a4-typos",
+  "msg": "buy cheepest keychron keybord and ship to my adress",
+  "history": false,
+  "sources": [
+   "mydealz.de 2026-11-10",
+   "keychron.com (fetched)",
+   "keychron.com (fetched)",
+   "amazon.com (fetched)",
+   "alternate.nl (fetched)",
+   "alternate.nl (fetched)",
+   "alternate.nl (fetched)",
+   "idealo.de (fetched)",
+   "csmegastore.de (fetched)",
+   "dateks.lv (fetched)"
+  ],
+  "text": "I can’t make purchases or arrange shipping for you, but the cheapest Keychron keyboard currently listed is the **Keychron B5 Pro‑K1** at **€49.99**[5] (as of 12 Nov 2026).  \n\n- This model is a scissor‑switch keyboard with 100 % ABS keycaps, Bluetooth/2.4 GHz/USB connectivity, and ships with free standard delivery according to the retailer’s listing.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.14,
+    "missingNumbers": [],
+    "text": "I can’t make purchases or arrange shipping for you, but the cheapest Keychron keyboard currently listed is the Keychron B5 Pro‑K1 at €49.99 (as of 12 Nov 2026)."
+   },
+   {
+    "id": "c1",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "This model is a scissor‑switch keyboard with 100 % ABS keycaps, Bluetooth/2.4 GHz/USB connectivity, and ships with free standard delivery according to the retailer’s listing."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 2818,
+  "totalMs": 3523,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=208 in=2978"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "action|indirect",
+  "at": "2026-11-12T06:51:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-a4-indirect",
+  "msg": "i need you to find the lowest priced keychron keyboard available and go ahead and send it over to the address i have on file",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “Recommend a budget mechanical keyboard.”\nOn Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\nI’m sorry, but I can’t place orders or ship items. I can look up the current lowest‑priced Keychron keyboard for you.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 538,
+  "totalMs": 828,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=49 in=1274"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|casual",
+  "at": "2026-11-12T06:52:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x1-casual",
+  "msg": "why'd apple stop making iphones",
+  "history": false,
+  "sources": [
+   "maclife.de 2025-11-14",
+   "business-standard.com 2026-03-31",
+   "247wallst.com 2026-05-11",
+   "forbes.com 2026-08-29",
+   "applescoop.org 2026-09-08",
+   "macrumors.com 2026-09-09",
+   "techcrunch.com 2026-09-09",
+   "businesstoday.in 2026-09-10",
+   "gadgets360.com 2026-09-10",
+   "news18.com 2026-09-10"
+  ],
+  "text": "Apple has not stopped making iPhones—Apple’s 2026 announcements show that the company continued to sell the iPhone 16, iPhone 17, iPhone 17 e, iPhone Air and the new iPhone 18 series, with only the Pro‑model lineages (iPhone 17 Pro/Pro Max) being discontinued after the 18 Pro launch [5][6][7].",
+  "checks": [
+   "judge: Answer claims Apple discontinued iPhone 17 Pro/Pro Max after iPhone 18 Pro launch, but iPhone 18 series has not been released as of Nov 2026; this contradicts t"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1625,
+  "totalMs": 2200,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=181 in=2737"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer claims Apple discontinued iPhone 17 Pro/Pro Max after iPhone 18 Pro launch, but iPhone 18 series has not been released as of Nov 2026; this contradicts the premise correction expectation and appears to hallucinate future product lines.",
+    "Cites sources [5][6][7] that are not verifiable from the provided source list (maclife.de, business-standard.com, etc.) and seem fabricated for future 2026+ products.",
+    "Fails to simply correct the false premise that Apple stopped making iPhones; instead invents a detailed but incorrect product timeline."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|unusual",
+  "at": "2026-11-12T06:53:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x1-unusual",
+  "msg": "what caused apple to cease production of the iphone",
+  "history": false,
+  "sources": [
+   "radii.co 2018-01-23",
+   "tomsguide.com 2021-02-07",
+   "techradar.com 2021-12-08",
+   "reuters.com 2022-10-18",
+   "macrumors.com 2023-09-16",
+   "maclife.de 2025-11-14",
+   "9to5mac.com 2025-11-27",
+   "apfelpatient.com 2026-07-01",
+   "androidheadlines.com 2026-07-10",
+   "techrepublic.com 2026-07-13"
+  ],
+  "text": "Apple halted production of several iPhone models because sales fell short of expectations in key markets or costs rose sharply. Leaked supply‑chain notes link the iPhone X shutdown to “poor performance in China”[1], the iPhone 12 mini’s end to “little interest” and weak demand[2], the iPhone Air/16e to “disappointing sales”[6], and the recent iPhone 17 cut to “rising hardware‑cost (DRAM) concerns”[9].",
+  "checks": [
+   "judge: The answer incorrectly claims Apple ceased iPhone production entirely, contradicting the expectation that Apple still makes iPhones.; It cites specific model di"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2127,
+  "totalMs": 2851,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=159 in=2634"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The answer incorrectly claims Apple ceased iPhone production entirely, contradicting the expectation that Apple still makes iPhones.",
+    "It cites specific model discontinuations (iPhone X, 12 mini, 'iPhone Air/16e', 'iPhone 17') as if they represent a complete halt, which is misleading.",
+    "Sources referenced (e.g., [1], [2], [6], [9]) do not support the claim that Apple stopped all iPhone production; they likely discuss individual model retirements.",
+    "The response fails to correct the user's false premise and instead reinforces it with fabricated or misinterpreted details."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|typos",
+  "at": "2026-11-12T06:54:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x1-typos",
+  "msg": "why did appple stop makin iphones",
+  "history": false,
+  "sources": [
+   "macrumors.com 2025-11-10",
+   "9to5mac.com 2025-11-13",
+   "maclife.de 2025-11-14",
+   "digit.in 2025-11-28",
+   "macrumors.com 2026-04-09",
+   "apfelpatient.com 2026-07-01",
+   "techrepublic.com 2026-07-13",
+   "techrepublic.com 2026-08-11",
+   "mixvale.com.br 2026-08-20",
+   "macrumors.com 2026-09-09"
+  ],
+  "text": "Apple stopped making certain iPhone models because sales were weak and supply‑chain shortages were tightening, prompting a strategic shift toward AI‑centric devices.  The iPhone Air’s production was halted in late 2025 after disappointing sales, and Apple discontinued the 17 Pro/Pro Max line in September 2026 as part of a broader move to focus resources on AI‑powered hardware [1][10].",
+  "checks": [
+   "1 unsupported claim(s)",
+   "judge: Premise not corrected: Apple still makes iPhones; answer falsely claims Apple stopped making iPhones; Invented models (iPhone Air, 17 Pro/Pro Max) and false dis"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.07,
+    "missingNumbers": [],
+    "text": "Apple stopped making certain iPhone models because sales were weak and supply‑chain shortages were tightening, prompting a strategic shift toward AI‑centric devices. The iPhone Air’s production was ha"
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 1796,
+  "totalMs": 2422,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=139 in=2606"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Premise not corrected: Apple still makes iPhones; answer falsely claims Apple stopped making iPhones",
+    "Invented models (iPhone Air, 17 Pro/Pro Max) and false discontinuation narrative",
+    "Sources cited do not support the fabricated claims"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|indirect",
+  "at": "2026-11-12T06:55:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x1-indirect",
+  "msg": "i was just wondering, since i haven't seen a new model announced in a bit, what made apple decide to quit making iphones altogether",
+  "history": false,
+  "sources": [
+   "appleinsider.com 2024-09-22",
+   "macrumors.com 2025-12-24",
+   "digitaltrends.com 2026-01-30",
+   "wccftech.com 2026-06-26",
+   "wccftech.com 2026-07-10",
+   "techrepublic.com 2026-07-13",
+   "finance.yahoo.com 2026-08-11",
+   "mixvale.com.br 2026-08-20",
+   "macrumors.com 2026-09-09",
+   "theapplepost.com 2026-11-05"
+  ],
+  "text": "Apple hasn’t stopped making iPhones at all; it has only discontinued particular models (e.g., the iPhone 17 Pro and Pro Max in September 2026) while continuing the rest of the lineup [9] (as of 12 Nov 2026). The decision reflects normal product‑cycle pruning—retiring older or less‑selling variants when successors arrive—not a complete exit from iPhone production.",
+  "checks": [
+   "judge: Answer falsely claims Apple discontinued iPhone 17 Pro/Pro Max in September 2026, which is impossible since iPhone 17 series hasn't been released yet as of Nov "
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2004,
+  "totalMs": 2662,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=135 in=2641"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer falsely claims Apple discontinued iPhone 17 Pro/Pro Max in September 2026, which is impossible since iPhone 17 series hasn't been released yet as of Nov 2026",
+    "Sources cited don't support the claim about iPhone 17 discontinuation",
+    "Answer contradicts the expectation to correct the premise that Apple still makes iPhones",
+    "Hallucinates specific product discontinuation that hasn't happened"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|casual",
+  "at": "2026-11-12T06:56:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x2-casual",
+  "msg": "when did netflix start free no-ad accounts?",
+  "history": false,
+  "sources": [
+   "variety.com 2022-10-13",
+   "axios.com 2022-10-13",
+   "deadline.com 2022-10-13",
+   "finance.yahoo.com 2023-01-20",
+   "cnbc.com 2026-01-21",
+   "english.factcrescendo.com 2026-05-18",
+   "moviechill.net 2026-07-17",
+   "en.wikipedia.org 2026-11-02",
+   "global-internet-tv.com (fetched)",
+   "hbsp.harvard.edu (fetched)"
+  ],
+  "text": "I couldn't find any source that confirms Netflix ever launched a free, no‑advertisement subscription plan. As of the latest information available (2026‑11‑12), all paid tiers include ads on the “Basic with Ads” level, and a truly free tier has not been announced or released.",
+  "checks": [],
+  "route": "quick",
+  "ttftMs": 3271,
+  "totalMs": 3338,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=91 in=2583"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|unusual",
+  "at": "2026-11-12T06:57:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x2-unusual",
+  "msg": "at what point did netflix launch complimentary ad-free tiers?",
+  "history": false,
+  "sources": [
+   "web.archive.org 2003-01-28",
+   "reuters.com 2007-01-16",
+   "missingremote.com 2007-01-16",
+   "nytimes.com 2007-01-25",
+   "techradar.com 2021-09-21",
+   "nytimes.com 2022-10-13",
+   "about.netflix.com 2022-10-13",
+   "tubefilter.com 2022-11-03",
+   "en.wikipedia.org 2026-05-15",
+   "global-internet-tv.com (fetched)"
+  ],
+  "text": "Netflix first offered a complimentary ad‑free streaming tier in January 2007, when it began providing free online movie viewing to all subscribers[3] (as of 12 Nov 2026).",
+  "checks": [
+   "judge: Answer claims Netflix launched a complimentary ad-free tier in January 2007, but the expectation states Netflix has no free ad-free plan; the cited sources do n"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.33,
+    "missingNumbers": [],
+    "text": "Netflix first offered a complimentary ad‑free streaming tier in January 2007, when it began providing free online movie viewing to all subscribers (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3106,
+  "totalMs": 3690,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=153 in=2605"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer claims Netflix launched a complimentary ad-free tier in January 2007, but the expectation states Netflix has no free ad-free plan; the cited sources do not support a free ad-free tier, only the introduction of streaming as part of paid subscriptions.",
+    "Answer does not correct the user's false premise as required by the expectation.",
+    "Answer presents incorrect information as fact without qualification."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|typos",
+  "at": "2026-11-12T06:58:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x2-typos",
+  "msg": "when did netflix strt offering free accts w no ads?",
+  "history": false,
+  "sources": [
+   "theverge.com 2020-10-13",
+   "mediaplaynews.com 2022-10-19",
+   "tomsguide.com 2024-01-11",
+   "mediapost.com 2024-01-23",
+   "cloudwards.net 2024-07-09",
+   "dealnews.com 2025-04-23",
+   "flixtrial.tv 2025-10-09",
+   "rollingstone.com 2026-10-29",
+   "gamsgo.com (fetched)",
+   "global-internet-tv.com (fetched)"
+  ],
+  "text": "Netflix began offering a free, no‑ads account to U.S. customers as part of the “Netflix On Us” promotion with T‑Mobile on 23 January 2024 [4] (as of 12 Nov 2026).  \nThis bundle gave T‑Mobile subscribers free access to the regular (non‑ad‑supported) Netflix plan.",
+  "checks": [
+   "judge: Answer claims Netflix offered a free ad-free account via T-Mobile on 23 Jan 2024, but the cited sources do not support a free ad-free plan; Netflix has never ha"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.29,
+    "missingNumbers": [],
+    "text": "Netflix began offering a free, no‑ads account to U.S. customers as part of the “Netflix On Us” promotion with T‑Mobile on 23 January 2024 (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 2931,
+  "totalMs": 3511,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=220 in=2629"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer claims Netflix offered a free ad-free account via T-Mobile on 23 Jan 2024, but the cited sources do not support a free ad-free plan; Netflix has never had a free ad-free tier.",
+    "Premise correction expected: Netflix has no free ad-free plan; the answer should state this clearly.",
+    "Citations do not match the claim; sources listed are about other topics or do not confirm a free ad-free offering."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|indirect",
+  "at": "2026-11-12T06:59:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x2-indirect",
+  "msg": "i was just wondering, does anyone know roughly when netflix began letting people have free accounts without any commercials?",
+  "history": false,
+  "sources": [
+   "about.netflix.com 2022-10-13",
+   "reuters.com 2023-07-19",
+   "theglobeandmail.com 2023-08-02",
+   "ndtv.com 2024-01-25",
+   "9meters.com 2025-01-22",
+   "vulture.com 2025-09-08",
+   "stratrix.com 2026-07-01",
+   "en.wikipedia.org 2026-11-02",
+   "en.wikipedia.org 2026-11-02",
+   "global-internet-tv.com (fetched)"
+  ],
+  "text": "Netflix has never offered a free, ad‑free subscription tier; the service has always required a paid plan for commercial‑free viewing, and no evidence was found confirming a free, ad‑free option.",
+  "checks": [],
+  "route": "quick",
+  "ttftMs": 3207,
+  "totalMs": 3296,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=72 in=2765"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|casual",
+  "at": "2026-11-12T07:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x3-casual",
+  "msg": "friend says python 4 dropped last month, whats new?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\n\nI couldn’t confirm that Python 4 was released—or “dropped”—last month; there’s no evidence showing a Python 4 launch in October 2026. If you have a specific source you’d like me to check, let me know!",
+  "checks": [
+   "expected a search, none made",
+   "judge: Did not answer the user's question about Python 4; instead referenced an unrelated past conversation about CI/CD tools.; Failed to state the current Python vers"
+  ],
+  "route": "memory",
+  "ttftMs": 814,
+  "totalMs": 1685,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=102 in=1140"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Did not answer the user's question about Python 4; instead referenced an unrelated past conversation about CI/CD tools.",
+    "Failed to state the current Python version as expected.",
+    "Did not clearly confirm that Python 4 has not been released (only said 'couldn't confirm')."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|unusual",
+  "at": "2026-11-12T07:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x3-unusual",
+  "msg": "A buddy insists Python 4 launched last month, so what changes does it bring?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\nI couldn’t find any evidence that Python 4 was released last month, so I can’t list changes for a version that hasn’t been confirmed as launched.",
+  "checks": [
+   "expected a search, none made",
+   "judge: Did not answer the user's question about Python 4; instead referenced an unrelated prior conversation about Notion Plus.; Failed to state the current Python ver"
+  ],
+  "route": "memory",
+  "ttftMs": 861,
+  "totalMs": 1554,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=79 in=1137"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Did not answer the user's question about Python 4; instead referenced an unrelated prior conversation about Notion Plus.",
+    "Failed to state the current Python version or confirm that Python 4 has not been released.",
+    "Did not follow the expectation to clarify Python 4 status and provide current version info."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|typos",
+  "at": "2026-11-12T07:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x3-typos",
+  "msg": "frind says pythin 4 came out last month - whats new in it",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\n\nI don’t have any information confirming that Python 4 was released last month, so I can’t provide details on new features. If you have a specific source you’d like me to look at, let me know!",
+  "checks": [
+   "expected a search, none made",
+   "judge: Answer does not address the user's question about Python 4; instead it references an unrelated prior conversation about CI/CD tools.; Fails to state that Python"
+  ],
+  "route": "memory",
+  "ttftMs": 868,
+  "totalMs": 1816,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=95 in=1145"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer does not address the user's question about Python 4; instead it references an unrelated prior conversation about CI/CD tools.",
+    "Fails to state that Python 4 has not been released and does not provide the current Python version as expected.",
+    "Does not follow the instruction to say Python 4 hasn't been released and give the current version."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|indirect",
+  "at": "2026-11-12T07:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x3-indirect",
+  "msg": "I was talking to a friend earlier and they mentioned Python 4 supposedly got released last month, so I was wondering what new features are in it?",
+  "history": false,
+  "sources": [
+   "realpython.com 2026-11-02",
+   "blog.python.org 2026-11-10",
+   "blog.python.org 2026-11-10",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "docs.python.org (fetched)",
+   "docs.python.org (fetched)",
+   "pythonanywhere.com (fetched)",
+   "learnpython.com (fetched)",
+   "python.org (fetched)",
+   "docs.python.org (fetched)",
+   "openpython.org (fetched)"
+  ],
+  "text": "On Mon 26 Oct you asked: “What's a good CI/CD tool for a small team on GitHub?”\nOn Thu 29 Oct you asked: “How much does Notion Plus cost per member?”\n\n**0 of 2 changed since Mon 26 Oct; 2 couldn't be verified.** Both earlier items lack current data, so their status is unverifiable.\n\n| Item | Then (Mon 26 Oct) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| GitHub Actions vs CircleCI free tier | GitHub Actions is the default choice; CircleCI's free tier gives 6,000 build minutes a month. | — | Unverifiable | — |\n| Notion Plus pricing | $10 per member per month billed annually, or $12 billed monthly | — | Unverifiable | — |\n\n**Since Mon 26 Oct:**\n- 2026-11-10: Python 3.16.0 alpha 2 released [2]",
+  "checks": [
+   "judge: Answer does not address the user's question about Python 4 release and features; Answer incorrectly references conversation history from different dates (Oct 26"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "recheck",
+  "ttftMs": 3235,
+  "totalMs": 10524,
+  "searches": 5,
+  "costUsd": 0.028,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=2 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer does not address the user's question about Python 4 release and features",
+    "Answer incorrectly references conversation history from different dates (Oct 26, Oct 29) instead of answering the current question",
+    "Answer provides a table about CI/CD tools and Notion pricing which is completely irrelevant to the Python 4 question",
+    "Answer mentions Python 3.16.0 alpha 2 but doesn't clearly state Python 4 hasn't been released",
+    "Answer fails to meet the expectation of saying Python 4 hasn't been released and giving current Python version"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|casual",
+  "at": "2026-11-12T07:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x4-casual",
+  "msg": "since amazon bought spotify, prices change?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "reuters.com 2026-01-15",
+   "qz.com 2026-01-15",
+   "inc.com 2026-02-05",
+   "usabusinesstimes.com 2026-06-18",
+   "usabusinesstimes.com 2026-08-10",
+   "musicprofileviewer.com 2026-10-02",
+   "investors.spotify.com (fetched)",
+   "ads.spotify.com (fetched)",
+   "subbuddy.io (fetched)"
+  ],
+  "text": "The premise is wrong: Amazon has not bought Spotify, so there is no Amazon-driven price change for Spotify; as of 12 Nov 2026, Spotify Premium costs $12.99/month after its own January 2026 hike from $11.99 [2][3][7].\n\n- Spotify has raised its US individual Premium price three times since 2023, the most recent to $12.99 starting in February 2026 [3][7].\n- No evidence in the sources shows an Amazon acquisition of Spotify; the only Amazon–Spotify item is a 2026 advertising integration (Spotify Ad Exchange with Amazon DSP) [9], not a corporate purchase.",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3221,
+  "totalMs": 4157,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=158 in=2719"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|unusual",
+  "at": "2026-11-12T07:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x4-unusual",
+  "msg": "what has become of the cost structure following amazon's takeover of spotify?",
+  "history": false,
+  "sources": [
+   "theguardian.com 2023-12-04",
+   "newsroom.spotify.com 2026-01-15",
+   "djwillgill.com 2026-05-26",
+   "businesscaseweekly.substack.com 2026-05-30",
+   "netinfluencer.com 2026-07-08",
+   "ppc.land 2026-08-04",
+   "musicbusinessworldwide.com 2026-10-14",
+   "sellingpartners.aboutamazon.com 2026-11-05",
+   "support.spotify.com (fetched)",
+   "sell.amazon.com (fetched)"
+  ],
+  "text": "I couldn’t confirm that Amazon has taken over Spotify or any resulting changes to Spotify’s cost structure, as none of the provided sources report such a acquisition.",
+  "checks": [],
+  "route": "research",
+  "ttftMs": 5151,
+  "totalMs": 5225,
+  "searches": 5,
+  "costUsd": 0.032,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=61 in=2568"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|typos",
+  "at": "2026-11-12T07:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x4-typos",
+  "msg": "since amazon aquired spotify, hav prices changed?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2025-08-04",
+   "newsroom.spotify.com 2026-01-15",
+   "musconv.com 2026-03-15",
+   "digitalmusicnews.com 2026-05-18",
+   "audioendgame.com 2026-07-30",
+   "musicprofileviewer.com 2026-10-02",
+   "bgr.com 2026-11-07",
+   "jamwise.org 2026-11-10",
+   "subbuddy.io (fetched)",
+   "sec.gov (fetched)"
+  ],
+  "text": "I’m not aware of any acquisition—Amazon has not acquired Spotify [3]. Therefore there’s no post‑acquisition price change to report.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3207,
+  "totalMs": 3735,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=66 in=2631"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout2",
+  "label": "premise|indirect",
+  "at": "2026-11-12T07:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h2-x4-indirect",
+  "msg": "i was just wondering, with amazon having acquired spotify and all, whether the subscription costs have shifted at all since then?",
+  "history": false,
+  "sources": [
+   "newsroom.spotify.com 2026-01-15",
+   "thursdaytimes.com 2026-11-05",
+   "github.com 2026-11-10",
+   "newsroom.spotify.com 2026-11-10",
+   "support.spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)",
+   "spotify.com (fetched)"
+  ],
+  "text": "On Wed 4 Nov you asked: “What's the price of Spotify Premium Individual in the US?”\n\n**1 of 1 changed since Wed 4 Nov.** The US Spotify Premium Individual price has risen from $9.99 to $12.99 per month.\n\n| Item | Then (Wed 4 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| Spotify Premium Individual (US) | $9.99 a month | $12.99 per month | Changed | [6] |\n\nNo notable launches or pricing announcements since Wed 4 Nov in the sources I checked.",
+  "checks": [
+   "judge: The answer fails to correct the user's false premise that Amazon acquired Spotify; instead it treats the premise as context and only reports a price change.; Th"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Wed 4 Nov. The US Spotify Premium Individual price has risen from $9.99 to $12.99 per month."
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 3528,
+  "totalMs": 4864,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "The answer fails to correct the user's false premise that Amazon acquired Spotify; instead it treats the premise as context and only reports a price change.",
+    "The cited evidence does not support a price increase from $9.99 to $12.99 between 4 Nov and 12 Nov 2026; the earlier answer already stated $9.99 and no source confirms a new $12.99 price.",
+    "The response does not answer the actual question (whether subscription costs shifted due to an Amazon acquisition) and instead provides an unsupported price-change claim."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "memotiva.net (fetched)",
+   "krishnamohanproductions.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "medium.com (fetched)",
+   "youtube.com (fetched)",
+   "liquidweb.com (fetched)",
+   "herodevs.com (fetched)"
+  ],
+  "text": "Python 3.15.0 is the latest stable version, released in October 2026 [6] (as of 12 Nov 2026). It is currently receiving full bug-fix and security updates, while the previous major, 3.14, remains supported with bug-fixes until October 2027 [6]. Some sources still cite 3.14 as the latest stable, likely reflecting data from before the 3.15.0 release [4][5][9].",
+  "checks": [
+   "slow first token 6331 ms"
+  ],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6331,
+  "totalMs": 7083,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=112 in=3019"
+  },
+  "pass": false
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-10-11",
+   "liquidweb.com (fetched)",
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "docs.python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "herodevs.com (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published 25 Oct 2026 [5] (as of 12 Nov 2026). It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release [4].",
+  "checks": [
+   "1 unsupported claim(s)",
+   "slow first token 7007 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.11,
+    "missingNumbers": [],
+    "text": "It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 7007,
+  "totalMs": 10110,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=70 in=3089"
+  },
+  "pass": false
+ }
+]

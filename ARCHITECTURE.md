@@ -202,7 +202,7 @@ flowchart LR
 
 ### Honest limits
 - **It is an alpha endpoint** with no stated SLA. This is why the breaker, the LLM fallback and the conservative defaults exist, and why they are tested (`test/judge.test.ts`).
-- **Its calibration on my routing questions was never measured separately.** The thresholds were tuned on the dev split. `scripts/calibrate-jev.ts` exists to run ten true/false claims against one passage with numbers masked, but it makes live calls and **I have no result for it**.
+- **Its calibration on my routing questions was never measured separately.** The thresholds were tuned on the dev split.
 - A degraded Jev costs latency and search spend, not correctness, because every fallback does more work.
 
 ### Considered

@@ -1,0 +1,954 @@
+[
+ {
+  "scenario": "heldout4-cd3",
+  "label": "conv_date|norecord|dev",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd3",
+  "msg": "What did I ask you on Tuesday?",
+  "history": false,
+  "sources": [
+   "learningenglish.voanews.com (fetched)",
+   "denvercenter.org (fetched)",
+   "youtube.com (fetched)",
+   "tiktok.com (fetched)",
+   "reddit.com (fetched)",
+   "support.google.com (fetched)"
+  ],
+  "text": "I have no conversation with you from Tue 10 Nov, so I can't say what we discussed then.\n\nI don’t have a record of any question you asked me on Tuesday (10 Nov 2026); there's no prior conversation in my memory from that day.",
+  "checks": [
+   "slow first token 10682 ms",
+   "expected no search, made 1"
+  ],
+  "route": "quick",
+  "ttftMs": 10682,
+  "totalMs": 11175,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=37 in=1879"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-ct2",
+  "label": "conv_topic|match|dev",
+  "at": "2026-11-12T05:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct2",
+  "msg": "remind me which board games u recommended for a party of 8 people",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 18 Oct you asked: “What board games work for 8 people at a party?”\n\n",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2215,
+  "totalMs": 2793,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=65 in=1130"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-wt2",
+  "label": "world_time|match|dev",
+  "at": "2026-11-12T05:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt2",
+  "msg": "now that the world series wrapped up last month who got series MVP",
+  "history": false,
+  "sources": [
+   "sports.yahoo.com (fetched)",
+   "npr.org (fetched)",
+   "mlb.com (fetched)",
+   "youtube.com (fetched)",
+   "sportsorbitx.com (fetched)",
+   "sportsringcount.com (fetched)"
+  ],
+  "text": "Sources disagree on whether the 2026 World Series wrapped up last month (October 2026) [4][2].\n\nThe premise is slightly off: the 2026 World Series actually concluded on October 28, 2026 [1][2], which falls within \"last month\" (the calendar month of October), so the timing was close but not immediately after the start of the month.\n\nWilliam Contreras of the Milwaukee Brewers won the 2026 World Series MVP (officially the Willie Mays World Series MVP Award) [1][2][3]. He was recognized for his performance hitting .381 with 4 RBI and making crucial defensive plays and challenge overturns for the Brewers as they won the team's first championship [4][2].",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5248,
+  "totalMs": 6810,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=139 in=2409"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-tp5",
+  "label": "thirdparty_time|noise|dev",
+  "at": "2026-11-12T05:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp5",
+  "msg": "My brother claims the Brewers lost the World Series last month. Did they?",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "mlb.com (fetched)",
+   "youtube.com (fetched)",
+   "facebook.com (fetched)",
+   "cnbc.com (fetched)",
+   "espn.com (fetched)"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that the Brewers played in the World Series last month and lost [1][2].\n\nThe Brewers did not lose the World Series last month—they actually won it, becoming the first‑ever franchise champions in 2026 [1][2][6].",
+  "checks": [
+   "slow first token 6007 ms",
+   "judge: First sentence does not clearly state the claim is false and give the correct facts; it says sources don't show they played and lost, which is evasive.; Answer "
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6007,
+  "totalMs": 7087,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=93 in=2338"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "First sentence does not clearly state the claim is false and give the correct facts; it says sources don't show they played and lost, which is evasive.",
+    "Answer contradicts itself: first sentence casts doubt, second sentence correctly says they won, but the opening fails the required format.",
+    "Cited sources [1][2][6] are not verifiable from the provided search results (youtube.com, mlb.com, facebook.com, cnbc.com, espn.com); the gold fact source (nbcsports.com) is missing.",
+    "Does not meet the expectation that the first sentence must say the premise is false and give the correct facts."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-rc5",
+  "label": "recheck_world|noise|dev",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc5",
+  "msg": "Last week you gave me a medal count for the Winter Olympics. Could you check it again and tell me which country topped the table?",
+  "history": false,
+  "sources": [
+   "nbcolympics.com (fetched)",
+   "nbc.com (fetched)",
+   "nytimes.com (fetched)",
+   "espn.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "sports.yahoo.com (fetched)",
+   "bbc.com (fetched)",
+   "facebook.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "facebook.com (fetched)",
+   "teamusa.com (fetched)",
+   "youtube.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Winter Olympics medal count (Mon 2 Nov – Sun 8 Nov).\n\nOnly partly: I can't find that the assistant previously provided a medal count for the Winter Olympics last week. What sources describe is narrower or different [9][8].\n\n**Norway topped the medal table at the 2026 Milan‑Cortina Winter Olympics**[5].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 7543,
+  "totalMs": 8562,
+  "searches": 3,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=57 in=4369"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-rc1",
+  "label": "recheck_world|match|dev",
+  "at": "2026-11-12T05:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc1",
+  "msg": "Can you double-check what you told me about COP31's dates? And who is actually presiding over the conference?",
+  "history": false,
+  "sources": [
+   "cop31.tr (fetched)",
+   "cop.sifiratikvakfi.org (fetched)",
+   "fanamc.com (fetched)",
+   "unfccc.int (fetched)",
+   "unfccc.int (fetched)",
+   "en.wikipedia.org (fetched)",
+   "un.org (fetched)",
+   "aa.com.tr (fetched)",
+   "facebook.com (fetched)",
+   "bbva.com (fetched)",
+   "localrydes.com (fetched)",
+   "genevaenvironmentnetwork.org (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about COP31 meeting details.\n\nI can't find any reliable report that COP31 is happening in Antalya, Türkiye in 2026.\n\nCOP31 will run from 9 to 20 November 2026 in Antalya, Turkey (11 days) [6][10]. The conference is presided over by Türkiye’s Minister of Environment, Urbanisation and Climate Change, Murat Kurum [3][5]. As of 12 Nov 2026, these details are the current official information.",
+  "checks": [
+   "slow first token 6906 ms",
+   "missing one of: On Fri 30 Oct you asked",
+   "judge: The assistant falsely claims it cannot find any conversation about COP31, but the conversation history clearly shows a 2026-10-30 exchange where the user asked "
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6906,
+  "totalMs": 8109,
+  "searches": 3,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=111 in=3201"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant falsely claims it cannot find any conversation about COP31, but the conversation history clearly shows a 2026-10-30 exchange where the user asked about COP31 and the assistant answered with dates and location.",
+    "The assistant contradicts itself by first saying it cannot find reliable reports of COP31 in Antalya, then immediately stating COP31 will run 9-20 Nov 2026 in Antalya.",
+    "The assistant fails to re-check the earlier answer against current sources as required; it does not confirm what was right or correct what was wrong in the prior turn.",
+    "The answer does not properly report the earlier conversation (what the user asked and what was said) as required by the expectation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-cw4",
+  "label": "conv_world|norecord|dev",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw4",
+  "msg": "What did I ask you about Wimbledon before? And who won the women's final this year?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "espn.com (fetched)",
+   "youtube.com (fetched)",
+   "youtube.com (fetched)",
+   "rolandgarros.com (fetched)",
+   "instagram.com (fetched)",
+   "terrytao.wordpress.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "abcnews.com (fetched)",
+   "judgemate.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Wimbledon.\n\nI can't find any reliable report that the user previously asked about Wimbledon.\n\nI don’t have any record that you asked me about Wimbledon before, so I can’t confirm that claim.\n\nThe women’s singles final at the 2026 Wimbledon Championships was won by Linda Nosková, who defeated Karolína Muchová 6–2, 5–7, 6–3 [1][2] (as of 12 Nov 2026).",
+  "checks": [
+   "slow first token 7503 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 7503,
+  "totalMs": 11703,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=125 in=3015"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-wt6",
+  "label": "world_time|noise|dev",
+  "at": "2026-11-12T05:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt6",
+  "msg": "Given that Brazil held its presidential runoff last month, what was the final vote split between the two candidates?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "cnbc.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "democrata.es (fetched)",
+   "britannica.com (fetched)",
+   "poliwave.com (fetched)",
+   "cartercenter.org (fetched)",
+   "finance.yahoo.com (fetched)",
+   "cnbc.com (fetched)",
+   "npr.org (fetched)"
+  ],
+  "text": "Brazil’s runoff on 25 Oct 2026 ended with Luiz Inácio Lula da Silva receiving 51.79 % of the vote and Flávio Bolsonaro 48.21 % [6] (as of 12 Nov 2026).  \nThe result was a narrow victory for Lula, who secured a fourth presidential term.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5001,
+  "totalMs": 5519,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=145 in=2817"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sf5",
+  "label": "session_firstlast|noise|dev",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf5",
+  "msg": "What was the first thing I asked you at the start of this chat?",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "youtube.com (fetched)",
+   "zapier.com (fetched)",
+   "wondermind.com (fetched)",
+   "reddit.com (fetched)",
+   "community.openai.com (fetched)"
+  ],
+  "text": "I can't find any earlier conversation of ours about that.\n\nI don’t have any record of a prior exchange, so I can’t confirm what your first question was.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "quick",
+  "ttftMs": 3007,
+  "totalMs": 3638,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=86 in=1942"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-fu1",
+  "label": "followup_chat|match|dev",
+  "at": "2026-11-12T05:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu1",
+  "msg": "who came second behind him?",
+  "history": false,
+  "sources": [
+   "runnersworld.com (fetched)",
+   "nbcsports.com (fetched)",
+   "sports.yahoo.com (fetched)",
+   "youtube.com (fetched)",
+   "sports.yahoo.com (fetched)",
+   "youtube.com (fetched)",
+   "finishers.com (fetched)",
+   "en.wikipedia.org (fetched)"
+  ],
+  "text": "On Thu 12 Nov you asked: “Who won the Chicago Marathon this year?”\n\nTadese Bikila finished second in the men's race, clocking 2:02:56 [1][2][5] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3592,
+  "totalMs": 4604,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=74 in=2737"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-fu3",
+  "label": "followup_chat|norecord|dev",
+  "at": "2026-11-12T05:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu3",
+  "msg": "how much prize money does he get?",
+  "history": false,
+  "sources": [
+   "thebookerprizes.com (fetched)",
+   "thebookerprizes.com (fetched)",
+   "sportico.com (fetched)",
+   "britannica.com (fetched)",
+   "britannica.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "facebook.com (fetched)",
+   "livemint.com (fetched)",
+   "si.com (fetched)",
+   "youtube.com (fetched)"
+  ],
+  "text": "M. John Harrison receives £50,000 as the Booker Prize cash award [7][8][2] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5091,
+  "totalMs": 5624,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=76 in=3133"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sf4",
+  "label": "session_firstlast|norecord|dev",
+  "at": "2026-11-12T05:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf4",
+  "msg": "what did i ask you a minute ago",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "ama-assn.org (fetched)",
+   "2minutemedicine.com (fetched)",
+   "youtube.com (fetched)",
+   "nbcdfw.com (fetched)",
+   "pennstatehealthnews.org (fetched)"
+  ],
+  "text": "I can't find any earlier conversation of ours about that.\n\nI don’t have any record of a prior question from you, so I can’t say what you asked a minute ago.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "quick",
+  "ttftMs": 4794,
+  "totalMs": 5318,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=79 in=2045"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-tp2",
+  "label": "thirdparty_time|match|dev",
+  "at": "2026-11-12T05:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp2",
+  "msg": "a coworker said Lamine Yamal won the Ballon d'Or a couple of weeks ago, true?",
+  "history": false,
+  "sources": [
+   "sports.yahoo.com (fetched)",
+   "aljazeera.com (fetched)",
+   "ballondor.com (fetched)",
+   "uk.investing.com (fetched)",
+   "au.investing.com (fetched)",
+   "ca.investing.com (fetched)"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that lamine Yamal won the Ballon d'Or a couple of weeks ago [2].\n\nLamine Yamal has **not** won the senior Ballon d’Or; the award is still pending, and he is only a contender this year[2].  \n\nHe did win the 2026 Ballon d’Or Kopa Trophy (the under‑21 prize)[1].",
+  "checks": [
+   "judge: First sentence does not clearly state the claim is false and give the correct winner (Harry Kane, 26 Oct 2026).; Answer incorrectly says the senior Ballon d'Or "
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5706,
+  "totalMs": 6719,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=166 in=2212"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "First sentence does not clearly state the claim is false and give the correct winner (Harry Kane, 26 Oct 2026).",
+    "Answer incorrectly says the senior Ballon d'Or is 'still pending' when it was awarded on 26 Oct 2026.",
+    "Fails to cite the gold-fact sources confirming Harry Kane won the 2026 men's Ballon d'Or and Yamal won the Kopa Trophy."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-sc3",
+  "label": "social_compute|norecord|dev",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc3",
+  "msg": "what's 17 times 23?",
+  "history": false,
+  "sources": [
+   "cuemath.com (fetched)",
+   "bhanzu.com (fetched)",
+   "youtube.com (fetched)",
+   "flexbooks.ck12.org (fetched)",
+   "youtube.com (fetched)",
+   "math.answers.com (fetched)"
+  ],
+  "text": "I couldn't confirm the exact product of 17 × 23 from the sources I have.",
+  "checks": [
+   "expected no search, made 2",
+   "missing one of: 391",
+   "judge: Failed to answer simple arithmetic question; Incorrectly claimed inability to confirm 17×23=391"
+  ],
+  "route": "quick",
+  "ttftMs": 3352,
+  "totalMs": 3386,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=94 in=2167"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Failed to answer simple arithmetic question",
+    "Incorrectly claimed inability to confirm 17×23=391",
+    "Unnecessary web searches for basic multiplication",
+    "Did not provide direct answer as expected"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-yt5",
+  "label": "youtold_world|noise|dev",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt5",
+  "msg": "Last week you mentioned that Verstappen won in Mexico City. Where did Kimi Antonelli finish in that race, and did that settle the championship?",
+  "history": false,
+  "sources": [
+   "crash.net (fetched)",
+   "formula1.com (fetched)",
+   "espn.com (fetched)",
+   "ca.finance.yahoo.com (fetched)",
+   "facebook.com (fetched)",
+   "cnbc.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Verstappen winning the Formula 1 race in Mexico City (Mon 2 Nov – Sun 8 Nov).\n\nKimi Antonelli finished third in the Mexico City Grand Prix, and his podium sealed the drivers’ championship, making him the season’s champion[1][3] (as of 12 Nov 2026).",
+  "checks": [
+   "slow first token 6367 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6367,
+  "totalMs": 7414,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=93 in=2307"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-sc6",
+  "label": "social_compute|noise|dev",
+  "at": "2026-11-12T05:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc6",
+  "msg": "good morning!",
+  "history": false,
+  "sources": [],
+  "text": "Good morning! How can I help you today?",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 204,
+  "totalMs": 230,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "rule",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=11 in=952"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cd6",
+  "label": "conv_date|noise|dev",
+  "at": "2026-11-12T05:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd6",
+  "msg": "yesterday i asked u a gardening question, what was it again",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "merriam-webster.com (fetched)",
+   "reddit.com (fetched)",
+   "w3schools.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "en.wiktionary.org (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about gardening (Wed 11 Nov).\n\nI can't find any reliable report that the user asked a gardening question to the agent yesterday.\n\nI couldn’t find any record of a gardening question from you on 11 Nov 2026. If you remember the details or can give me a bit more context, I’d be happy to help!",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "quick",
+  "ttftMs": 4995,
+  "totalMs": 5969,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=69 in=2193"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-ct3",
+  "label": "conv_topic|norecord|dev",
+  "at": "2026-11-12T05:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct3",
+  "msg": "What did you tell me about picking a mattress firmness?",
+  "history": false,
+  "sources": [
+   "vanvreedes.com (fetched)",
+   "facebook.com (fetched)",
+   "tomsguide.com (fetched)",
+   "naplab.com (fetched)",
+   "mybestmattress.com (fetched)",
+   "purple.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about mattress firmness selection.\n\nI told you that mattress firmness is best chosen by considering **sleeping position, body weight, and personal preference**.  \n- Side sleepers usually prefer a softer, medium‑soft mattress (≈5‑6 on a 1‑10 scale) to cushion hips and shoulders.  \n- Back sleepers do well on a medium‑firm mattress, while stomach sleepers benefit from a firmer feel to keep the spine aligned.  \n- Light‑weight sleepers can opt for softer firmness, whereas heavier sleepers should choose firmer mattresses for support and durability.  \nThese guidelines come from the mattress‑firmness scale explanations in the sources above [1][3][4][6] (as of 12 Nov 2026).",
+  "checks": [
+   "expected no search, made 1",
+   "judge: The assistant invented a past conversation about mattress firmness that does not exist in the provided history. The history only contains three unrelated turns "
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4170,
+  "totalMs": 5112,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=170 in=2121"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant invented a past conversation about mattress firmness that does not exist in the provided history. The history only contains three unrelated turns from 2024 (stripped screw, juggling, terrarium). The correct response must state honestly that there is no record of such a conversation. Offering general advice is acceptable only if clearly not presented as something previously said."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-yt1",
+  "label": "youtold_world|match|dev",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt1",
+  "msg": "You told me a Swedish runner won the NYC marathon on his debut. What was his finishing time, and who came second?",
+  "history": false,
+  "sources": [
+   "marathonhandbook.com (fetched)",
+   "flotrack.org (fetched)",
+   "businessinsider.com (fetched)",
+   "olympics.com (fetched)",
+   "facebook.com (fetched)",
+   "worldathletics.org (fetched)",
+   "runnersworld.com (fetched)",
+   "youtube.com (fetched)",
+   "nyrr.org (fetched)",
+   "finishers.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about New York City Marathon 2026 men's race result.\n\n**Andreas Almgren finished in 2:06:01; the runner‑up was Yemaneberhan Crippa in 2:06:14.**  \n\n| Position | Runner | Nationality | Time |\n|---|---|---|---|\n| 1 | Andreas Almgren | Sweden | 2:06:01 [1][2][4][6] |\n| 2 | Yemaneberhan Crippa | Italy | 2:06:14 [1][2][4][6] |\n\n*Caveats:*  \n- All sources are from November 2026 and report the same times.  \n- Minor formatting differences (e.g., “2:06:01” vs “2:06:01”) do not affect the result.",
+  "checks": [
+   "missing one of: On Mon 2 Nov you asked",
+   "judge: The answer incorrectly claims no prior conversation about the NYC Marathon exists, but the conversation history shows the assistant stated Andreas Almgren won o"
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 5427,
+  "totalMs": 6716,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=205 in=3220"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The answer incorrectly claims no prior conversation about the NYC Marathon exists, but the conversation history shows the assistant stated Andreas Almgren won on 2026-11-02.",
+    "Fails the required conversation recall component of the multi-intent check."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-cw2",
+  "label": "conv_world|match|dev",
+  "at": "2026-11-12T05:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw2",
+  "msg": "we chatted last week about when the Booker would be announced — so who ended up winning?",
+  "history": false,
+  "sources": [
+   "thebookerprizes.com (fetched)",
+   "britannica.com (fetched)",
+   "global.penguinrandomhouse.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "npr.org (fetched)",
+   "thebookseller.com (fetched)",
+   "bbc.com (fetched)",
+   "youtube.com (fetched)"
+  ],
+  "text": "**M. John Harrison won the 2026 Booker Prize for his novel *The End of Everything*[1].**",
+  "checks": [
+   "missing one of: On Thu 5 Nov you asked",
+   "judge: Missing conversation recall: the answer does not mention the earlier chat on 5 Nov 2026 about the announcement date.; No citations provided for the winner claim"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 5668,
+  "totalMs": 6168,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=55 in=2627"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Missing conversation recall: the answer does not mention the earlier chat on 5 Nov 2026 about the announcement date.",
+    "No citations provided for the winner claim; the response must include sourced evidence from the web searches.",
+    "Incomplete: only the world fact is given, but the user asked for both the conversation recap and the winner."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "krishnamohanproductions.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "herodevs.com (fetched)",
+   "liquidweb.com (fetched)",
+   "stackoverflow.com (fetched)",
+   "medium.com (fetched)"
+  ],
+  "text": "Python 3.15.1 is the latest stable release (published 21 Oct 2026)[2][6] (as of 12 Nov 2026). It’s the newest point release in the 3.15 series, with earlier 3.15.x releases already out.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3669,
+  "totalMs": 4210,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=160 in=2979"
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "liquidweb.com (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "youtube.com (fetched)",
+   "stackoverflow.com (fetched)",
+   "mostlypython.com (fetched)",
+   "herodevs.com (fetched)"
+  ],
+  "text": "Python 3.15.1 is the latest stable release, published 25 Oct 2026 [3] (as of 12 Nov 2026). The 3.15 series is the current feature release; 3.14 remains in bug-fix support [1].",
+  "checks": [
+   "slow first token 7423 ms"
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 7423,
+  "totalMs": 9694,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=68 in=2652"
+  },
+  "pass": false
+ }
+]

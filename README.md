@@ -129,6 +129,5 @@ src/
   recheck/             typed values + comparator; recheck v2
 public/index.html      the UI (one file)
 test/                  176 offline tests (20 files)
-scripts/               calibrate-jev.ts, eval-brief.ts
 evals/FINDINGS.md      the log
 ```

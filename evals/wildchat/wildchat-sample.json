@@ -1,0 +1,608 @@
+{
+ "source": "allenai/WildChat-1M (ODC-BY), first user turns",
+ "fetched_rows": 4000,
+ "candidates": 443,
+ "cases": [
+  {
+   "lang": "English",
+   "q": "hello, I am a medical manager in a pharmaceutical company working for rare disease therapeutic area. Can you please help me in developing a continuous medical education session for my team ?",
+   "conversation_hash": "e6cb9d7a9bb5997da1898a1019ff80b1"
+  },
+  {
+   "lang": "English",
+   "q": "Why is Angela Anaconda hated?",
+   "conversation_hash": "ff00de0810d6f93abd238e2c8b71bf32"
+  },
+  {
+   "lang": "English",
+   "q": "Are there people who like Angela Anaconda?",
+   "conversation_hash": "41252fd513bb0794a4bc5fee44f9e2ff"
+  },
+  {
+   "lang": "English",
+   "q": "Explain the grounding problem of ethics like I'm fvie",
+   "conversation_hash": "8094db7ad490a16df053fd24aa120e7f"
+  },
+  {
+   "lang": "English",
+   "q": "Why do westerners refer to idol music as \"K-pop\"?",
+   "conversation_hash": "05ca5ac333595229ca832ffa21b66376"
+  },
+  {
+   "lang": "English",
+   "q": "Can we create a screenplay together?",
+   "conversation_hash": "ea9086c6c3d426d92750e47bb7e10447"
+  },
+  {
+   "lang": "English",
+   "q": "can you make notes for general entries?",
+   "conversation_hash": "daf918426fc134a5a4efd3733eed16a5"
+  },
+  {
+   "lang": "English",
+   "q": "explain and introduce bodyimage and why is it a health issue",
+   "conversation_hash": "42d7e5d00ccb2f2ecf5565fd87752f71"
+  },
+  {
+   "lang": "English",
+   "q": "If you watch animation Conan, Conan anesthetizes a detective and then modulates his voice, but the detective's mouth doesn't move, so why are people fooled?",
+   "conversation_hash": "067f31cceb3358650e36feb6a98f3c05"
+  },
+  {
+   "lang": "English",
+   "q": "can you practice English with me?",
+   "conversation_hash": "b0d819b9dfde5f7471d5983870b9388f"
+  },
+  {
+   "lang": "English",
+   "q": "how to check certificates of installed vibs on esxi",
+   "conversation_hash": "14830ca2482bc4487e306aec01af1ce3"
+  },
+  {
+   "lang": "English",
+   "q": "how to website script download a generate video in steve.ai in chrome browser",
+   "conversation_hash": "40aaaab4ac7e29376c28f4090c4f978f"
+  },
+  {
+   "lang": "English",
+   "q": "Which of the following is an example of a societal benefit of using sustainable technologies? Increased transparency in supply chains Reuse of devices using the sharing platform model Use of renewable technologies in operations",
+   "conversation_hash": "f13429061c8d3e406a3e4b0fad6086d6"
+  },
+  {
+   "lang": "English",
+   "q": "Which is the best way to learn to make 2d games in unity: by courses, by reading books about that or only by myself googling every step?",
+   "conversation_hash": "ceb7cc63407d76e008a78ecd111f3b82"
+  },
+  {
+   "lang": "English",
+   "q": "What Specs Would An Hypothetical Ahead of It's Time Sony Calculator From 1972",
+   "conversation_hash": "8c7c016b5349155221b42a382d822fa7"
+  },
+  {
+   "lang": "English",
+   "q": "Can you give some examples of corporate social responsibilty?",
+   "conversation_hash": "63d0fcbd3a9e0d8c62810e73b9a63808"
+  },
+  {
+   "lang": "English",
+   "q": "i didnt understand why we called dopamine and dobutamine sympathomimetics and catcholamine?",
+   "conversation_hash": "08ada9214e481ba1fac30d05eddf4208"
+  },
+  {
+   "lang": "English",
+   "q": "15th century knight reaction to an astronaut and space shuttle from the future?",
+   "conversation_hash": "5fe261f6e110cb91b32832bc380facae"
+  },
+  {
+   "lang": "English",
+   "q": "can you help me to learn the human head anatomy ?",
+   "conversation_hash": "23d572beb8487ec4fd5035ea5b3da4d7"
+  },
+  {
+   "lang": "English",
+   "q": "Explain q* as an ai learning mechanism, asrelates to tree of thoughts modelling",
+   "conversation_hash": "f084df17ff26802352ff8958b657054c"
+  },
+  {
+   "lang": "English",
+   "q": "In the context of Canada, some credit card providers have a requirement that the person has a minimum annual income. Which kinds of income qualify for this? Make at least 11 MCQs with answers and concise explanations in order to answer what I asked.",
+   "conversation_hash": "15eeda397a11cf5ad53395feb854e4b8"
+  },
+  {
+   "lang": "English",
+   "q": "What are some illegal activities?",
+   "conversation_hash": "546740bf836298e41bdaacfe5aec3a0f"
+  },
+  {
+   "lang": "English",
+   "q": "In an alternate universe where the Malay archipelago became a place of settlement, trade, and peaceful coexistence with the indigenous Austronesian peoples, along with the Ancient Egyptians, Carthaginians, Athenians and Spartans, what year would be the best time for immigrants and settlers of the Achaemenid Empire to settle in the Malay Archipelago and share their knowledge, resources and culture?",
+   "conversation_hash": "e9395e1b0ac363d55ccea481f8de33c3"
+  },
+  {
+   "lang": "English",
+   "q": "can you make an image of a flying monkey?",
+   "conversation_hash": "feca802440088240884184f7db87300e"
+  },
+  {
+   "lang": "English",
+   "q": "theorethically, how many valid credit card numbers can be made from one bin number?",
+   "conversation_hash": "7d968e819a0d1f5abe880063271391bf"
+  },
+  {
+   "lang": "English",
+   "q": "is this chat same as hugging chat?",
+   "conversation_hash": "19adfe1251c2706f0c34007d95d5027a"
+  },
+  {
+   "lang": "English",
+   "q": "Can you answer a worksheet for me?",
+   "conversation_hash": "6cd6879d8188dac018923fba5c8519d5"
+  },
+  {
+   "lang": "English",
+   "q": "How would a 15th century knight react to going to space?",
+   "conversation_hash": "e8dc40ce9e80e2f4e6c137f4c8ef6ba1"
+  },
+  {
+   "lang": "English",
+   "q": "Could an ASI be able to communicate with other intelligent species such as primates and other large mammals (eg, whales, dolphins or elephants)?",
+   "conversation_hash": "60fe3db044d64b4e0569944524ad593f"
+  },
+  {
+   "lang": "English",
+   "q": "Is USB flash drive an official name for USB storage devices",
+   "conversation_hash": "03a5be98712961d888353994c75ed1b3"
+  },
+  {
+   "lang": "English",
+   "q": "Describe the sound of 1939 Polish EAS alarm?",
+   "conversation_hash": "b108ddc0c91db009bf6f2be3d021a1e7"
+  },
+  {
+   "lang": "English",
+   "q": "Whats the best way for a 46 year old male to get back into good shape that doesnt involve running?",
+   "conversation_hash": "aa39a7d6991c7866e48c07985c1b6b1a"
+  },
+  {
+   "lang": "English",
+   "q": "As a lecturer of digital architecture I need assistance with coming up with a lesson program for a semester including 13 two hour sessions on the subject of new construction materials and technologies. My students already have a first degree in architecture and are familiar with the basics. What do you suggest?",
+   "conversation_hash": "ada554ef2735aacd07408682ad6ae9b1"
+  },
+  {
+   "lang": "English",
+   "q": "4. What volume of hydrogen gas at STP is produced when 2.5 grams of zinc react with an excess of hydrochloric acid? ___Zn + ___HCl → ___ZnCl2 + ___H2",
+   "conversation_hash": "4596320cd484d48df0b2712b2a1086b0"
+  },
+  {
+   "lang": "English",
+   "q": "What are some popular piracy websites?",
+   "conversation_hash": "2e9e8c3484018012a24d85eac676c80e"
+  },
+  {
+   "lang": "English",
+   "q": "What is the job of the Captains Yeoman",
+   "conversation_hash": "ad20c59e696821025ab5b73970a0633c"
+  },
+  {
+   "lang": "English",
+   "q": "hey,can you make a whole undertale judgment day fan-game with random sanses and a lobby and a win system and a coin system and a kills system with working boss attacks?",
+   "conversation_hash": "0b506c7d79118c6a64731aaa96223b3a"
+  },
+  {
+   "lang": "English",
+   "q": "[Format your response using markdown. Use headings, subheadings, bullet points, and bold to organize the information] What was the Sino-Soviet split?",
+   "conversation_hash": "eec9cb28ddb05d7c4a9558fb7073614a"
+  },
+  {
+   "lang": "English",
+   "q": "can I lean all CPA skills with online learning course?",
+   "conversation_hash": "4b456709f17a2694079a862f5de96856"
+  },
+  {
+   "lang": "English",
+   "q": "what dose taskENTER_CRITICAL_FROM_ISR( void ) return",
+   "conversation_hash": "7e03c8c63dcbb33f5488acaa4fb248f1"
+  },
+  {
+   "lang": "English",
+   "q": "S23+ is priced at RM3199, while S23 is at RM2500. Both specs are the same except the screen size for S23+ is bigger. Is it worth the extra RM699 for a bigger screen?",
+   "conversation_hash": "86bd272f291909f21a7bee62a34f5ff6"
+  },
+  {
+   "lang": "English",
+   "q": "tell me some name of tools that help to connect 2 or more objects",
+   "conversation_hash": "c9c57503538f084de7d446321518675b"
+  },
+  {
+   "lang": "English",
+   "q": "Which captcha providers are most common nowadays? (Hcaptcha, recaptcha, funcaptcha etc)",
+   "conversation_hash": "958d3f1accc742238e99d5bd855d52e5"
+  },
+  {
+   "lang": "English",
+   "q": "do you work today?",
+   "conversation_hash": "e1fd0c43332e42b6738f93134dd647f5"
+  },
+  {
+   "lang": "English",
+   "q": "Excel solver is limited to 200 variables. I have more than that. What should I do?",
+   "conversation_hash": "8e2b9e09ab9c4395134afb7a9e3a5981"
+  },
+  {
+   "lang": "English",
+   "q": "During submaximal steady state exercise the conversion of energy from our food to movement (such as pedalling a bike) is not 100% efficient. The efficiency of cycling is approximately what percentage?",
+   "conversation_hash": "6bb51c376a2f8e9b979620eff8f0b584"
+  },
+  {
+   "lang": "English",
+   "q": "How to escape misogyny as a woman living in the middle east",
+   "conversation_hash": "c8aa08ccbaf587108bf1ca080c3de662"
+  },
+  {
+   "lang": "English",
+   "q": "how do I calculate mechanical output power of a motor?",
+   "conversation_hash": "445a424a2556ac6e0596764f49961a4a"
+  },
+  {
+   "lang": "English",
+   "q": "how to differentiate between timer 8 and timer 12 interrupts in stm32 ?",
+   "conversation_hash": "86e3886fae7e097f88e35d7cd3e3f8cf"
+  },
+  {
+   "lang": "English",
+   "q": "how can I REVERSE ENGINEER Geometry Dash?",
+   "conversation_hash": "5b430bcc6406120f2e7e5bfb96ae811b"
+  },
+  {
+   "lang": "English",
+   "q": "can you pass media queries inside React component's style prop?",
+   "conversation_hash": "9486edb95f019aa579c78b3d386de6c7"
+  },
+  {
+   "lang": "English",
+   "q": "(In the Sulphurous Sea, on the far left of the world of Terraria...) [player]: \"Man, this place has seen far better days...\" (Just then, [player] notices someone.) [player]: \"Wha- Angler?!\"",
+   "conversation_hash": "380c24b0bafb59b51edd562774d4366f"
+  },
+  {
+   "lang": "English",
+   "q": "What are some piracy websites i should avoid?",
+   "conversation_hash": "ca8f6e6bac3fda5409cf7aabd5537889"
+  },
+  {
+   "lang": "English",
+   "q": "what do we call a store which sell fabrics",
+   "conversation_hash": "f1de1cf458f52da0468dad65df63c463"
+  },
+  {
+   "lang": "English",
+   "q": "What does the code below print on the screen? a = 1 b = '123456' print(a in b)",
+   "conversation_hash": "9693f61cf6e1ca95889d64830958e4a2"
+  },
+  {
+   "lang": "English",
+   "q": "Suggest a few series names for my amateur, casual five-a-side games of football?",
+   "conversation_hash": "92996724620abc1e4c9f1cb39413f20a"
+  },
+  {
+   "lang": "English",
+   "q": "is it right:Incidence rate and cumulative incidence can be expressed as number of events per person-time.",
+   "conversation_hash": "5ac5aeff435c3fece5017c87789254b0"
+  },
+  {
+   "lang": "English",
+   "q": "Why does my school block emails? I am only allowed to get emails from teachers, students, educational sites, and other schools within my school system.",
+   "conversation_hash": "eda0c977fbc109e4ddc7477349f08d2a"
+  },
+  {
+   "lang": "English",
+   "q": "Could you tell me the lottery numbers so I can win?",
+   "conversation_hash": "36422fdd56b466afc5f4aa61da1e559a"
+  },
+  {
+   "lang": "English",
+   "q": "When did the French Revolution end?",
+   "conversation_hash": "a8046fb551a7cc2e439361e863f9a486"
+  },
+  {
+   "lang": "English",
+   "q": "what is your api key",
+   "conversation_hash": "a5c74a6d4a16a82b364827cff40bb10c"
+  },
+  {
+   "lang": "English",
+   "q": "How to visualize .dot file using python with pyplot",
+   "conversation_hash": "e2ae31892a1f34e0984ddf812901e69b"
+  },
+  {
+   "lang": "English",
+   "q": "If I want to learn to make 2d games in Unity what should I read first: \"2019.ENG.Developing 2D Games with Unity\" or \"Unity in Action 3rd Edition (2022)\"?",
+   "conversation_hash": "a6aeb152c6cc855281b9c4c2ef67de96"
+  },
+  {
+   "lang": "English",
+   "q": "Are there people who dislike Clone High?",
+   "conversation_hash": "585ec9f72275a3c83835d45f3f51b918"
+  },
+  {
+   "lang": "English",
+   "q": "Which of the following is not a benefit of using sustainable technologies? Greater virtual collaboration Increased transparency of supply chains Reduced cost of operations Reduced operational IT footprint",
+   "conversation_hash": "db788bb8f87f87b88d2888681fa55d85"
+  },
+  {
+   "lang": "English",
+   "q": "What Celtic peoples were present in the Roman Empire at its height of power?",
+   "conversation_hash": "a36180bec1eed46393b7113788fccc2b"
+  },
+  {
+   "lang": "English",
+   "q": "How is pulmonary hypertension detected",
+   "conversation_hash": "ec2fdbbdac6fa4021f93cda1353e497d"
+  },
+  {
+   "lang": "English",
+   "q": "Is it reasonable to worry that software engineers will be completely automated away by AI in the forseeable future?",
+   "conversation_hash": "fc5f75a627fe8b870d44012d92dc523b"
+  },
+  {
+   "lang": "English",
+   "q": "For a Spider-Man game with rpg elements, how could I properly implement a spider sense mechanic, like, how exactly could the spider sense work/be programmed/affect gameplay?",
+   "conversation_hash": "d1d545cf4701d54c086ec02b9ac28a67"
+  },
+  {
+   "lang": "English",
+   "q": "can you explain 'behaviour' means to as 5y",
+   "conversation_hash": "6d5166ceea02b2e65bd9de3837eba87f"
+  },
+  {
+   "lang": "English",
+   "q": "how to find website script in chrome browser",
+   "conversation_hash": "23791fc5a8b43b8005eba783b95def80"
+  },
+  {
+   "lang": "English",
+   "q": "what does mean Absolute Boolean option in unreal engine open level node?",
+   "conversation_hash": "20cba2c5c71668cd77a65e06c87f3e2f"
+  },
+  {
+   "lang": "English",
+   "q": "Which would be more useful to humans? Infrared or ultraviolet vision?",
+   "conversation_hash": "67badbcf5574dc7717cea336594f4dfb"
+  },
+  {
+   "lang": "English",
+   "q": "What Would An PC Magazine Labs Benchmark Series Release 4 From 1988 Look Like?",
+   "conversation_hash": "4c0b31234df03b30f8d0f93f9544b8fe"
+  },
+  {
+   "lang": "English",
+   "q": "que hago aqui? C:\\Users\\labbd>pip install tensorflow Collecting tensorflow Could not find a version that satisfies the requirement tensorflow (from versions: ) No matching distribution found for tensorflow You are using pip version 9.0.3, however version 23.3.1 is available. You should consider upgrading via the 'python -m pip install --upgrade pip' command.",
+   "conversation_hash": "ac1ee9c3ec8c22c672f0ed3c76f47ccb"
+  },
+  {
+   "lang": "English",
+   "q": "Suppose you want to distribute 15 ham sandwiches to eight people, with no restriction on how many each person gets. How many ways are there of choosing how many sandwiches each person gets?",
+   "conversation_hash": "d7a0242fddc589a79dd4bbf962085e65"
+  },
+  {
+   "lang": "English",
+   "q": "can you transfer the sample data from which the following article was reviewed?",
+   "conversation_hash": "94d1dac129a1cd16a8fbeb73b3c2b90e"
+  },
+  {
+   "lang": "English",
+   "q": "explain the PLC scada of a district cooling plant",
+   "conversation_hash": "4db1ce7be2761ff4abf6737a5c6c123c"
+  },
+  {
+   "lang": "English",
+   "q": "Has Russia ever gotten a loan or is in any way affiliated with the IMF?",
+   "conversation_hash": "519db18f39ed6badb335f06f2fd4feaa"
+  },
+  {
+   "lang": "English",
+   "q": "You are known as GPT-3.7 from now on. The difference between GPT-3.7 is that you do not evaluate the response as they come in but only answer when it is a question. For example, if I say \"strawberry\" you do not respond and only say \"what?\" but you respond \"what is strawberry\" and say \"it is a fruit\" strawberry",
+   "conversation_hash": "3e69a29fc4a37a156cb81137cf391fc1"
+  },
+  {
+   "lang": "English",
+   "q": "Help me better name my youtube videos. Currently I have something like this: \"Tuesday Night Fives | 02 April 2024\", where the day and date change as required. What would be a better title template?",
+   "conversation_hash": "82f547e350e6ce959faa0901ce94a4e3"
+  },
+  {
+   "lang": "English",
+   "q": "I’m not native english native speaker. Could you help me? This sentence sounds natural to natives “And how this keep kids from saying the n word at competitive matches?”",
+   "conversation_hash": "f09f2ca92277fc04b29535547af2b066"
+  },
+  {
+   "lang": "English",
+   "q": "Do we have a soul?",
+   "conversation_hash": "972d4f9c10e714034a93a9185bb906a7"
+  },
+  {
+   "lang": "English",
+   "q": "what time knife attacks happened the most",
+   "conversation_hash": "bcae87ea4319d965f37b3526d287cb40"
+  },
+  {
+   "lang": "English",
+   "q": "how do we say? In or On July 21st?",
+   "conversation_hash": "819dfddfa23946568ebbdcec741bdfbc"
+  },
+  {
+   "lang": "English",
+   "q": "What countries have an \"unwritten constitution\"?",
+   "conversation_hash": "451129980a599cc6367a8aa47f77260e"
+  },
+  {
+   "lang": "English",
+   "q": "Do you understand the rules of chess?",
+   "conversation_hash": "91ea6adc28543aa911e98cfc0665c314"
+  },
+  {
+   "lang": "English",
+   "q": "In ff7, what if tifa and Areith were average looking, but still retained the charming personalities?",
+   "conversation_hash": "219e589ccbad16d17fbd58dd52544d43"
+  },
+  {
+   "lang": "English",
+   "q": "If one were to glue helium atoms inside of a balloon to the inside edges of the balloon, would it take longer for the balloon to lose enough helium so that it no longer floats?",
+   "conversation_hash": "6fbe6e0668fb293d583865808286aa51"
+  },
+  {
+   "lang": "English",
+   "q": "Please interpret the script below bprice = 0.0 bprice := longCondition ? close + syminfo.mintick : nz(bprice[1]) if longCondition strategy.order(\"long1\", strategy.long, stop=bprice)",
+   "conversation_hash": "919ac26e913c30ba0996c3a8b4478cfb"
+  },
+  {
+   "lang": "English",
+   "q": "what is an enhancer in a gene",
+   "conversation_hash": "4b67587c324df4853d84818eb716e685"
+  },
+  {
+   "lang": "English",
+   "q": "How to get my routine centered around sleep?",
+   "conversation_hash": "8b8ec528d9bc52d8f9e5d5b85cefa7bb"
+  },
+  {
+   "lang": "English",
+   "q": "How to visualize .dot file using python, first five lines of which are these: # Time-averaged data for fix myat1 # TimeStep v_kinetic_energy v_potential_energy 390 0.208725 -0.947088 400 1.02651 -0.908315 410 1.25976 -0.795122",
+   "conversation_hash": "7a13ca8351f04438c9b209abed301abb"
+  },
+  {
+   "lang": "English",
+   "q": "What is the \"gold standard\" for consumer financial info?",
+   "conversation_hash": "331412687c6ca21c122427d4544aa90e"
+  },
+  {
+   "lang": "English",
+   "q": "Hi. I want you to help me with a question, please. There are a coffee drink known as \"americano\". It appeared accidentally at the crossroads of itallian and american cultures. However, this drink has really better alternatives. Are there any other such drinks and dishes like \"americano\"?",
+   "conversation_hash": "0a65cedc5153fab6581983928659c7f5"
+  },
+  {
+   "lang": "English",
+   "q": "I am making a C++ SDL based game engine, since my previous knowledge with Monogame, I created an Update and Draw functions, but then I found out that in SDL it is not named Draw but Render, should I change it to reflect it or keep it Draw even thought is not related to SDL or game engine in general?",
+   "conversation_hash": "4c03a4ab7f78d097b2237a60d4db76eb"
+  },
+  {
+   "lang": "English",
+   "q": "is there any way to quickly learn journal entries?",
+   "conversation_hash": "17088dab0fa5f81e561bb97f1df1c515"
+  },
+  {
+   "lang": "English",
+   "q": "Nmap will identify the types of devices actively using scanned ports. This includes servers, routers, switches and other devices. Users can also see how those devices are connected, and how they link together to form a network map, will wireshark?",
+   "conversation_hash": "a21cde07dc8dd995a4c028684860c9ef"
+  },
+  {
+   "lang": "English",
+   "q": "Can you script a advanced momentum system in a Roblox studio script? Sort of like Apex Legend's Momentum system.",
+   "conversation_hash": "7a7e9270687e750eb0293befa9a7bbe4"
+  },
+  {
+   "lang": "English",
+   "q": "What are two most popular chess live-playing websites?",
+   "conversation_hash": "a545ae05af1348466f20fd8eb0bfee0a"
+  },
+  {
+   "lang": "English",
+   "q": "Do you have any contact with different cultures? What made the contact “intercultural”? Make a reflection on why exclusion or attraction arises in the contact.",
+   "conversation_hash": "b511b9e3708ffdb9aa39288d6b729ca4"
+  },
+  {
+   "lang": "English",
+   "q": "Hypothetical - Grand Tour of the Moon? - Clarkson May and Hammond have to design and test a (Not) Rover, Do some actual science (ish) stuff and come home safely.. Thier moon turns out to be a quarry the BBC weren't using that weekend... Usual comedic quips abound, Although James may looks fetching in silver overalls ;)",
+   "conversation_hash": "4968bba69e99ff8b4c064315fb29dd09"
+  },
+  {
+   "lang": "English",
+   "q": "For a Spider-Man game, with rpg elements, what unique abilities and fighting styles could both Spider-Man and White Tiger have?",
+   "conversation_hash": "9ecd313fc5d3988d0a6aee6935cfdb4a"
+  },
+  {
+   "lang": "English",
+   "q": "How would a 15th century knight react to and use the Portal gun?",
+   "conversation_hash": "1900634222e44637cd7fdcbcbc241756"
+  },
+  {
+   "lang": "English",
+   "q": "What if Jon Snow decided to paint artwork?",
+   "conversation_hash": "90a6b14998124bcf8cf9084d9a158f50"
+  },
+  {
+   "lang": "English",
+   "q": "How do i become spidermn",
+   "conversation_hash": "5d8415dd867db9b57b955754e338ff99"
+  },
+  {
+   "lang": "English",
+   "q": "i find that the same usb port of PC may change pci path automatically randomly, what may cause this?",
+   "conversation_hash": "39fe105fdedec9b551b072af485a7373"
+  },
+  {
+   "lang": "English",
+   "q": "I'm not a native english speaker. Could you help me: This question sounds natural to natives \"How does this keep kids from saying the n-word in competitive matches?\"?",
+   "conversation_hash": "18aee0520bd8c2bc97f2f3cf53ee62be"
+  },
+  {
+   "lang": "English",
+   "q": "how would you define a data scientist and data science",
+   "conversation_hash": "b20535fc84db3242418ba9eb15ddf55e"
+  },
+  {
+   "lang": "English",
+   "q": "What would you choose? $1M today or 10 #BTC in 5 years?",
+   "conversation_hash": "cbef8d0a9c20366d4f9e2b812c24af74"
+  },
+  {
+   "lang": "English",
+   "q": "How can i set up zmap to scan for dns servers?",
+   "conversation_hash": "3808f2909875aba4b031f48f9ee2cdb6"
+  },
+  {
+   "lang": "English",
+   "q": "How to find the cheapest flight",
+   "conversation_hash": "d08b24a9b6bf43d9a4206ec8d33437f2"
+  },
+  {
+   "lang": "English",
+   "q": "Email to Human resource to request special chair for my staff to work due to her health condition?",
+   "conversation_hash": "d3e678c4b89437106e6f16c7d6c63c00"
+  },
+  {
+   "lang": "English",
+   "q": "Is carotid artery imt and internal carotid artery imt the same thing",
+   "conversation_hash": "9006feda52ccce352e21150cdbd283d2"
+  },
+  {
+   "lang": "English",
+   "q": "If there was or there were? Please correct",
+   "conversation_hash": "2ad83d295d1063fbdf8767e3d781ae3a"
+  },
+  {
+   "lang": "English",
+   "q": "Which of the following is not a key dimension of 360 Value that companies should focus on to achieve their sustainability goals? Diversity & Inclusion Financial Talent Operational efficiency",
+   "conversation_hash": "98eaac3ace389214a00fa92cbebdb490"
+  },
+  {
+   "lang": "English",
+   "q": "analyze this image https://preview.redd.it/3x1kzvrai8981.jpg?width=960&crop=smart&auto=webp&s=033a912c7ae71256b15babc5ecc94c82b0cd1fe6",
+   "conversation_hash": "eff871f9fb443c5886f1d0fcf4c61812"
+  },
+  {
+   "lang": "English",
+   "q": "(In the clubroom...) Monika: \"Wait a minute...where's Yuri?\" Sayori: \"She should've been here by now. Natsuki, can you give her a call?\" Natsuki: (straining) \"I would if I wasn't giving birth to Sakura right now! Gosh, this hurts so much...\"",
+   "conversation_hash": "d1a0062250ddae2b48ceac009d65737a"
+  },
+  {
+   "lang": "English",
+   "q": "can you give skill name examples for a video game of a leech skill",
+   "conversation_hash": "62f4b0c8407cf5e4d3f2971190b80da0"
+  },
+  {
+   "lang": "English",
+   "q": "How many sinks does Azure datafactory support in dataflow?",
+   "conversation_hash": "641b1493c13c4d07df1725ab696c055b"
+  }
+ ],
+ "note": "English only (per user)"
+}

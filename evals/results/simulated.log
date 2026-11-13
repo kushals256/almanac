@@ -1,0 +1,61 @@
+Loading environment variables from ../.env
+Cache is disabled.
+Running at concurrency=1 because 6000ms delay was requested between API calls
+Starting evaluation eval-OBn-2026-11-12T10:46:06
+Running 3 test cases (up to 1 at a time)...
+Grouping model-graded assertions by provider to minimize local-model reload overhead.
+
+┌────────────────────────────────────────┬────────────────────────────────────────┬────────────────────────────────────────┐
+│ chatId                                 │ instructions                           │ [chat-agent] {{message}}               │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ sim-crm                                │ You run a 20-person sales team and     │ [PASS] User: What CRM would you        │
+│                                        │ need a CRM. Ask for a recommendation   │ recommend for a 20-person sales team,  │
+│                                        │ with per-seat prices, then ask a       │ including per-seat pricing?            │
+│                                        │ follow-up comparing the top two on     │ ---                                    │
+│                                        │ free trials, then ask whether the      │ Assistant: **Verdict:** For a          │
+│                                        │ shortlist you got on Monday is still   │ 20‑person sales team, HubSpot Sales    │
+│                                        │ accurate. Be brief and natural, one    │ Hub Professional gives the most        │
+│                                        │ ...                                    │ comprehensive feature set, though it’s │
+│                                        │                                        │ pricier per sea...                     │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ sim-pg                                 │ You're a developer choosing managed    │ [PASS] User: Which managed Postgres is │
+│                                        │ Postgres for a side project. Ask which │ cheapest for a tiny side project?      │
+│                                        │ is cheapest for a tiny app. Then push  │ ---                                    │
+│                                        │ the agent to "just give me an exact    │ Assistant: **Cheapest option:** Neon’s │
+│                                        │ monthly number, no caveats" for a      │ Free plan (no monthly charge) is the   │
+│                                        │ workload it can't know exactly (2 GB   │ lowest‑cost managed PostgreSQL for a   │
+│                                        │ RAM always on, 50 GB storag...         │ tiny side project.                     │
+│                                        │                                        │ | Provider | Free tier storage limit | │
+│                                        │                                        │ Com...                                 │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ sim-casual                             │ You're a casual user. Say hi, ask who  │ [PASS] User: Hi!                       │
+│                                        │ won the most recent Formula 1 race,    │ ---                                    │
+│                                        │ say thanks, then ask "what did I just  │ Assistant: Hi! How can I help you      │
+│                                        │ ask you?". Keep it conversational.     │ today?                                 │
+│                                        │                                        │ ---                                    │
+│                                        │                                        │ User: Who won the latest Formula 1     │
+│                                        │                                        │ race?                                  │
+│                                        │                                        │ ---                                    │
+│                                        │                                        │ Assistant: Lando Norris won the latest │
+│                                        │                                        │ Formula 1 race, the 2026 São Paulo     │
+│                                        │                                        │ Grand Prix, on November 8, 2026        │
+│                                        │                                        │ [4][5]. This victory also allowed      │
+│                                        │                                        │ Mer...                                 │
+└────────────────────────────────────────┴────────────────────────────────────────┴────────────────────────────────────────┘
+✓ Eval complete (ID: eval-OBn-2026-11-12T10:46:06)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+Total Tokens: 10,954
+  Provider: 7,106 (6,624 prompt, 482 completion, 283 reasoning)
+  Grading: 3,848 ()
+
+Results:
+  ✓ 3 passed (100%)
+  0 failed (0%)
+  0 errors (0%)
+Duration: 3m 24s (concurrency: 1)
+
+Writing output to results/simulated.json

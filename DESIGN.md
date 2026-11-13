@@ -41,9 +41,9 @@ A framework agent loop (opaque control flow, no per-stage budgets) · vector-onl
 
 - **Everything was tested on free-tier models** (Groq, NVIDIA, Exa and Tavily free plans). Absolute numbers are not what a paid stack would score. Groq's cap is 200k tokens per model per day per account (F-49, F-95), and Exa credits ran out mid-project (F-102).
 - **The strongest numbers are on a 44-case dev set that was tuned against.** Generalisation was measured only on small frozen held-out sets (43 and 51 items, about ±13–15 points): 41% to 61% with the premise gate (F-100); 47% to 58% with needs routing (F-101). Treat those as the honest figures.
-- Jev is an alpha endpoint with no SLA. Its published figures are the vendor's own and unverified here; `scripts/calibrate-jev.ts` is a small seed for measuring it, and I have not run it.
+- Jev is an alpha endpoint with no SLA. Its published figures are the vendor's own and unverified here.
 - Vendor pricing pages that render prices with JavaScript can come back "Unverifiable" (F-22).
 
 ## With another week
 
-Run the frozen sets on a paid model tier and report the gap. Calibrate Jev's thresholds on a proper labelled set (`calibrate-jev.ts` is only a seed for that). Add the planner-degradation arm and a per-component ablation table. Larger held-out sets (n ≥ 150) so the error bars shrink. Full list: [ARCH §12](ARCHITECTURE.md#12-with-another-week).
+Run the frozen sets on a paid model tier and report the gap. Calibrate Jev's thresholds on a proper labelled set. Add the planner-degradation arm and a per-component ablation table. Larger held-out sets (n ≥ 150) so the error bars shrink. Full list: [ARCH §12](ARCHITECTURE.md#12-with-another-week).

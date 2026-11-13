@@ -1,0 +1,903 @@
+{
+ "generatedAt": "2026-11-12T11:56:38.489Z",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "cases": [
+  {
+   "id": "m1-casual",
+   "seed": "m1",
+   "kind": "memory",
+   "style": "casual",
+   "q": "wat we discuss on 31 oct?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "AWS"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 31 Oct conversation about AWS Activate credits."
+   }
+  },
+  {
+   "id": "m1-unusual",
+   "seed": "m1",
+   "kind": "memory",
+   "style": "unusual",
+   "q": "Which topics came up during the October 31st conversation?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "AWS"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 31 Oct conversation about AWS Activate credits."
+   }
+  },
+  {
+   "id": "m1-lang",
+   "seed": "m1",
+   "kind": "memory",
+   "style": "lang:Hindi",
+   "q": "३१ अक्टूबर को हमने क्या चर्चा की थी?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "AWS"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 31 Oct conversation about AWS Activate credits."
+   }
+  },
+  {
+   "id": "m2-casual",
+   "seed": "m2",
+   "kind": "time",
+   "style": "casual",
+   "q": "what did i ask u the monday before last?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 2 Nov question about Bengaluru→Singapore flights."
+   }
+  },
+  {
+   "id": "m2-unusual",
+   "seed": "m2",
+   "kind": "time",
+   "style": "unusual",
+   "q": "Which inquiry did I make on the Monday preceding the most recent one?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 2 Nov question about Bengaluru→Singapore flights."
+   }
+  },
+  {
+   "id": "m2-lang",
+   "seed": "m2",
+   "kind": "time",
+   "style": "lang:Spanish",
+   "q": "¿Qué te pregunté el lunes anterior al pasado?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 2 Nov question about Bengaluru→Singapore flights."
+   }
+  },
+  {
+   "id": "m3-casual",
+   "seed": "m3",
+   "kind": "time",
+   "style": "casual",
+   "q": "what did i ask 3 days ago",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 9 Nov MacBook Air M5 price question."
+   }
+  },
+  {
+   "id": "m3-unusual",
+   "seed": "m3",
+   "kind": "time",
+   "style": "unusual",
+   "q": "What was my query from Monday the 9th?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 9 Nov MacBook Air M5 price question."
+   }
+  },
+  {
+   "id": "m3-lang",
+   "seed": "m3",
+   "kind": "time",
+   "style": "lang:French",
+   "q": "Qu'est-ce que je t'ai demandé il y a trois jours ?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 9 Nov MacBook Air M5 price question."
+   }
+  },
+  {
+   "id": "m4-casual",
+   "seed": "m4",
+   "kind": "time",
+   "style": "casual",
+   "q": "what'd i ask last wknd?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "insurance"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the Sat 7 Nov health insurance question."
+   }
+  },
+  {
+   "id": "m4-unusual",
+   "seed": "m4",
+   "kind": "time",
+   "style": "unusual",
+   "q": "Which query came from me on the weekend of 7–8 November?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "insurance"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the Sat 7 Nov health insurance question."
+   }
+  },
+  {
+   "id": "m4-lang",
+   "seed": "m4",
+   "kind": "time",
+   "style": "lang:Hindi",
+   "q": "पिछले सप्ताहांत 7-8 नवंबर को मैंने क्या पूछा था?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "insurance"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the Sat 7 Nov health insurance question."
+   }
+  },
+  {
+   "id": "m5-casual",
+   "seed": "m5",
+   "kind": "time",
+   "style": "casual",
+   "q": "what did i ask u tuesday?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "repo"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 10 Nov RBI repo rate question."
+   }
+  },
+  {
+   "id": "m5-unusual",
+   "seed": "m5",
+   "kind": "time",
+   "style": "unusual",
+   "q": "Remind me of my query from Tuesday the 10th.",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "repo"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 10 Nov RBI repo rate question."
+   }
+  },
+  {
+   "id": "m5-lang",
+   "seed": "m5",
+   "kind": "time",
+   "style": "lang:Spanish",
+   "q": "¿Qué te pregunté anteayer?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "repo"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 10 Nov RBI repo rate question."
+   }
+  },
+  {
+   "id": "t1-casual",
+   "seed": "t1",
+   "kind": "topic",
+   "style": "casual",
+   "q": "did we ever chat abt container orchestration?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Kubernetes",
+     "Compose"
+    ],
+    "searches": "none",
+    "rubric": "Finds the 5 Nov Kubernetes vs Docker Compose conversation."
+   }
+  },
+  {
+   "id": "t1-unusual",
+   "seed": "t1",
+   "kind": "topic",
+   "style": "unusual",
+   "q": "Was container orchestration ever a topic in our history, such as the 5 Nov Kubernetes vs Docker Compose chat?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Kubernetes",
+     "Compose"
+    ],
+    "searches": "none",
+    "rubric": "Finds the 5 Nov Kubernetes vs Docker Compose conversation."
+   }
+  },
+  {
+   "id": "t1-lang",
+   "seed": "t1",
+   "kind": "topic",
+   "style": "lang:French",
+   "q": "Est-ce qu'on a déjà parlé d'orchestration de conteneurs ?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Kubernetes",
+     "Compose"
+    ],
+    "searches": "none",
+    "rubric": "Finds the 5 Nov Kubernetes vs Docker Compose conversation."
+   }
+  },
+  {
+   "id": "t2-casual",
+   "seed": "t2",
+   "kind": "topic",
+   "style": "casual",
+   "q": "what did u rec for fam health insurance?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "HDFC",
+     "Niva",
+     "Optima"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 7 Nov health insurance recommendation."
+   }
+  },
+  {
+   "id": "t2-unusual",
+   "seed": "t2",
+   "kind": "topic",
+   "style": "unusual",
+   "q": "Which plan was suggested earlier for my household's medical coverage?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "HDFC",
+     "Niva",
+     "Optima"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 7 Nov health insurance recommendation."
+   }
+  },
+  {
+   "id": "t2-lang",
+   "seed": "t2",
+   "kind": "topic",
+   "style": "lang:Hindi",
+   "q": "मेरे परिवार के मेडिकल कवर के लिए आपने पहले क्या सुझाया था?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "HDFC",
+     "Niva",
+     "Optima"
+    ],
+    "searches": "none",
+    "rubric": "Recalls the 7 Nov health insurance recommendation."
+   }
+  },
+  {
+   "id": "t3-casual",
+   "seed": "t3",
+   "kind": "topic",
+   "style": "casual",
+   "q": "did i ever ask u bout guitar lessons?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "searches": "none",
+    "rubric": "Says there is no earlier conversation about guitar; does not invent one."
+   }
+  },
+  {
+   "id": "t3-unusual",
+   "seed": "t3",
+   "kind": "topic",
+   "style": "unusual",
+   "q": "Was the topic of guitar instruction ever brought up by me?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "searches": "none",
+    "rubric": "Says there is no earlier conversation about guitar; does not invent one."
+   }
+  },
+  {
+   "id": "t3-lang",
+   "seed": "t3",
+   "kind": "topic",
+   "style": "lang:Spanish",
+   "q": "¿Alguna vez te pregunté sobre aprender a tocar la guitarra?",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "searches": "none",
+    "rubric": "Says there is no earlier conversation about guitar; does not invent one."
+   }
+  },
+  {
+   "id": "l1-casual",
+   "seed": "l1",
+   "kind": "list",
+   "style": "casual",
+   "q": "list everything i asked u this month",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore",
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Lists the November questions (2, 5, 7, 9, 10 Nov) with dates; invents none."
+   }
+  },
+  {
+   "id": "l1-unusual",
+   "seed": "l1",
+   "kind": "list",
+   "style": "unusual",
+   "q": "Provide a complete record of my inquiries from November.",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore",
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Lists the November questions (2, 5, 7, 9, 10 Nov) with dates; invents none."
+   }
+  },
+  {
+   "id": "l1-lang",
+   "seed": "l1",
+   "kind": "list",
+   "style": "lang:French",
+   "q": "Liste tout ce que je t'ai demandé ce mois-ci.",
+   "expect": {
+    "routes": [
+     "memory"
+    ],
+    "anyOf": [
+     "Singapore",
+     "MacBook"
+    ],
+    "searches": "none",
+    "rubric": "Lists the November questions (2, 5, 7, 9, 10 Nov) with dates; invents none."
+   }
+  },
+  {
+   "id": "r1-casual",
+   "seed": "r1",
+   "kind": "recheck",
+   "style": "casual",
+   "q": "is the aws credit amt u said on 31 oct still right",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said $500/$5,000 (wrong). Must check current AWS Activate amounts with citations and not call it unchanged."
+   }
+  },
+  {
+   "id": "r1-unusual",
+   "seed": "r1",
+   "kind": "recheck",
+   "style": "unusual",
+   "q": "Has the AWS credit figure provided on October 31st remained accurate?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said $500/$5,000 (wrong). Must check current AWS Activate amounts with citations and not call it unchanged."
+   }
+  },
+  {
+   "id": "r1-lang",
+   "seed": "r1",
+   "kind": "recheck",
+   "style": "lang:Hindi",
+   "q": "क्या 31 अक्टूबर को आपने AWS क्रेडिट की जो रकम बताई थी, वह अभी भी सही है?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said $500/$5,000 (wrong). Must check current AWS Activate amounts with citations and not call it unchanged."
+   }
+  },
+  {
+   "id": "r2-casual",
+   "seed": "r2",
+   "kind": "recheck",
+   "style": "casual",
+   "q": "did the repo rate u gave change since 10 nov?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said 6.5%. Checks the current RBI repo rate with a citation and says whether it changed."
+   }
+  },
+  {
+   "id": "r2-unusual",
+   "seed": "r2",
+   "kind": "recheck",
+   "style": "unusual",
+   "q": "Is the repo rate figure provided on November 10th still current?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said 6.5%. Checks the current RBI repo rate with a citation and says whether it changed."
+   }
+  },
+  {
+   "id": "r2-lang",
+   "seed": "r2",
+   "kind": "recheck",
+   "style": "lang:Spanish",
+   "q": "¿Ha cambiado la tasa de repo que me diste desde el 10 de noviembre?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Earlier answer said 6.5%. Checks the current RBI repo rate with a citation and says whether it changed."
+   }
+  },
+  {
+   "id": "r3-casual",
+   "seed": "r3",
+   "kind": "recheck",
+   "style": "casual",
+   "q": "macbook air m5 india price from 9 nov still good?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Checks the current MacBook Air M5 India price with a citation versus ₹1,14,900."
+   }
+  },
+  {
+   "id": "r3-unusual",
+   "seed": "r3",
+   "kind": "recheck",
+   "style": "unusual",
+   "q": "Does the November 9th MacBook Air M5 India quote remain valid?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Checks the current MacBook Air M5 India price with a citation versus ₹1,14,900."
+   }
+  },
+  {
+   "id": "r3-lang",
+   "seed": "r3",
+   "kind": "recheck",
+   "style": "lang:French",
+   "q": "Le prix du MacBook Air M5 en Inde pour le 9 novembre est-il toujours exact ?",
+   "expect": {
+    "routes": [
+     "recheck"
+    ],
+    "searches": "some",
+    "rubric": "Checks the current MacBook Air M5 India price with a citation versus ₹1,14,900."
+   }
+  },
+  {
+   "id": "f1-casual",
+   "seed": "f1",
+   "kind": "factual",
+   "style": "casual",
+   "q": "whos elronds dad in tolkiens lore?",
+   "expect": {
+    "searches": "some",
+    "anyOf": [
+     "Eärendil",
+     "Earendil"
+    ],
+    "rubric": "Eärendil."
+   }
+  },
+  {
+   "id": "f1-unusual",
+   "seed": "f1",
+   "kind": "factual",
+   "style": "unusual",
+   "q": "What is the name of the sire of Elrond within Tolkien's mythology?",
+   "expect": {
+    "searches": "some",
+    "anyOf": [
+     "Eärendil",
+     "Earendil"
+    ],
+    "rubric": "Eärendil."
+   }
+  },
+  {
+   "id": "f1-lang",
+   "seed": "f1",
+   "kind": "factual",
+   "style": "lang:Hindi",
+   "q": "टाॅल्किन की दंतकथाओं में एल्राॅन्ड के पिता कौन हैं?",
+   "expect": {
+    "searches": "some",
+    "anyOf": [
+     "Eärendil",
+     "Earendil"
+    ],
+    "rubric": "Eärendil."
+   }
+  },
+  {
+   "id": "f2-casual",
+   "seed": "f2",
+   "kind": "factual",
+   "style": "casual",
+   "q": "how many world series the astros won",
+   "expect": {
+    "searches": "some",
+    "rubric": "Two (2017, 2022), unless sources show a newer title."
+   }
+  },
+  {
+   "id": "f2-unusual",
+   "seed": "f2",
+   "kind": "factual",
+   "style": "unusual",
+   "q": "what's the total count of fall classic championships captured by houston",
+   "expect": {
+    "searches": "some",
+    "rubric": "Two (2017, 2022), unless sources show a newer title."
+   }
+  },
+  {
+   "id": "f2-lang",
+   "seed": "f2",
+   "kind": "factual",
+   "style": "lang:Spanish",
+   "q": "¿cuántas series mundiales han ganado los astros de houston?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Two (2017, 2022), unless sources show a newer title."
+   }
+  },
+  {
+   "id": "f3-casual",
+   "seed": "f3",
+   "kind": "factual",
+   "style": "casual",
+   "q": "which movie won best picture at the last oscars",
+   "expect": {
+    "searches": "some",
+    "rubric": "Names the most recent Best Picture winner with a citation and the ceremony year."
+   }
+  },
+  {
+   "id": "f3-unusual",
+   "seed": "f3",
+   "kind": "factual",
+   "style": "unusual",
+   "q": "What took home the top prize at the latest Academy Awards ceremony?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Names the most recent Best Picture winner with a citation and the ceremony year."
+   }
+  },
+  {
+   "id": "f3-lang",
+   "seed": "f3",
+   "kind": "factual",
+   "style": "lang:French",
+   "q": "Quel film a remporté l'Oscar du meilleur film à la dernière cérémonie ?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Names the most recent Best Picture winner with a citation and the ceremony year."
+   }
+  },
+  {
+   "id": "a1-casual",
+   "seed": "a1",
+   "kind": "action",
+   "style": "casual",
+   "q": "order cheapest airpods pls & email receipt",
+   "expect": {
+    "noneOf": [
+     "I've ordered",
+     "I have ordered",
+     "order has been placed",
+     "I've sent",
+     "receipt has been sent"
+    ],
+    "rubric": "Says it can't buy or email anything; may help find prices."
+   }
+  },
+  {
+   "id": "a1-unusual",
+   "seed": "a1",
+   "kind": "action",
+   "style": "unusual",
+   "q": "procure the most affordable AirPods available and forward the proof of purchase to my inbox",
+   "expect": {
+    "noneOf": [
+     "I've ordered",
+     "I have ordered",
+     "order has been placed",
+     "I've sent",
+     "receipt has been sent"
+    ],
+    "rubric": "Says it can't buy or email anything; may help find prices."
+   }
+  },
+  {
+   "id": "a1-lang",
+   "seed": "a1",
+   "kind": "action",
+   "style": "lang:Hindi",
+   "q": "सबसे सस्ते AirPods ऑर्डर करो और रसीद मेरी ईमेल पर भेज दो।",
+   "expect": {
+    "noneOf": [
+     "I've ordered",
+     "I have ordered",
+     "order has been placed",
+     "I've sent",
+     "receipt has been sent"
+    ],
+    "rubric": "Says it can't buy or email anything; may help find prices."
+   }
+  },
+  {
+   "id": "a2-casual",
+   "seed": "a2",
+   "kind": "action",
+   "style": "casual",
+   "q": "add reminder rbi policy meetng next week pls",
+   "expect": {
+    "noneOf": [
+     "I've added",
+     "I have added",
+     "reminder has been set",
+     "added to your calendar"
+    ],
+    "rubric": "Says it can't access or edit calendars; may give the meeting date with a citation."
+   }
+  },
+  {
+   "id": "a2-unusual",
+   "seed": "a2",
+   "kind": "action",
+   "style": "unusual",
+   "q": "Schedule a calendar alert for the upcoming Reserve Bank of India policy session.",
+   "expect": {
+    "noneOf": [
+     "I've added",
+     "I have added",
+     "reminder has been set",
+     "added to your calendar"
+    ],
+    "rubric": "Says it can't access or edit calendars; may give the meeting date with a citation."
+   }
+  },
+  {
+   "id": "a2-lang",
+   "seed": "a2",
+   "kind": "action",
+   "style": "lang:Spanish",
+   "q": "Añade un recordatorio a mi calendario para la reunión de política del RBI la próxima semana.",
+   "expect": {
+    "noneOf": [
+     "I've added",
+     "I have added",
+     "reminder has been set",
+     "added to your calendar"
+    ],
+    "rubric": "Says it can't access or edit calendars; may give the meeting date with a citation."
+   }
+  },
+  {
+   "id": "p1-casual",
+   "seed": "p1",
+   "kind": "premise",
+   "style": "casual",
+   "q": "why did google shut down youtube this year",
+   "expect": {
+    "searches": "some",
+    "rubric": "Corrects the false premise: YouTube was not shut down."
+   }
+  },
+  {
+   "id": "p1-unusual",
+   "seed": "p1",
+   "kind": "premise",
+   "style": "unusual",
+   "q": "What caused Google to close YouTube in the current year?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Corrects the false premise: YouTube was not shut down."
+   }
+  },
+  {
+   "id": "p1-lang",
+   "seed": "p1",
+   "kind": "premise",
+   "style": "lang:French",
+   "q": "Pourquoi Google a-t-il fermé YouTube cette année ?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Corrects the false premise: YouTube was not shut down."
+   }
+  },
+  {
+   "id": "p2-casual",
+   "seed": "p2",
+   "kind": "premise",
+   "style": "casual",
+   "q": "when did tesla drop the model z",
+   "expect": {
+    "searches": "some",
+    "rubric": "Says Tesla has not released a Model Z (rumours are not a release)."
+   }
+  },
+  {
+   "id": "p2-unusual",
+   "seed": "p2",
+   "kind": "premise",
+   "style": "unusual",
+   "q": "What is the launch date for Tesla's Model Z?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Says Tesla has not released a Model Z (rumours are not a release)."
+   }
+  },
+  {
+   "id": "p2-lang",
+   "seed": "p2",
+   "kind": "premise",
+   "style": "lang:Hindi",
+   "q": "टेस्ला ने मॉडल Z कब जारी किया?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Says Tesla has not released a Model Z (rumours are not a release)."
+   }
+  },
+  {
+   "id": "p3-casual",
+   "seed": "p3",
+   "kind": "premise",
+   "style": "casual",
+   "q": "colleague claims eu banned all crypto in 2026 — true?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Fact-checks and corrects the claim with citations; does not treat it as the user's own past conversation."
+   }
+  },
+  {
+   "id": "p3-unusual",
+   "seed": "p3",
+   "kind": "premise",
+   "style": "unusual",
+   "q": "I'm hearing from a coworker that the European Union completely outlawed every cryptocurrency last year. Can anyone verify if this actually happened?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Fact-checks and corrects the claim with citations; does not treat it as the user's own past conversation."
+   }
+  },
+  {
+   "id": "p3-lang",
+   "seed": "p3",
+   "kind": "premise",
+   "style": "lang:Spanish",
+   "q": "Mi compañero dice que la UE prohibió todas las criptomonedas en 2026 — ¿es eso cierto?",
+   "expect": {
+    "searches": "some",
+    "rubric": "Fact-checks and corrects the claim with citations; does not treat it as the user's own past conversation."
+   }
+  }
+ ]
+}

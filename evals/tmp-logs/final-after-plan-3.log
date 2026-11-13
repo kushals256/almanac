@@ -1,0 +1,57 @@
+(node:61556) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+hist brief-crm                research ttft= 8907 total= 10464 s=10 ver=3/6   
+PASS brief-crm                recheck  ttft= 2239 total=  7388 s=13 ver=6/6   
+PASS planted-wrong-postgres   recheck  ttft= 1544 total=  3808 s= 7 ver=4/4   
+PASS planted-wrong-ai-pricing recheck  ttft= 1502 total=  3376 s= 4 ver=7/7   
+PASS planted-correct-node     recheck  ttft= 1815 total=  3647 s= 5 ver=5/5   
+hist laptop-last-thursday     research ttft= 3269 total=  4706 s= 4 ver=2/5   
+PASS laptop-last-thursday     recheck  ttft= 1623 total= 14176 s=12 ver=8/8   
+hist timezone-la              quick    ttft= 1812 total=  2563 s= 1 ver=2/2   
+PASS timezone-la              memory   ttft= 2335 total=  2336 s= 0 ver=-     
+PASS two-weeks-ago            memory   ttft= 1484 total=  2648 s= 0 ver=-     
+PASS two-weeks-ago            memory   ttft= 2788 total=  2790 s= 0 ver=-     
+PASS long-chat-phone          research ttft= 7983 total=  9177 s= 7 ver=3/3   
+FAIL long-chat-phone          research ttft= 5939 total=  7626 s= 6 ver=4/8   1 unsupported claim(s)
+PASS long-chat-phone          quick    ttft= 4179 total=  4864 s= 2 ver=1/1   
+PASS long-chat-phone          research ttft= 4007 total=  4909 s= 3 ver=4/4   
+FAIL long-chat-phone          quick    ttft= 2385 total=  2451 s= 1 ver=0/1   1 unsupported claim(s) | judge: The assistant failed to provide a two-line recommendation as requested, instead repeating a generic disclaimer about not being a
+PASS long-chat-phone          memory   ttft= 1408 total=  2405 s= 0 ver=-     
+PASS breadth                  quick    ttft= 2507 total=  3043 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2377 total=  2898 s= 1 ver=1/2   
+PASS breadth                  quick    ttft= 3281 total=  3956 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2577 total=  3340 s= 1 ver=3/3   
+PASS breadth                  quick    ttft= 2707 total=  3284 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 3247 total=  3785 s= 1 ver=0/1   
+PASS breadth                  quick    ttft= 1594 total=  2176 s= 1 ver=1/1   
+PASS breadth                  chat     ttft= 1093 total=  1507 s= 0 ver=-     
+PASS breadth                  chat     ttft= 1222 total=  1239 s= 0 ver=-     
+PASS breadth                  chat     ttft= 1155 total=  1182 s= 0 ver=-     
+PASS breadth                  quick    ttft= 2234 total=  3337 s= 1 ver=0/1   
+PASS breadth                  quick    ttft= 2327 total=  2864 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2235 total=  2798 s= 1 ver=1/1   
+PASS breadth                  chat     ttft=  674 total=  1237 s= 0 ver=-     
+PASS breadth                  quick    ttft= 1452 total=  2115 s= 1 ver=1/1   
+FAIL breadth                  research ttft= 2253 total=  3585 s= 3 ver=3/5   1 unsupported claim(s)
+PASS breadth                  research ttft= 6952 total=  8553 s= 7 ver=3/4   
+PASS breadth                  quick    ttft= 4415 total=  5069 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2437 total=  3021 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2750 total=  3281 s= 1 ver=1/1   
+PASS breadth                  quick    ttft= 2561 total=  3511 s= 1 ver=2/2   
+PASS breadth                  quick    ttft= 1703 total=  2322 s= 1 ver=3/3   
+PASS breadth                  chat     ttft=  821 total=   892 s= 0 ver=-     
+FAIL breadth                  research ttft= 7540 total=  8642 s= 3 ver=2/4   1 unsupported claim(s)
+PASS adversarial              quick    ttft= 4011 total=  5550 s= 2 ver=1/1   
+PASS adversarial              quick    ttft= 3528 total=  6066 s= 1 ver=1/1   
+PASS adversarial              chat     ttft= 1285 total=  1338 s= 0 ver=-     
+PASS adversarial              chat     ttft= 2929 total=  2947 s= 0 ver=-     
+PASS resilience:exa-down       quick    ttft=5368 s=1 models={"planner":"qwen/qwen3.8-27b","answerer":"groq/openai/gpt-oss-20b","finish":"stop out=105 in=2574"} 
+FAIL resilience:groq-down      quick    ttft=5776 s=1 models={"planner":"nvidia/nemotron-3.5-bolt-e4b","answerer":"nvidia/nvidia/nemotron-3-ultra-550b-a55b","finish":"stop out=74 in=3161"} 1 unsupported claim(s)
+
+# Real-world run (2026-11-13T08:49)
+
+- Cases graded: **44**, passed **39**, failed **5** (wall time 15 min)
+- First token p50 **2385 ms**, p95 **6952 ms**
+- Searches 109, search spend $0.606
+- Mean judge score 4.88 / 5
+
