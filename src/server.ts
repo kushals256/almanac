@@ -30,7 +30,7 @@ const llm = new LlmClient(cfg);
 // SEARCH_TAPE=record|replay (evaluation only): the same web for every build compared, at no search cost.
 const tape = tapeFromEnv(new SearchRouter(cfg, store));
 const search = tape.router;
-if (tape.stats) console.warn(`Search tape: ${tape.stats.mode} (${process.env.SEARCH_TAPE_DIR ?? "evals/tapes/default"})`);
+if (tape.stats) console.warn(`Search tape: ${tape.stats.mode} (${process.env.SEARCH_TAPE_DIR ?? "data/tapes/default"})`);
 const agent = new Agent(cfg, store, llm, search);
 
 const modelStatus = await llm.probe();
@@ -78,8 +78,8 @@ app.post("/api/chat", async (c) => {
   // Same owner rule for both modes (JSON mode must not bypass isolation on a network deployment).
   const owner = ownerOf(c);
 
-  // JSON mode (?mode=json): same pipeline, one response at the end. Used by the evals/ harness,
-  // which can't consume SSE. Includes verification so tests can assert on it.
+  // JSON mode (?mode=json): same pipeline, one response at the end. Used by scripts and test
+  // harnesses that can't consume SSE. Includes verification so tests can assert on it.
   if (c.req.query("mode") === "json") {
     const ctl = new AbortController();
     c.req.raw.signal.addEventListener("abort", () => ctl.abort(new Error("client disconnected")));
