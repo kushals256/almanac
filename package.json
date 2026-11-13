@@ -1,9 +1,9 @@
 {
-  "name": "chat-agent",
+  "name": "almanac",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Chat agent with one tool (web search) that remembers what you asked and when.",
+  "description": "Assistant with one tool (web search) that remembers what you asked and when.",
   "engines": {
     "node": ">=22.13"
   },
