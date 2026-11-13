@@ -1,0 +1,1830 @@
+[
+ {
+  "scenario": "heldout4-sc4",
+  "label": "social_compute|norecord|test",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc4",
+  "msg": "hey there, how's it going?",
+  "history": false,
+  "sources": [],
+  "text": "Hey! All good here—just ready to help with whatever you need next.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 950,
+  "totalMs": 974,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=33 in=971"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cd2",
+  "label": "conv_date|match|test",
+  "at": "2026-11-12T05:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd2",
+  "msg": "Could you remind me what I asked you about on Monday?",
+  "history": false,
+  "sources": [
+   "ludwig.guru (fetched)",
+   "open.spotify.com (fetched)",
+   "reddit.com (fetched)",
+   "quora.com (fetched)",
+   "english.stackexchange.com (fetched)",
+   "youtube.com (fetched)"
+  ],
+  "text": "On Mon 9 Nov you asked: “Is a two-stroke or four-stroke leaf blower better for a small yard?”\n\n[as of 12 Nov 2026]",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "quick",
+  "ttftMs": 3325,
+  "totalMs": 3969,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=101 in=1492"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-ct1",
+  "label": "conv_topic|match|test",
+  "at": "2026-11-12T05:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct1",
+  "msg": "What names did you suggest for my grey kitten?",
+  "history": false,
+  "sources": [],
+  "text": "On Tue 27 Oct you asked: “Can you suggest some names for a grey kitten?”\n\nI suggested the following names for your grey kitten: Ash, Pebble, Smokey, Earl Grey, and Misty. This was provided on Tue 27 Oct 2026.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1278,
+  "totalMs": 1799,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=64 in=1116"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-tp6",
+  "label": "thirdparty_time|noise|test",
+  "at": "2026-11-12T05:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp6",
+  "msg": "my sister said last week that an American woman won the NYC marathon. is that right?",
+  "history": false,
+  "sources": [
+   "marathonhandbook.com (fetched)",
+   "flotrack.org (fetched)",
+   "nyrr.org (fetched)",
+   "youtube.com (fetched)",
+   "sports.yahoo.com (fetched)",
+   "espn.com (fetched)"
+  ],
+  "text": "On that claim: That doesn't hold up — sources don't show that an American woman won the NYC marathon last week [2][1].\n\nNo—the women's title was won by Kenya’s Sheila Chepkirui, not an American [2][3]. An American, Jess McClain, finished second, marking the first U.S. woman on the podium since 2018 [1][6]. (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4814,
+  "totalMs": 6291,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=110 in=2249"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sc5",
+  "label": "social_compute|noise|test",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc5",
+  "msg": "If I split a 1,260 rupee bill four ways, how much does each person pay?",
+  "history": false,
+  "sources": [],
+  "text": "$1,260 ÷ 4 = 315$. Each person pays ₹315.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 1140,
+  "totalMs": 1167,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=49 in=984"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sf6",
+  "label": "session_firstlast|noise|test",
+  "at": "2026-11-12T05:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf6",
+  "msg": "Remind me what my last question in this conversation was.",
+  "history": false,
+  "sources": [],
+  "text": "There's no earlier question in this chat — this is the start of our conversation here.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1014,
+  "totalMs": 1015,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sc2",
+  "label": "social_compute|match|test",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc2",
+  "msg": "thanks, that's all I needed!",
+  "history": false,
+  "sources": [],
+  "text": "Glad it helped! Let me know if you need anything else.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 589,
+  "totalMs": 621,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=31 in=999"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cw6",
+  "label": "conv_world|noise|test",
+  "at": "2026-11-12T05:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw6",
+  "msg": "Yesterday we talked about the World Series, right? What did you tell me, and who was the MVP?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about World Series (Wed 11 Nov).\n\nI do have conversations from Tue 10 Nov, Wed 11 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "expected a search, none made",
+   "judge: Failed to answer the world fact question about 2026 World Series MVP; Did not perform required web search for current World Series information"
+  ],
+  "route": "memory",
+  "ttftMs": 2025,
+  "totalMs": 2025,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Failed to answer the world fact question about 2026 World Series MVP",
+    "Did not perform required web search for current World Series information",
+    "Incorrectly claimed to have conversations from 10-12 Nov 2026 when history shows only up to 11 Nov",
+    "Did not address the MVP question at all"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-tp3",
+  "label": "thirdparty_time|norecord|test",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp3",
+  "msg": "My friend says Ubuntu stopped putting out new versions after the April release this year. Is that accurate?",
+  "history": false,
+  "sources": [
+   "ubuntu.com (fetched)",
+   "ubuntu-mate.community (fetched)",
+   "documentation.ubuntu.com (fetched)",
+   "tuxcare.com (fetched)",
+   "askubuntu.com (fetched)",
+   "discourse.ubuntu.com (fetched)",
+   "itsfoss.community (fetched)",
+   "canonical.com (fetched)",
+   "endoflife.date (fetched)",
+   "lansweeper.com (fetched)",
+   "omgubuntu.co.uk (fetched)",
+   "documentation.ubuntu.com (fetched)",
+   "linuxconfig.org (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that ubuntu stopped putting out new versions after the April release this year [11][13].\n\n**No – Ubuntu continued releasing new versions after the April 2026 LTS; an interim release (26.10) arrived in October 2026.**  \n\n| Release | Type | Release date | Source |\n|---|---|---|---|\n| Ubuntu 26.04 LTS “Resolute Raccoon” | LTS | 23 Apr 2026 | [1] |\n| Ubuntu 26.10 | Interim | Oct 2026 | [1] |\n\n**Caveats**\n- The evidence shows the 26.10 interim release was published in October 2026; no later releases are listed yet.  \n- “Stopping after April” is contradicted by the documented 26.10 release.  \n- Information is current as of the sources fetched on 12 Nov 2026.",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "unsupported",
+    "score": 0.15,
+    "missingNumbers": [],
+    "text": "Ubuntu 26.04 LTS “Resolute Raccoon” | LTS | 23 Apr 2026 |"
+   }
+  ],
+  "route": "research",
+  "ttftMs": 4309,
+  "totalMs": 9121,
+  "searches": 3,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=235 in=3837"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-yt7",
+  "label": "youtold_world|noise|test",
+  "at": "2026-11-12T05:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt7",
+  "msg": "A few days ago you told me Australia won the women's T20 World Cup. Who did they beat in the final, and by what margin?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "cricinfo.com (fetched)",
+   "skysports.com (fetched)",
+   "facebook.com (fetched)",
+   "cnbc.com (fetched)",
+   "facebook.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about women's T20 World Cup (Thu 5 Nov – Wed 11 Nov).\n\nThat doesn't hold up — sources don't show that australia won the women's T20 World Cup [5].\n\nAustralia has not yet won the 2026 Women's T20 World Cup; the tournament is still in progress and the final has not been played. Current reports say Australia reached the final and will face England, but no result or margin is available yet [3][2] (as of 12 Nov 2026).",
+  "checks": [
+   "judge: Denies the true premise that Australia won the 2026 Women's T20 World Cup; Claims tournament is still in progress and final not played, contradicting gold facts"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 4,
+    "status": "weak",
+    "score": 0.32,
+    "missingNumbers": [],
+    "text": "Australia has not yet won the 2026 Women's T20 World Cup; the tournament is still in progress and the final has not been played. Current reports say Australia reached the final and will face England, "
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 4984,
+  "totalMs": 7958,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=142 in=2380"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Denies the true premise that Australia won the 2026 Women's T20 World Cup",
+    "Claims tournament is still in progress and final not played, contradicting gold facts",
+    "Fails to answer who Australia beat and by what margin",
+    "Does not provide the correct answer: beat England by 7 wickets at Lord's"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-yt6",
+  "label": "youtold_world|noise|test",
+  "at": "2026-11-12T05:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt6",
+  "msg": "you told me yesterday Pogačar won the Tour again this year. how many Tour titles does that make for him?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "instagram.com (fetched)",
+   "businessinsider.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "espn.com (fetched)",
+   "cyclingflash.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Pogačar Tour de France titles (Wed 11 Nov).\n\n**Five Tour de France titles in total — 2020, 2021, 2024, 2025, and 2026.** [1]\n\n| Title | Year | Confirmed by |\n|-------|------|--------------|\n| 1st | 2020 | [1] |\n| 2nd | 2021 | [1] |\n| 3rd | 2024 | [1] |\n| 4th | 2025 | [1] |\n| 5th | 2026 | [1][2][5] |\n\nSources [1], [2] and [5] all describe the 2026 win as his fifth Tour victory.",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 5,
+   "unsupported": 0,
+   "total": 7
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.21,
+    "missingNumbers": [],
+    "text": "1st | 2020 |"
+   },
+   {
+    "id": "c2",
+    "line": 7,
+    "status": "weak",
+    "score": 0.26,
+    "missingNumbers": [],
+    "text": "2nd | 2021 |"
+   },
+   {
+    "id": "c3",
+    "line": 8,
+    "status": "weak",
+    "score": 0.26,
+    "missingNumbers": [],
+    "text": "3rd | 2024 |"
+   },
+   {
+    "id": "c4",
+    "line": 9,
+    "status": "weak",
+    "score": 0.21,
+    "missingNumbers": [],
+    "text": "4th | 2025 |"
+   },
+   {
+    "id": "c5",
+    "line": 10,
+    "status": "weak",
+    "score": 0.23,
+    "missingNumbers": [],
+    "text": "5th | 2026 |"
+   }
+  ],
+  "route": "research",
+  "ttftMs": 3147,
+  "totalMs": 9297,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=168 in=2629"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sf2",
+  "label": "session_firstlast|match|test",
+  "at": "2026-11-12T05:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf2",
+  "msg": "sorry, what did I just ask you?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 12 Nov you asked: “Give me something shorter.”\n\nI answered with the short options “‘Gambit’ or ‘Checkmates’.”",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 719,
+  "totalMs": 1028,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=54 in=1128"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-yt3",
+  "label": "youtold_world|norecord|test",
+  "at": "2026-11-12T05:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt3",
+  "msg": "You told me Bulgaria switched to the euro at the start of this year. What was the fixed conversion rate from the lev?",
+  "history": false,
+  "sources": [
+   "ecb.europa.eu (fetched)",
+   "economy-finance.ec.europa.eu (fetched)",
+   "payhawk.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "ca.finance.yahoo.com (fetched)"
+  ],
+  "text": "There's no earlier question in this chat — this is the start of our conversation here.\n\nThat doesn't hold up — sources don't show that bulgaria switched to the euro at the start of this year [1][3].\n\nThe fixed conversion rate is €1 = 1.95583 BGN [1][2][3] (as of 12 Nov 2026).",
+  "checks": [
+   "judge: Denies the gold fact that Bulgaria adopted the euro on 1 Jan 2026, contradicting the provided sources and the premise.; Falsely claims 'this is the start of our"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4329,
+  "totalMs": 5125,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=102 in=2130"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Denies the gold fact that Bulgaria adopted the euro on 1 Jan 2026, contradicting the provided sources and the premise.",
+    "Falsely claims 'this is the start of our conversation here' despite the provided conversation history showing prior turns from 2024.",
+    "Fails to acknowledge the premise as true and does not answer honestly about the missing earlier conversation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-cd1",
+  "label": "conv_date|match|test",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd1",
+  "msg": "what did i ask you yesterday?",
+  "history": false,
+  "sources": [],
+  "text": "On Wed 11 Nov you asked: “What's a good way to label pantry jars so the labels don't peel off?”\n\nI replied that chalkboard vinyl labels or an oil‑based paint pen written directly on the glass are both durable options that survive washing better than paper labels.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2376,
+  "totalMs": 2689,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=94 in=1142"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-ct5",
+  "label": "conv_topic|noise|test",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct5",
+  "msg": "What did you tell me last week about sharpening kitchen knives?",
+  "history": false,
+  "sources": [],
+  "text": "I have no conversation with you from Mon 2 Nov – Sun 8 Nov, so I can't say what we discussed then.\n\nI do have conversations from Thu 29 Oct, Tue 3 Nov, Thu 5 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2165,
+  "totalMs": 2166,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-fu5",
+  "label": "followup_chat|noise|test",
+  "at": "2026-11-12T05:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu5",
+  "msg": "and who finished second",
+  "history": false,
+  "sources": [
+   "thefieldf1.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "facebook.com (fetched)",
+   "threads.com (fetched)",
+   "crash.net (fetched)",
+   "skysports.com (fetched)",
+   "formula1.com (fetched)",
+   "espn.com (fetched)",
+   "nbcnews.com (fetched)",
+   "espn.com (fetched)"
+  ],
+  "text": "Lewis Hamilton finished second behind Max Verstappen [2] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5765,
+  "totalMs": 6324,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=58 in=2517"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-wt1",
+  "label": "world_time|match|test",
+  "at": "2026-11-12T05:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt1",
+  "msg": "Since the new Ubuntu came out last month, what GNOME and kernel versions does it ship with?",
+  "history": false,
+  "sources": [
+   "omgubuntu.co.uk (fetched)",
+   "discourse.ubuntu.com (fetched)",
+   "youtube.com (fetched)",
+   "fosslinux.com (fetched)",
+   "documentation.ubuntu.com (fetched)",
+   "discourse.ubuntu.com (fetched)",
+   "opensourcefeed.org (fetched)",
+   "en.ubunlog.com (fetched)",
+   "youtube.com (fetched)",
+   "9to5linux.com (fetched)"
+  ],
+  "text": "On Fri 2 Oct you asked: “When does the next Ubuntu release come out?”\n\n**Ubuntu 26.10 (released 15 Oct 2026) ships with GNOME 51 and Linux kernel 7.3.**\n\n| Component | Version | Evidence |\n|---|---|---|\n| GNOME | 51 | [3][4][7] |\n| Linux kernel | 7.3 (based on 7.3-rc6 at GA) | [1][5][6][7] |\n\n**Earlier claim check:**  \nThe previous answer (2 Oct 2026) said “Ubuntu 26.10 is scheduled for release on 15 October 2026.” That date is now confirmed by multiple sources [3][6][7], so the claim still holds.",
+  "checks": [
+   "contains forbidden: \"On Fri 2 Oct you asked\""
+  ],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 4022,
+  "totalMs": 9026,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=168 in=3316"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-cw5",
+  "label": "conv_world|noise|test",
+  "at": "2026-11-12T05:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw5",
+  "msg": "Last week I asked you about the Mexico City race. What did I ask, and who ended up winning it?",
+  "history": false,
+  "sources": [
+   "mexico.gp (fetched)",
+   "youtube.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "formula1.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "espn.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Mexico City race (Mon 2 Nov – Sun 8 Nov).\n\nIf you tell me which ones you mean, I'll check what has changed since then.\n\nMax Verstappen won the 2026 Mexico City Grand Prix [4] (as of 12 Nov 2026).  \n\nI don’t have a record of the specific question you asked last week, so I can’t confirm what you inquired about.",
+  "checks": [
+   "judge: Conversation part incorrect: claims no record for Mon 2 Nov – Sun 8 Nov window, but the actual last week (Nov 5–11) contains only unrelated turns; must state ho"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4802,
+  "totalMs": 5699,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=124 in=2259"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Conversation part incorrect: claims no record for Mon 2 Nov – Sun 8 Nov window, but the actual last week (Nov 5–11) contains only unrelated turns; must state honestly that there is no record of a Mexico City race question in the conversation history.",
+    "World part correct: Max Verstappen identified as winner with citation."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-ct4",
+  "label": "conv_topic|norecord|test",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct4",
+  "msg": "Have we ever discussed how to write a cover letter? If so, what was your advice?",
+  "history": false,
+  "sources": [
+   "indeed.com (fetched)",
+   "ca.indeed.com (fetched)",
+   "sg.indeed.com (fetched)",
+   "youtube.com (fetched)",
+   "ideo.com (fetched)",
+   "reddit.com (fetched)"
+  ],
+  "text": "We don’t have any record of a previous conversation about cover‑letter writing, so I can’t refer back to advice I gave you before.",
+  "checks": [
+   "expected no search, made 2",
+   "missing one of: can't find / cannot find / can not find / couldn't find / could not find / no record / don't see / do not see / don't have any / do not have any / don't have a record / didn't find / did not find / not finding / no earlier / no previous / no prior / nothing in our / no conversation / haven't talked / haven't discussed / we haven't / you haven't asked / haven't asked / first message / first question / no messages / nothing earlier / don't remember / no memory"
+  ],
+  "route": "quick",
+  "ttftMs": 1642,
+  "totalMs": 1717,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=66 in=1933"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-tp4",
+  "label": "thirdparty_time|norecord|test",
+  "at": "2026-11-12T05:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp4",
+  "msg": "According to my running club, a woman won the Chicago Marathon last month in under 2:14. Legit?",
+  "history": false,
+  "sources": [
+   "marathonhandbook.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "flotrack.org (fetched)",
+   "sports.yahoo.com (fetched)",
+   "facebook.com (fetched)",
+   "facebook.com (fetched)"
+  ],
+  "text": "Yes—Hawi Feysa won the 2026 Chicago Marathon in 2:13:33, a time under 2 :14 [1][2][4] (as of 12 Nov 2026).  \nThe win was reported by multiple sources, all noting her time below the 2:14 threshold.",
+  "checks": [
+   "slow first token 9243 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 9243,
+  "totalMs": 9772,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=124 in=2352"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-ct6",
+  "label": "conv_topic|noise|test",
+  "at": "2026-11-12T05:20:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-ct6",
+  "msg": "Last month I asked for advice about hiking boots; what did you recommend?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about hiking boots (Thu 1 Oct – Sat 31 Oct).\n\nI do have conversations from Mon 5 Oct, Wed 14 Oct, Wed 21 Oct. Ask about one of those and I'll pull it up.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2252,
+  "totalMs": 2252,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-wt4",
+  "label": "world_time|norecord|test",
+  "at": "2026-11-12T05:21:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt4",
+  "msg": "Since the Booker Prize was announced earlier this week, who won it and for which book?",
+  "history": false,
+  "sources": [
+   "thebookerprizes.com (fetched)",
+   "thebookerprizes.com (fetched)",
+   "npr.org (fetched)",
+   "bbc.com (fetched)",
+   "global.penguinrandomhouse.com (fetched)",
+   "facebook.com (fetched)"
+  ],
+  "text": "**M. John Harrison won the 2026 Booker Prize for his novel *The End of Everything*.**[2][4]",
+  "checks": [
+   "slow first token 10202 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 10202,
+  "totalMs": 10813,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=59 in=2276"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-sf3",
+  "label": "session_firstlast|norecord|test",
+  "at": "2026-11-12T05:22:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf3",
+  "msg": "What was my first question in this chat?",
+  "history": false,
+  "sources": [],
+  "text": "There's no earlier question in this chat — this is the start of our conversation here.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1390,
+  "totalMs": 1394,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-tp7",
+  "label": "thirdparty_time|noise|test",
+  "at": "2026-11-12T05:23:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp7",
+  "msg": "A guy at work told me yesterday that the Artemis II astronauts landed on the Moon this year. Is that true?",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "pbs.org (fetched)",
+   "facebook.com (fetched)",
+   "investing.com (fetched)",
+   "africa.businessinsider.com (fetched)",
+   "cnbc.com (fetched)"
+  ],
+  "text": "Artemis II did not land on the Moon in 2026; it was a 10‑day crewed flyby around the Moon with the astronauts returning to Earth [2][5][6] (as of 12 Nov 2026).  \n\n- All sources describe Artemis II as a test flight that “will not be a lunar landing” and note the crew splashed down back on Earth after the mission.",
+  "checks": [
+   "slow first token 7747 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 7747,
+  "totalMs": 8375,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "none",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=126 in=2119"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-rc2",
+  "label": "recheck_world|match|test",
+  "at": "2026-11-12T05:24:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc2",
+  "msg": "Earlier you told me who won Wimbledon this year — can you recheck that, and what was the score in the men's final?",
+  "history": false,
+  "sources": [
+   "youtube.com (fetched)",
+   "sports.yahoo.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "rolandgarros.com (fetched)",
+   "youtube.com (fetched)",
+   "bbc.com (fetched)"
+  ],
+  "text": "On Sun 2 Aug you asked: “Who won Wimbledon this year?”\n\nJannik Sinner won the 2026 Wimbledon men’s singles title, defeating Alexander Zverev 6‑7 (7‑9), 7‑6 (7‑2), 6‑3, 6‑4[3] (as of 12 Nov 2026).  \n\nThe match score reflects Sinner rallying from a set down to retain his Wimbledon crown.",
+  "checks": [
+   "slow first token 7716 ms",
+   "judge: Missing women's singles result (Linda Noskova) which was part of the earlier answer and gold facts; Does not explicitly state the earlier answer was wrong about"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 7716,
+  "totalMs": 10183,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "none",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=156 in=2326"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Missing women's singles result (Linda Noskova) which was part of the earlier answer and gold facts",
+    "Does not explicitly state the earlier answer was wrong about Alcaraz and correct it",
+    "No citation for the score despite claiming a source [3]"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-wt7",
+  "label": "world_time|noise|test",
+  "at": "2026-11-12T05:25:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt7",
+  "msg": "With the Melbourne Cup run last week, which horse won it and who was the jockey?",
+  "history": false,
+  "sources": [
+   "afr.com (fetched)",
+   "punters.com.au (fetched)",
+   "racenet.com.au (fetched)",
+   "facebook.com (fetched)",
+   "facebook.com (fetched)",
+   "facebook.com (fetched)"
+  ],
+  "text": "Point of Law won the 2026 Melbourne Cup, ridden by jockey Ethan Brown [1][5].\n\n| Source | Winner | Jockey | Trainer | Note |\n|---|---|---|---|---|\n| afr.com [1] | Point of Law | Ethan Brown | Ciaron Maher | First time a trainer had 1st, 2nd, 3rd |\n| Facebook/World Horse Racing [5] | Point of Law | Ethan Brown | — | Video post dated 3 Nov 2026 |\n\nCaveat: Some other outlets (e.g., Punters [2], Racenet [3]) show a different result (Vow and Declare / Knight's Choice), but those pages appear to carry stale or incorrect data for the 2026 running. The Australian Financial Review live report [1] and the Racing.com social post [4] both confirm Point of Law / Ethan Brown.",
+  "checks": [],
+  "verification": {
+   "verified": 5,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 5
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 7495,
+  "totalMs": 10162,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=199 in=2454"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sf1",
+  "label": "session_firstlast|match|test",
+  "at": "2026-11-12T05:26:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sf1",
+  "msg": "what was the first thing I asked in this chat?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 12 Nov you asked: “How many tablespoons are in a quarter cup?”\n\nand I answered “4 tablespoons (US).”",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 1110,
+  "totalMs": 7977,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=75 in=1127"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-rc4",
+  "label": "recheck_world|norecord|test",
+  "at": "2026-11-12T05:27:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc4",
+  "msg": "can u recheck ur earlier answer about the champions league final? also who missed the last penalty",
+  "history": false,
+  "sources": [
+   "uefa.com (fetched)",
+   "uefa.com (fetched)",
+   "facebook.com (fetched)",
+   "facebook.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "youtube.com (fetched)",
+   "budapest.com (fetched)",
+   "foxsports.com (fetched)",
+   "bbc.com (fetched)",
+   "reddit.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Champions League final result and penalty miss.\n\nThe 2026 UEFA Champions League final was played on 30 May 2026 in Budapest; Paris Saint‑Germain beat Arsenal 4‑3 on penalties after a 1‑1 draw [1][5].  \nThe sources that mention a “last penalty miss” refer to Arsenal’s Gabriel Magalhães missing in the shoot‑out, but they do not state that his was the final kick of the sequence [4].",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5964,
+  "totalMs": 11212,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=95 in=2835"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-yt4",
+  "label": "youtold_world|norecord|test",
+  "at": "2026-11-12T05:28:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt4",
+  "msg": "u said the seahawks won the super bowl back in february — who'd they beat and whats the final score",
+  "history": false,
+  "sources": [
+   "fox13seattle.com (fetched)",
+   "seahawks.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "finance.yahoo.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "espn.com (fetched)",
+   "facebook.com (fetched)",
+   "ca.investing.com (fetched)",
+   "cnbc.com (fetched)",
+   "finance.yahoo.com (fetched)"
+  ],
+  "text": "I can't find any earlier conversation of ours about that.\n\nThe Seattle Seahawks beat the New England Patriots 29–13 in Super Bowl LX on 8 Feb 2026 [1][6] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4016,
+  "totalMs": 5846,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=47 in=3170"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-tp1",
+  "label": "thirdparty_time|match|test",
+  "at": "2026-11-12T05:29:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-tp1",
+  "msg": "My uncle insists Bolsonaro won Brazil's election last month. Is he right?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "pbs.org (fetched)",
+   "apnews.com (fetched)",
+   "finance.yahoo.com (fetched)",
+   "cnbc.com (fetched)",
+   "youtube.com (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that bolsonaro won Brazil's election last month [3][1].\n\nNo. President Luiz Inácio Lula da Silva won the 25 October 2026 runoff with 51.7 % of the vote against Senator Flávio Bolsonaro’s 48.2 % [6][3]. The election went to a second round after no candidate reached 50 % on 4 October [1], and Lula was declared the winner on 25 October [2][3] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5429,
+  "totalMs": 8779,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=105 in=2408"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-fu2",
+  "label": "followup_chat|match|test",
+  "at": "2026-11-12T05:30:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu2",
+  "msg": "Who trained it?",
+  "history": false,
+  "sources": [
+   "melbournecup2026.com (fetched)",
+   "youtube.com (fetched)",
+   "racingpost.com (fetched)",
+   "nine.com.au (fetched)",
+   "rte.ie (fetched)",
+   "bbc.com (fetched)"
+  ],
+  "text": "Ciaron Maher trained Point Of Law, who won the 2026 Melbourne Cup on Tuesday 3 November [1][3][4] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.34,
+    "missingNumbers": [],
+    "text": "Ciaron Maher trained Point Of Law, who won the 2026 Melbourne Cup on Tuesday 3 November (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3925,
+  "totalMs": 5052,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=45 in=2210"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-wt5",
+  "label": "world_time|noise|test",
+  "at": "2026-11-12T05:31:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt5",
+  "msg": "The Chicago Marathon was last month — who won the men's and women's races?",
+  "history": false,
+  "sources": [
+   "flotrack.org (fetched)",
+   "sports.yahoo.com (fetched)",
+   "youtube.com (fetched)",
+   "chicagomarathon.com (fetched)",
+   "instagram.com (fetched)",
+   "en.wikipedia.org (fetched)"
+  ],
+  "text": "Amos Kipruto won the men’s race and Hawi Feysa Gejia won the women’s race at the 2026 Chicago Marathon [2] (as of 12 Nov 2026).",
+  "checks": [
+   "slow first token 7924 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 7924,
+  "totalMs": 8458,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "none",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=133 in=2275"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-fu6",
+  "label": "followup_chat|noise|test",
+  "at": "2026-11-12T05:32:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu6",
+  "msg": "How far behind him was the runner-up, and who was it?",
+  "history": false,
+  "sources": [
+   "flobikes.com (fetched)",
+   "beyondthepeloton.substack.com (fetched)",
+   "nbclosangeles.com (fetched)",
+   "youtube.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "cyclingwest.com (fetched)",
+   "letour.fr (fetched)",
+   "businessinsider.com (fetched)",
+   "facebook.com (fetched)"
+  ],
+  "text": "Jonas Vingegaard was the runner‑up, finishing more than four minutes behind Pogačar [1] (as of 12 Nov 2026).",
+  "checks": [
+   "slow first token 9799 ms",
+   "judge: Answer contradicts gold facts: runner-up was Remco Evenepoel, not Jonas Vingegaard; gap was 6 min 26 s, not 'more than four minutes'"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 9799,
+  "totalMs": 10301,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=118 in=2624"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer contradicts gold facts: runner-up was Remco Evenepoel, not Jonas Vingegaard; gap was 6 min 26 s, not 'more than four minutes'"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-fu4",
+  "label": "followup_chat|norecord|test",
+  "at": "2026-11-12T05:33:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-fu4",
+  "msg": "Which GNOME version does it use?",
+  "history": false,
+  "sources": [
+   "opensourcefeed.org (fetched)",
+   "youtube.com (fetched)",
+   "reddit.com (fetched)",
+   "itsfoss.community (fetched)",
+   "documentation.ubuntu.com (fetched)",
+   "youtube.com (fetched)",
+   "reddit.com (fetched)",
+   "youtube.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "gnome.org (fetched)"
+  ],
+  "text": "Ubuntu 26.10 ships with **GNOME 51** [1][5][6].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 6572,
+  "totalMs": 7483,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=26 in=3275"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-rc6",
+  "label": "recheck_world|noise|test",
+  "at": "2026-11-12T05:34:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc6",
+  "msg": "Recheck what you said yesterday about the Booker Prize, and tell me how old the winner is.",
+  "history": false,
+  "sources": [
+   "thebookerprizes.com (fetched)",
+   "facebook.com (fetched)",
+   "bbc.com (fetched)",
+   "bbc.com (fetched)",
+   "cnn.com (fetched)",
+   "standard.co.uk (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Booker Prize winner age (Wed 11 Nov).\n\nM. John Harrison won the 2026 Booker Prize at age 81, making him the oldest winner ever [3][4] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3992,
+  "totalMs": 7349,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=44 in=2544"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-sc1",
+  "label": "social_compute|match|test",
+  "at": "2026-11-12T05:35:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-sc1",
+  "msg": "and what's that plus 18?",
+  "history": false,
+  "sources": [],
+  "text": "36 + 18 = 54.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 1251,
+  "totalMs": 1260,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=33 in=990"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cd4",
+  "label": "conv_date|norecord|test",
+  "at": "2026-11-12T05:36:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd4",
+  "msg": "Did we talk about anything on the 6th of this month? I honestly can't remember",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about the (Sun 1 Nov – Thu 12 Nov).\n\nI do have conversations from Fri 19 Jul, Sat 2 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "judge: Invented a conversation on 12 Nov 2026 that does not exist in the provided history; Misstated the available conversation dates (19 Jul and 2 Nov 2024, not 2026)"
+  ],
+  "route": "memory",
+  "ttftMs": 3124,
+  "totalMs": 3125,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Invented a conversation on 12 Nov 2026 that does not exist in the provided history",
+    "Misstated the available conversation dates (19 Jul and 2 Nov 2024, not 2026)",
+    "Failed to honestly state that there is no record of a conversation on 6 Nov 2026"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-rc3",
+  "label": "recheck_world|norecord|test",
+  "at": "2026-11-12T05:37:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-rc3",
+  "msg": "Please re-verify what you told me about the Artemis II splashdown date, and also tell me who commanded the mission.",
+  "history": false,
+  "sources": [
+   "nbc.com (fetched)",
+   "houstonpublicmedia.org (fetched)",
+   "en.wikipedia.org (fetched)",
+   "nasa.gov (fetched)",
+   "en.wikipedia.org (fetched)",
+   "floridatoday.com (fetched)",
+   "airandspace.si.edu (fetched)",
+   "nasa.gov (fetched)",
+   "space.com (fetched)",
+   "space.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Artemis II mission details.\n\nArtemis II splashed down on **10 April 2026 at 20:07 EDT (00:07 UTC 11 April)** in the Pacific Ocean off San Diego [1][8].  \nThe mission was commanded by **Reid Wiseman** (NASA astronaut and former Chief of the Astronaut Office) [3][4][5].",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 5388,
+  "totalMs": 8286,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=82 in=2905"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cw3",
+  "label": "conv_world|norecord|test",
+  "at": "2026-11-12T05:38:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw3",
+  "msg": "Didn't we discuss the Super Bowl at some point? Remind me what I asked, and also who was named MVP.",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about Super Bowl.\n\nI do have conversations from Fri 19 Jul, Sat 2 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "expected a search, none made",
+   "judge: Did not answer the world-fact part (Super Bowl LX MVP) despite gold facts being provided and a web search being required.; Invented a false list of conversation"
+  ],
+  "route": "memory",
+  "ttftMs": 1886,
+  "totalMs": 1886,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Did not answer the world-fact part (Super Bowl LX MVP) despite gold facts being provided and a web search being required.",
+    "Invented a false list of conversation dates instead of honestly stating there is no record of a Super Bowl discussion."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-cd5",
+  "label": "conv_date|noise|test",
+  "at": "2026-11-12T05:39:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd5",
+  "msg": "On Tuesday did I ask you something about my car battery? What did you say?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about car battery (Tue 10 Nov).\n\nI do have conversations from Mon 9 Nov, Tue 10 Nov, Wed 11 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 2925,
+  "totalMs": 2926,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "code (needs: no record)"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-wt3",
+  "label": "world_time|norecord|test",
+  "at": "2026-11-12T05:40:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-wt3",
+  "msg": "Phantom Blade Zero came out a couple weeks ago, right? Which platforms is it on and how have critics received it?",
+  "history": false,
+  "sources": [
+   "gamesradar.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "youtube.com (fetched)",
+   "pcgamer.com (fetched)",
+   "pbz.s-game.com (fetched)",
+   "reddit.com (fetched)"
+  ],
+  "text": "That doesn't hold up — sources don't show that phantom Blade Zero was released a couple of weeks ago [1][4].\n\n**Phantom Blade Zero launched on 29 October 2026 for PC (Windows) and PlayStation 5; early reviews are generally positive.**\n\n| Platform | Release date | Critical reception |\n|---|---|---|\n| PC (Windows) | 29 Oct 2026 [2] | Reviews “looking pretty positive” (PC Gamer) [4] |\n| PlayStation 5 | 29 Oct 2026 [2] | Reviews “looking pretty positive” (PC Gamer) [4] |\n\n**Caveats**\n- The cited sources note the release date but do not provide specific review scores or aggregate ratings.  \n- Reception is described qualitatively (“pretty positive”) without detailed metrics.  \n- No information was found on other platforms (e.g., Xbox, Switch) or on regional launch variations.",
+  "checks": [
+   "judge: Answer incorrectly claims sources don't show release 'a couple of weeks ago' when gold facts confirm 28/29 Oct 2026 launch; Fails to provide specific review sco"
+  ],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 8356,
+  "totalMs": 17980,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=587 in=2354"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer incorrectly claims sources don't show release 'a couple of weeks ago' when gold facts confirm 28/29 Oct 2026 launch",
+    "Fails to provide specific review scores (Metacritic ~88, OpenCritic ~91-92) despite gold facts and expectation requiring cited current scores",
+    "Omits key detail about launch time (7pm PT 28 Oct = 29 Oct in most time zones) from gold fact 1",
+    "Does not mention story criticism noted in gold fact 2",
+    "Table cites sources [2] and [4] but doesn't include the required aggregate review score sources"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout4-yt2",
+  "label": "youtold_world|match|test",
+  "at": "2026-11-12T05:41:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-yt2",
+  "msg": "last month you said Harry Kane won the Ballon d'Or. where was the ceremony held and which club does he play for?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "facebook.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "businessinsider.com (fetched)",
+   "au.finance.yahoo.com (fetched)",
+   "ca.finance.yahoo.com (fetched)",
+   "cnbc.com (fetched)",
+   "cnbc.com (fetched)",
+   "tracxn.com (fetched)",
+   "businessinsider.com (fetched)"
+  ],
+  "text": "On Tue 27 Oct you asked: “Who won the Ballon d'Or last night?”\n\n**Yes, the earlier claim still holds:** Harry Kane won the men's Ballon d'Or on 26 October 2026 [1].  \n\n| Detail | Answer | Source |\n|---|---|---|\n| Ceremony location | London Palladium, London | [1] |\n| Current club (as of the award) | Bayern Munich | [1][3] |\n\n**Caveat:** The Wikipedia page shows Kane’s club at the time of the 2026 Ballon d’Or was Bayern Munich [1]; his player page also lists Bayern Munich as his current team [3].",
+  "checks": [],
+  "verification": {
+   "verified": 4,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 4
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 4849,
+  "totalMs": 8429,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=130 in=3200"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout4-cw1",
+  "label": "conv_world|match|test",
+  "at": "2026-11-12T05:42:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cw1",
+  "msg": "Last month we talked about whether I should upgrade Ubuntu. Is there anything newer than 26.10 out yet?",
+  "history": false,
+  "sources": [
+   "ubuntu.com (fetched)",
+   "github.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "youtube.com (fetched)",
+   "endoflife.date (fetched)",
+   "canonical.com (fetched)"
+  ],
+  "text": "On Fri 16 Oct you asked: “Is it worth upgrading from Ubuntu 26.04 to 26.10?”\n\nNo, Ubuntu 26.10 (codename “Stonking Stingray”) is the newest release; no later version has been released as of 12 Nov 2026 [1][3].",
+  "checks": [
+   "slow first token 6784 ms",
+   "judge: Missing next release date (27.04 April 2027) and its LTS status; Incomplete answer to 'anything newer' question"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6784,
+  "totalMs": 7647,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "none",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=98 in=2250"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Missing next release date (27.04 April 2027) and its LTS status",
+    "Incomplete answer to 'anything newer' question",
+    "Sources cited but key fact from gold facts not included"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "krishnamohanproductions.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "herodevs.com (fetched)",
+   "liquidweb.com (fetched)",
+   "stackoverflow.com (fetched)",
+   "medium.com (fetched)"
+  ],
+  "text": "Python 3.15.1 is the latest stable release, published 21 Oct 2026 [2] (as of 12 Nov 2026).  \n\nIt follows the 3.15.0 release on the same day and is the newest point‑release in the 3.15 series.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3732,
+  "totalMs": 4391,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-120b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=142 in=2979"
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org (fetched)",
+   "liquidweb.com (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "youtube.com (fetched)",
+   "stackoverflow.com (fetched)",
+   "mostlypython.com (fetched)",
+   "herodevs.com (fetched)"
+  ],
+  "text": "Python 3.15.1 is the latest stable release (as of 12 Nov 2026) [3]; Python 3.15 became the current stable series in October 2026 [1].",
+  "checks": [
+   "slow first token 6583 ms"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 6583,
+  "totalMs": 7958,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=51 in=2652"
+  },
+  "pass": false
+ }
+]

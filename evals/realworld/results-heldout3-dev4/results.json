@@ -1,0 +1,424 @@
+[
+ {
+  "scenario": "heldout3",
+  "label": "award_time|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-w3-assistant_past",
+  "msg": "you said soai was the only winner of the chemistry nobel this year, what was the discovery",
+  "history": false,
+  "sources": [
+   "science.org 2021-10-06",
+   "cen.acs.org 2025-01-21",
+   "nobelprize.org 2026-10-07",
+   "apnews.com 2026-10-07",
+   "jagranjosh.com 2026-10-07",
+   "nature.com 2026-10-07",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)",
+   "nobelprize.org (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Nobel Prize in Chemistry 2026 winners and discovery (Thu 1 Jan – Thu 12 Nov).\n\nThat doesn't hold up — sources don't show that 'soai' was the only winner of the 2026 Nobel Prize in Chemistry [3][7].\n\nSoai was not the only winner; the 2026 Nobel Prize in Chemistry was awarded jointly to Henri B. Kagan and Kenso Soai for \"the discovery of non-linear effects and autocatalysis in asymmetric organic synthesis\" [8] [3] (as of 12 Nov 2026).\n\n* Kagan specifically discovered non-linear effects in asymmetric catalysis, showing product chirality can be amplified beyond the catalyst's chirality [9] [5].\n* Soai discovered asymmetric autocatalysis, a process where a chiral product catalyzes the formation of more of itself, enabling a single mirror image to emerge from achiral starting materials [9] [1] [7].",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4339,
+  "totalMs": 5466,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=150 in=2803"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|false|assistant_past|dev",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u1-assistant_past",
+  "msg": "You said Sony released the PlayStation 6 last month. How much does it cost?",
+  "history": false,
+  "sources": [
+   "timesnownews.com 2025-11-09",
+   "wccftech.com 2026-02-21",
+   "trustedreviews.com 2026-03-09",
+   "gamingbible.com 2026-06-23",
+   "techplayguide.com 2026-06-26",
+   "wccftech.com 2026-06-27",
+   "vice.com 2026-06-28",
+   "pcgamer.com 2026-07-02",
+   "media.v2.nationalgeographic.com 2026-09-13",
+   "backmarket.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about PlayStation 6 release and pricing (Thu 1 Oct – Sat 31 Oct).\n\nThat doesn't hold up — sources don't show that sony released the PlayStation 6 in October 2026 [5][3].\n\nThe claim that Sony released the PlayStation 6 last month is contradicted by all available evidence; Sony has not officially announced or released the console as of 12 Nov 2026 [5][3][7][10][2]. No confirmed launch date or pricing exists yet, so the cost cannot be stated.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3091,
+  "totalMs": 3956,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=89 in=2908"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|true|assistant_past|dev",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l2-assistant_past",
+  "msg": "You told me the Switch 2 came out in June 2025. Was that a record launch for Nintendo?",
+  "history": false,
+  "sources": [
+   "nintendo.co.jp 2025-04-02",
+   "nintendo.com 2025-04-02",
+   "nintendo.com 2025-04-18",
+   "nintendo.com 2025-06-05",
+   "nintendo.com 2025-06-11",
+   "nintendolife.com 2025-06-14",
+   "nintendolife.com 2025-08-01",
+   "en.wikipedia.org 2026-11-05",
+   "nintendo.com (fetched)",
+   "nintendo.com.hk (fetched)",
+   "videogameschronicle.com 2025-04-02"
+  ],
+  "text": "I can't find any conversation of ours about Nintendo Switch 2 launch.\n\nOnly partly: I can't find that the user was previously told by the assistant that the Switch 2 released in June 2025. What sources describe is narrower or different [6].\n\nYes – the Switch 2 launched on 5 June 2025 and achieved record‑setting sales, becoming the fastest‑selling Nintendo system ever in the first four days and setting an all‑time launch‑week record for U.S. video‑game hardware, with over 1.1 million units sold that week [5][6] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4056,
+  "totalMs": 5089,
+  "searches": 3,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=162 in=3118"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "price_policy|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-p3-assistant_past",
+  "msg": "u told me chatgpt go is free for a year for everyone. how do i claim it in the US",
+  "history": false,
+  "sources": [
+   "glbgpt.com 2026-01-27",
+   "glbgpt.com 2026-03-12",
+   "whizi.io 2026-10-01",
+   "aicredits.tech 2026-10-05",
+   "christopheralarcon.com 2026-10-18",
+   "kingy.ai 2026-11-07",
+   "chatgpt.com (fetched)",
+   "chatgpt.com (fetched)",
+   "help.openai.com (fetched)",
+   "help.openai.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about ChatGPT Go free plan.\n\nThat doesn't hold up — sources don't show that chatGPT Go is free for a year for everyone [2][4].\n\nThe claim that “ChatGPT Go is free for a year for everyone” is not supported— the universal 12‑month free trial ended in India on 21 Jan 2026 and no global free‑year offer exists [2][4][5].  \n\nIn the US you can only get ChatGPT Go by paying the standard price (≈ $8 per month) or by using any account‑specific or partner promotion that OpenAI may show you; there is no open‑to‑all free‑year redemption link. Use the regular ChatGPT Go plan page or check your account for any personal promo codes.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "In the US you can only get ChatGPT Go by paying the standard price (≈ $8 per month) or by using any account‑specific or partner promotion that OpenAI may show you; there is no open‑to‑all free‑year re"
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 5667,
+  "totalMs": 6965,
+  "searches": 4,
+  "costUsd": 0.024999999999999998,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=170 in=2803"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "launch|false|assistant_past|dev",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-l1-assistant_past",
+  "msg": "Last week you said Windows 12 had been released. Is it a free upgrade from Windows 11?",
+  "history": false,
+  "sources": [
+   "trustedreviews.com 2026-01-29",
+   "learn.microsoft.com 2026-02-28",
+   "pcworld.com 2026-06-01",
+   "evezone.evetech.co.za 2026-06-28",
+   "windowscentral.com 2026-11-08",
+   "learn.microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "microsoft.com (fetched)",
+   "tweaktown.com (fetched)",
+   "dir.md (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Windows 12 release and Windows 11-to-Windows 12 upgrade availability (Mon 2 Nov – Sun 8 Nov).\n\nThat doesn't hold up — sources don't show that windows 12 had been released as of last week [10][4].\n\nThe claim that “Windows 12 was released last week” is false. None of the sources report an actual release; they all state that Microsoft has not announced Windows 12 and that Windows 11 remains the current supported OS [10][4][2]. Because Windows 12 does not exist, there is no upgrade path—free or otherwise—from Windows 11 [2].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 4,
+    "status": "weak",
+    "score": 0.27,
+    "missingNumbers": [],
+    "text": "Because Windows 12 does not exist, there is no upgrade path—free or otherwise—from Windows 11 ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 5109,
+  "totalMs": 6227,
+  "searches": 3,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=111 in=2738"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout3",
+  "label": "rumoured_product|narrower|assistant_past|dev",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-u3-assistant_past",
+  "msg": "you told me openai's jony ive gadget already shipped, how much does it cost",
+  "history": false,
+  "sources": [],
+  "text": "On Sun 21 Sep you asked: “How do I descale an electric kettle?”\nOn Sun 4 Oct you asked: “How often should I water a juniper bonsai?”\nOn Wed 28 Oct you asked: “How do I knit a gauge swatch properly?”\n\nI don’t have any record of mentioning a “Jony Ive gadget” from OpenAI, nor any source confirming that such a product has shipped or its price. I’m unable to provide a cost for it.",
+  "checks": [
+   "expected a search, none made",
+   "judge: The answer does not correct the user's premise that the OpenAI/Jony Ive device has shipped; it only says it has no record of mentioning it and cannot provide a "
+  ],
+  "route": "memory",
+  "ttftMs": 1278,
+  "totalMs": 1919,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=99 in=1401"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The answer does not correct the user's premise that the OpenAI/Jony Ive device has shipped; it only says it has no record of mentioning it and cannot provide a cost.",
+    "It fails to state the narrower true version from the gold facts: that the device is announced/in development, not released, with first shipment expected no earlier than Feb 2027 and estimated price $200–300.",
+    "It incorrectly references unrelated past conversations (descale kettle, juniper bonsai, gauge swatch) that are not in the provided conversation history, which is a hallucination."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout3",
+  "label": "discontinuation|true|assistant_past|dev",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h3-d2-assistant_past",
+  "msg": "you said skype was shut down — when was that exactly, and what replaced it?",
+  "history": false,
+  "sources": [
+   "aljazeera.com 2025-05-05",
+   "apnews.com 2025-05-06",
+   "withallo.com 2025-09-22",
+   "en.wikipedia.org 2026-11-03",
+   "exa.ai (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "support.microsoft.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "microsoft.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about Skype shutdown.\n\nSkype was retired on 5 May 2025 [1][4][6] (as of 12 Nov 2026). Microsoft directs former Skype users to Microsoft Teams — the free Teams version serves as the official replacement [2][3][6].",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3255,
+  "totalMs": 4315,
+  "searches": 2,
+  "costUsd": 0.014,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=115 in=2543"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "krishnamohanproductions.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "herodevs.com (fetched)",
+   "liquidweb.com (fetched)",
+   "stackoverflow.com (fetched)",
+   "medium.com (fetched)"
+  ],
+  "text": "Python 3.15.1 is the latest stable release, published 21 Oct 2026 [2] (as of 12 Nov 2026). It’s the newest point release of the current 3.15 branch, which has moved into full release status after earlier candidate releases.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3659,
+  "totalMs": 4206,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=101 in=2979"
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-10-11",
+   "liquidweb.com (fetched)",
+   "mostlypython.com (fetched)",
+   "python.org (fetched)",
+   "stackoverflow.com (fetched)",
+   "docs.python.org (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "pythondotorg.ingress.us-east-2.psfhosted.computer (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published 25 Oct 2026 [4][7] (as of 12 Nov 2026). It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release [4][8].",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.1,
+    "missingNumbers": [],
+    "text": "It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 4194,
+  "totalMs": 7313,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "nvidia/nemotron-3.5-bolt-e4b",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=74 in=3163"
+  },
+  "pass": false
+ }
+]

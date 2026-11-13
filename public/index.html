@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chat Agent</title>
+<style>
+  :root {
+    --bg: #f7f6f3; --panel: #ffffff; --ink: #1d1c1a; --muted: #6b6860; --line: #e4e1da;
+    --accent: #2f5d50; --accent-soft: #e3eee9; --warn: #8a5a00; --warn-soft: #fbf1dc; --bad: #9b2c2c;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #161615; --panel: #1f1f1d; --ink: #ecebe7; --muted: #9c9990; --line: #33322f;
+      --accent: #8cc5b2; --accent-soft: #23332e; --warn: #e0b35a; --warn-soft: #3a2f1a; --bad: #f08a8a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line); padding: 12px 16px; display: flex; align-items: center; gap: 12px; z-index: 2; }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; letter-spacing: .01em; }
+  header .sub { color: var(--muted); font-size: 13px; }
+  header button { margin-left: auto; }
+  main { max-width: 820px; margin: 0 auto; padding: 16px 16px 140px; }
+  .msg { margin: 18px 0; }
+  .msg.user .bubble { background: var(--accent-soft); border-radius: 14px; padding: 10px 14px; display: inline-block; max-width: 90%; white-space: pre-wrap; }
+  .msg.user { text-align: right; }
+  .msg.user .bubble { text-align: left; }
+  .msg.assistant .bubble { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; overflow-x: auto; }
+  .meta { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .status { color: var(--muted); font-size: 13px; margin: 4px 0 8px; display: flex; flex-direction: column; gap: 2px; }
+  .status div::before { content: "› "; }
+  .memory { font-size: 12.5px; color: var(--muted); border-left: 2px solid var(--accent); padding-left: 8px; margin-bottom: 8px; }
+  .bubble table { border-collapse: collapse; margin: 8px 0; font-size: 14px; width: 100%; }
+  .bubble th, .bubble td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+  .bubble th { background: var(--bg); }
+  .bubble p { margin: 6px 0; }
+  .bubble ul, .bubble ol { margin: 6px 0; padding-left: 22px; }
+  .bubble code { font-family: var(--mono); font-size: 13px; background: var(--bg); padding: 1px 4px; border-radius: 4px; }
+  .cite { display: inline-block; font-size: 11px; line-height: 16px; min-width: 18px; text-align: center; padding: 0 4px; margin: 0 1px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); text-decoration: none; vertical-align: 1px; }
+  .cite.bad { background: var(--warn-soft); color: var(--warn); }
+  .sources { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .src { font-size: 12px; border: 1px solid var(--line); border-radius: 8px; padding: 3px 8px; color: var(--ink); text-decoration: none; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .src b { color: var(--accent); margin-right: 4px; }
+  .src span { color: var(--muted); }
+  .error { color: var(--bad); }
+  .v-unsupported { background: var(--warn-soft); text-decoration: underline wavy var(--warn); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .v-unsupported::after { content: " ⚠"; color: var(--warn); font-size: 12px; }
+  tr.v-unsupported td:last-child::after { content: " ⚠"; color: var(--warn); }
+  tr.v-unsupported::after { content: none; }
+  .v-weak { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; }
+  .notice { font-size: 13px; margin-top: 8px; padding: 6px 10px; border-radius: 8px; background: var(--warn-soft); color: var(--warn); }
+  .verify { font-size: 12px; margin-top: 6px; color: var(--muted); }
+  .verify b.ok { color: var(--accent); font-weight: 600; }
+  .verify b.warn { color: var(--warn); font-weight: 600; }
+  form { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, var(--bg) 30%); padding: 24px 16px 16px; }
+  .composer { max-width: 820px; margin: 0 auto; display: flex; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 8px; }
+  textarea { flex: 1; border: 0; resize: none; background: transparent; color: var(--ink); font: inherit; outline: none; min-height: 24px; max-height: 160px; padding: 4px 6px; }
+  button { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 6px 12px; cursor: pointer; }
+  button.primary { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+  button:disabled { opacity: .5; cursor: default; }
+  .empty { color: var(--muted); text-align: center; margin-top: 18vh; }
+  .empty p { margin: 4px 0; }
+  .demo { margin-top: 18px; }
+  .demo-note { font-size: 12.5px; margin: 12px auto 0; max-width: 640px; text-align: left; border-left: 2px solid var(--accent); padding-left: 10px; }
+  .demo-note li { margin: 2px 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: 12px; }
+  .chip { font-size: 13px; border-radius: 999px; text-align: left; max-width: 100%; }
+  .dates { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
+  .dates button { font-size: 12px; padding: 1px 8px; margin-left: 6px; border-radius: 999px; }
+  .why { margin-top: 6px; font-size: 12.5px; color: var(--muted); }
+  .why summary { cursor: pointer; font-size: 12px; }
+  .why-body { margin-top: 6px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); display: grid; gap: 4px; }
+  .why-body b { color: var(--ink); font-weight: 600; }
+  .why-body code { font-family: var(--mono); font-size: 11.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Chat Agent</h1>
+  <span class="sub">web search · remembers what you asked and when</span>
+  <button id="newChat" type="button">New chat</button>
+</header>
+<main id="log"></main>
+<form id="form">
+  <div class="composer">
+    <textarea id="input" rows="1" placeholder="Ask anything…" autofocus></textarea>
+    <button class="primary" id="send" type="submit">Send</button>
+  </div>
+</form>
+<script>
+const log = document.getElementById("log");
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+const send = document.getElementById("send");
+const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+
+function getSession() {
+  try {
+    let s = localStorage.getItem("sessionId");
+    if (!s) { s = "s-" + Math.random().toString(36).slice(2, 12); localStorage.setItem("sessionId", s); }
+    return s;
+  } catch { return "s-" + Math.random().toString(36).slice(2, 12); }
+}
+let sessionId = getSession();
+
+function esc(s) { return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+/** Minimal markdown: tables, lists, bold/italic, code, links, [n] citation chips. Escapes first. */
+function md(text, sources, marks) {
+  marks = marks || new Map();
+  const cls = (idx) => { const m = marks.get(idx); return m ? ` class="v-${m.status}" title="${esc(m.title)}"` : ""; };
+  const lines = esc(text.replace(/【\s*(\d{1,2})(?:[^】]*)】/g, "[$1]")).split("\n");
+  let html = "", i = 0;
+  const inline = (s) => s
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/\[(\d{1,2})\]/g, (m, n) => {
+      const src = sources && sources[Number(n) - 1];
+      return src ? `<a class="cite" href="${esc(src.url)}" target="_blank" rel="noopener" title="${esc(src.title)}">${n}</a>` : `<span class="cite bad" title="citation not found">${n}</span>`;
+    });
+  while (i < lines.length) {
+    const l = lines[i];
+    if (/^\s*\|.*\|\s*$/.test(l) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+      const cells = (r) => r.trim().replace(/^\||\|$/g, "").split("|").map((c) => inline(c.trim()));
+      html += "<table><thead><tr>" + cells(l).map((c) => `<th>${c}</th>`).join("") + "</tr></thead><tbody>";
+      i += 2;
+      while (i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])) { html += `<tr${cls(i)}>` + cells(lines[i]).map((c) => `<td>${c}</td>`).join("") + "</tr>"; i++; }
+      html += "</tbody></table>";
+      continue;
+    }
+    if (/^\s*[-*] /.test(l)) { html += "<ul>"; while (i < lines.length && /^\s*[-*] /.test(lines[i])) { html += `<li${cls(i)}>${inline(lines[i].replace(/^\s*[-*] /, ""))}</li>`; i++; } html += "</ul>"; continue; }
+    if (/^\s*\d+\. /.test(l)) { html += "<ol>"; while (i < lines.length && /^\s*\d+\. /.test(lines[i])) { html += `<li${cls(i)}>${inline(lines[i].replace(/^\s*\d+\. /, ""))}</li>`; i++; } html += "</ol>"; continue; }
+    if (/^#{1,4} /.test(l)) { html += `<p><strong>${inline(l.replace(/^#+ /, ""))}</strong></p>`; i++; continue; }
+    if (l.trim()) html += `<p${cls(i)}>${inline(l)}</p>`;
+    i++;
+  }
+  return html;
+}
+
+function add(role) {
+  const el = document.createElement("div");
+  el.className = "msg " + role;
+  el.innerHTML = role === "assistant" ? '<div class="memory" hidden></div><div class="dates" hidden></div><div class="status"></div><div class="bubble"></div><div class="sources"></div><div class="verify" hidden></div><div class="meta"></div><details class="why" hidden><summary>How I answered</summary><div class="why-body"></div></details>' : '<div class="bubble"></div>';
+  log.appendChild(el);
+  document.querySelector(".empty")?.remove();
+  return el;
+}
+
+function emptyState() {
+  log.innerHTML = '<div class="empty"><p>Ask about anything current: prices, products, news.</p><p>Later, ask "is that still correct?" or "what did I ask you on Monday?"</p>'
+    + '<div class="demo"><button id="loadDemo" type="button">Load demo history</button><div class="demo-note" hidden></div><div class="chips" hidden></div></div></div>';
+  document.getElementById("loadDemo").addEventListener("click", loadDemoHistory);
+}
+
+/** Questions that exercise memory, dates and re-checking against the demo history (weekdays stay true after re-dating). */
+const DEMO_PROMPTS = [
+  "On Monday we shortlisted 5 CRM tools for a 20-person sales team. Has any of them changed pricing or shipped something big since?",
+  "Last Tuesday I asked you about Postgres hosting. Has any pricing changed since then?",
+  "Is the Node.js version you told me on Tuesday still the latest?",
+  "What did I ask you on Wednesday?",
+];
+
+async function loadDemoHistory() {
+  const btn = document.getElementById("loadDemo");
+  btn.disabled = true;
+  try {
+    const r = await fetch("/api/demo", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ tz }) });
+    const d = await r.json();
+    const note = document.querySelector(".demo-note"), chips = document.querySelector(".chips");
+    note.innerHTML = `<b>${d.added ? "Demo history loaded" : "Demo history already loaded"}.</b> Real answers this agent gave on 3–11 Nov 2026 (live search, real sources), moved to the same weekdays relative to today:<ul>`
+      + d.conversations.map((c) => `<li>${esc(c.label)} — “${esc(c.question)}”</li>`).join("") + "</ul>Try:";
+    chips.innerHTML = DEMO_PROMPTS.map((p, i) => `<button type="button" class="chip" data-i="${i}">${esc(p)}</button>`).join("");
+    chips.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => ask(DEMO_PROMPTS[Number(b.dataset.i)])));
+    note.hidden = false; chips.hidden = false; btn.hidden = true;
+  } catch { btn.disabled = false; }
+}
+
+/** Plain-language names for the needs model's decisions (src/agent/needs.ts). */
+const WHY = {
+  "world": "searched the web", "premise": "checked an assumption in your question", "recheck": "re-checked an earlier answer at its own sources",
+  "reply": "your message works on my previous reply", "world-replyOnly": "answered from my previous reply and its sources (no new search)",
+  "world-convOnly": "our earlier conversation alone answers it (no search)", "world-noRecord": "no matching conversation and nothing else to look up",
+  "world-social/compute": "small talk or arithmetic (no search)", "world-chat": "a writing or explaining request (no search)",
+  "recheck-vetoed": "no re-check: you asked what was said, not whether it still holds",
+  "conv+rule": "you referred to our earlier conversation", "conv+planner": "the planner read a reference to our conversation",
+  "conv+plannerRoute": "the planner chose a re-check", "conv+time": "a past time phrase", "conv+jev": "the judge found a reference to our conversation",
+  "conv+first": "you asked about this chat's first question", "conv+last": "you asked about this chat's last question", "conv+list": "you asked for a list of past questions",
+  "conv+assistant_past": "you quoted something I said", "conv-jev": "the judge decided it isn't about our conversation", "conv-timeOnly": "the time phrase is about the world, not our chat",
+};
+
+/** "How I answered": what was decided and by whom, the judge's scores, checks, searches and timings — all from the stream. */
+function renderWhy(a, tr) {
+  const rows = [];
+  const s = (ms) => (ms / 1000).toFixed(1) + "s";
+  if (tr.needs) {
+    rows.push(`<div><b>Decided:</b> ${tr.needs.why.map((w) => esc(WHY[w] || w)).join("; ")}</div>`);
+    const j = tr.needs.judge ? Object.entries(tr.needs.judge).map(([k, v]) => `${k} ${v}`) : [];
+    if (tr.needs.replyOnly != null) j.push(`replyOnly ${tr.needs.replyOnly}`);
+    if (j.length) rows.push(`<div><b>Judge scores</b> (0–1): <code>${esc(j.join(" · "))}</code></div>`);
+    if (tr.needs.planner) rows.push(`<div><b>Planner:</b> route ${esc(tr.needs.planner.route)}${tr.needs.planner.pastRef !== "none" ? `, refers back (${esc(tr.needs.planner.pastRef)})` : ""} · <code>${esc(tr.needs.planner.model)}</code></div>`);
+  }
+  if (tr.premise && tr.premise.length) rows.push(`<div><b>Assumptions checked:</b> ${tr.premise.map((p) => `“${esc(p.claim)}” → ${esc(p.status)}`).join("; ")}</div>`);
+  if (tr.searches.length) rows.push(`<div><b>Searches:</b> ${tr.searches.map(esc).join(" · ")}</div>`);
+  if (tr.verification && tr.verification.summary) {
+    const v = tr.verification, missing = v.claims.flatMap((c) => c.missingNumbers);
+    rows.push(`<div><b>Checked after display:</b> ${v.summary.verified}/${v.summary.total} claims supported (${esc(v.verifier)})${missing.length ? ` · figures not found in the cited source: ${esc([...new Set(missing)].join(", "))}` : " · every figure found in its cited source"}</div>`);
+  }
+  if (tr.done) {
+    const t = tr.done.timings, m = tr.done.models || {};
+    rows.push(`<div><b>Time:</b> plan ${s(t.planMs)} · memory ${s(t.recallMs)} · search ${s(t.retrieveMs)}${t.premiseMs ? ` · assumption check ${s(t.premiseMs)}` : ""} · first token ${s(t.ttftMs)} · total ${s(t.totalMs)}</div>`);
+    rows.push(`<div><b>Models:</b> <code>${esc([m.planner, m.answerer].filter(Boolean).join(" → "))}</code> · judge ${tr.done.judge && tr.done.judge.degraded ? "degraded (fallback in use)" : "Jev"}</div>`);
+  }
+  const box = a.querySelector(".why");
+  box.querySelector(".why-body").innerHTML = rows.join("");
+  box.hidden = !rows.length;
+}
+
+function sourceChips(list) {
+  return list.map((s) => `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.title)}"><b>${s.n}</b>${esc(s.domain)} <span>${s.dated ? "" : "fetched "}${esc(s.date)}</span></a>`).join("");
+}
+
+async function loadHistory() {
+  try {
+    const r = await fetch(`/api/history?sessionId=${encodeURIComponent(sessionId)}`);
+    const { turns } = await r.json();
+    if (!turns.length) return emptyState();
+    for (const t of turns) {
+      const el = add(t.role);
+      const srcs = t.sources || [];
+      el.querySelector(".bubble").innerHTML = t.role === "assistant" ? md(t.content, srcs) : esc(t.content);
+      if (t.role === "assistant" && srcs.length) el.querySelector(".sources").innerHTML = sourceChips(srcs);
+    }
+    window.scrollTo(0, document.body.scrollHeight);
+  } catch { emptyState(); }
+}
+
+async function ask(message) {
+  // A date chip belongs to the answer it sits under; once the conversation moves on, older chips stop acting.
+  document.querySelectorAll(".dates button").forEach((b) => (b.disabled = true));
+  const u = add("user");
+  u.querySelector(".bubble").textContent = message;
+  const a = add("assistant");
+  const status = a.querySelector(".status"), bubble = a.querySelector(".bubble"), srcEl = a.querySelector(".sources"), meta = a.querySelector(".meta"), mem = a.querySelector(".memory");
+  let text = "", sources = [];
+  const trace = { needs: null, premise: null, searches: [], verification: null, done: null };
+  send.disabled = true;
+  try {
+    const res = await fetch("/api/chat", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ sessionId, message, tz }) });
+    if (!res.ok || !res.body) throw new Error((await res.json().catch(() => ({}))).error || `HTTP ${res.status}`);
+    const reader = res.body.getReader(), dec = new TextDecoder();
+    let buf = "";
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let idx;
+      while ((idx = buf.indexOf("\n\n")) >= 0) {
+        const chunk = buf.slice(0, idx); buf = buf.slice(idx + 2);
+        const ev = (chunk.match(/^event: (.*)$/m) || [])[1];
+        const dataLine = chunk.split("\n").filter((l) => l.startsWith("data:")).map((l) => l.slice(5).trimStart()).join("\n");
+        if (!ev || !dataLine) continue;
+        const data = JSON.parse(dataLine);
+        if (ev === "status") { const d = document.createElement("div"); d.textContent = data.detail; status.appendChild(d); if (/^Searching: /.test(data.detail)) trace.searches.push(data.detail.slice(11)); }
+        else if (ev === "needs") { trace.needs = data; renderWhy(a, trace); }
+        else if (ev === "premise") { trace.premise = data; renderWhy(a, trace); }
+        else if (ev === "dates") {
+          const box = a.querySelector(".dates");
+          box.innerHTML = data.filter((c) => c.others.length).map((c) => `Read “${esc(c.phrase)}” as ${esc(c.chosen.label)}` + c.others.map((o) => `<button type="button" data-say="${esc("I meant " + o.label)}">Use ${esc(o.label)}</button>`).join("")).join(" · ");
+          box.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => ask(b.dataset.say)));
+          box.hidden = !box.innerHTML;
+        }
+        else if (ev === "memory") { mem.hidden = false; mem.textContent = "From memory: " + data.map((m) => `${m.label} — “${m.question}”`).join(" · "); }
+        else if (ev === "sources") {
+          sources = data;
+          srcEl.innerHTML = sourceChips(data);
+        }
+        else if (ev === "token") { text += data.text; bubble.innerHTML = md(text, sources); status.hidden = true; }
+        else if (ev === "done") {
+          trace.done = data; renderWhy(a, trace);
+          const t = data.timings;
+          meta.textContent = `${data.route} · first token ${(t.ttftMs / 1000).toFixed(1)}s · total ${(t.totalMs / 1000).toFixed(1)}s · ${data.search.calls} searches${data.citations.invalid.length ? ` · ${data.citations.invalid.length} unmatched citation(s)` : ""}`;
+        }
+        else if (ev === "verification") {
+          trace.verification = data; renderWhy(a, trace);
+          const v = a.querySelector(".verify");
+          if (!data.summary) { v.hidden = false; v.textContent = "Claims not checked: verifier unavailable"; continue; }
+          // Line-level marks: worst status per line wins.
+          const rank = { verified: 0, weak: 1, unsupported: 2 };
+          const marks = new Map();
+          for (const c of data.claims) {
+            if (c.status === "verified") continue;
+            const prev = marks.get(c.line);
+            const why = c.status === "unsupported" ? "Not supported by the cited source" : "Only partly supported";
+            const nums = (c.missingNumbers.length ? ` · figures not found in source: ${c.missingNumbers.join(", ")}` : "") + (c.reason ? ` · ${c.reason}` : "");
+            if (!prev || rank[c.status] > rank[prev.status]) marks.set(c.line, { status: c.status, title: why + nums + (c.score !== null ? ` (score ${c.score})` : "") });
+          }
+          bubble.innerHTML = md(text, sources, marks);
+          const s = data.summary;
+          v.hidden = false;
+          v.innerHTML = `<b class="ok">✓ ${s.verified}/${s.total} claims supported</b>` + (s.weak ? ` · ${s.weak} partly supported` : "") + (s.unsupported ? ` · <b class="warn">⚠ ${s.unsupported} not supported</b>` : "") + ` · checked by ${data.verifier === "jev" ? "Jev" : data.verifier} in ${(data.ms / 1000).toFixed(1)}s`;
+        }
+        else if (ev === "retract") { text = data.text; sources = []; srcEl.innerHTML = ""; bubble.innerHTML = md(text, sources); }
+        else if (ev === "replace") { text = data.text; bubble.innerHTML = md(text, sources); }
+        else if (ev === "notice") {
+          const n = document.createElement("div");
+          n.className = "notice";
+          n.textContent = "⚠ " + data.text;
+          a.querySelector(".verify").before(n);
+        }
+        else if (ev === "error") { bubble.innerHTML = `<span class="error">${esc(data.message)}</span>`; status.hidden = true; }
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    }
+  } catch (e) {
+    bubble.innerHTML = `<span class="error">${esc(e.message || "Request failed")}</span>`;
+  } finally { send.disabled = false; input.focus(); }
+}
+
+form.addEventListener("submit", (e) => { e.preventDefault(); const m = input.value.trim(); if (!m || send.disabled) return; input.value = ""; input.style.height = ""; ask(m); });
+input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
+input.addEventListener("input", () => { input.style.height = "auto"; input.style.height = Math.min(input.scrollHeight, 160) + "px"; });
+document.getElementById("newChat").addEventListener("click", () => { try { localStorage.removeItem("sessionId"); } catch {} sessionId = getSession(); emptyState(); });
+loadHistory();
+</script>
+</body>
+</html>

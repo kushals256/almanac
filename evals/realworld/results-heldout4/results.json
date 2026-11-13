@@ -1,0 +1,46 @@
+[
+ {
+  "scenario": "heldout4-cd3",
+  "label": "conv_date|norecord|dev",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "h4-cd3",
+  "msg": "What did I ask you on Tuesday?",
+  "history": false,
+  "sources": [
+   "learningenglish.voanews.com (fetched)",
+   "denvercenter.org (fetched)",
+   "youtube.com (fetched)",
+   "tiktok.com (fetched)",
+   "reddit.com (fetched)",
+   "support.google.com (fetched)"
+  ],
+  "text": "I have no conversation with you from Tue 10 Nov, so I can't say what we discussed then.\n\nI didn't receive any request from you on Tue 10 Nov (Tuesday); the conversation history provided doesn't show any such exchange.\n\nNote: The provided web evidence ([1]–[6]) does not contain any record of your previous questions. If you'd like, you can restate your question or ask me to search for information now.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3094,
+  "totalMs": 3918,
+  "searches": 1,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=73 in=1879"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ }
+]

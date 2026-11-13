@@ -1,0 +1,57 @@
+(node:85876) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS heldout4-sc4             chat     ttft=  995 total=  1015 s= 0 ver=-     
+PASS heldout4-cd2             memory   ttft=  857 total=  1511 s= 0 ver=-     
+PASS heldout4-ct1             memory   ttft= 1246 total=  1626 s= 0 ver=-     
+PASS heldout4-tp6             quick    ttft= 3906 total=  5197 s= 1 ver=1/1   
+PASS heldout4-sc5             chat     ttft= 1024 total=  1033 s= 0 ver=-     
+FAIL heldout4-sf6             memory   ttft=  688 total=   689 s= 0 ver=-     judge: The assistant incorrectly states there are conversations from Nov 10-12 when the conversation history shows this is the first message in the current sess
+PASS heldout4-sc2             chat     ttft= 1117 total=  1139 s= 0 ver=-     
+FAIL heldout4-cw6             memory   ttft= 1947 total=  1948 s= 0 ver=-     expected a search, none made | judge: Failed to answer the world fact question about 2026 World Series MVP (William Contreras) and winner (Milwaukee Brewers) de
+FAIL heldout4-tp3             quick    ttft= 3791 total=  4971 s= 3 ver=2/2   judge: First sentence does not clearly state the premise is false and give the correct release (Ubuntu 26.10 on 15 Oct 2026).; Answer hedges with 'sources don't
+FAIL heldout4-yt7             quick    ttft= 6649 total=  7460 s= 2 ver=1/1   slow first token 6649 ms
+PASS heldout4-yt6             quick    ttft= 5485 total=  6535 s= 2 ver=1/1   
+PASS heldout4-sf2             memory   ttft=  688 total=   940 s= 0 ver=-     
+FAIL heldout4-yt3             quick    ttft= 3507 total=  4471 s= 2 ver=2/2   judge: Denies the user's premise that Bulgaria switched to the euro at the start of 2026, contradicting the gold fact that adoption occurred on 1 January 2026.;
+PASS heldout4-cd1             memory   ttft=  751 total=  9495 s= 0 ver=-     
+PASS heldout4-ct5             memory   ttft= 2332 total=  2333 s= 0 ver=-     
+PASS heldout4-fu5             quick    ttft= 5572 total=  5615 s= 2 ver=-     
+FAIL heldout4-wt1             memory   ttft=  568 total=   938 s= 0 ver=-     expected a search, none made | contains forbidden: "On Fri 2 Oct you asked" | judge: Answer incorrectly references past conversation instead of providing curren
+FAIL heldout4-cw5             recheck  ttft= 3004 total=  3005 s= 0 ver=-     expected a search, none made | judge: Did not answer the world-fact part: who won the 2026 Mexico City Grand Prix (Max Verstappen per gold facts).; Incorrectly 
+FAIL heldout4-ct4             quick    ttft= 3938 total=  4032 s= 2 ver=-     expected no search, made 2
+FAIL heldout4-tp4             quick    ttft= 7595 total=  8339 s= 1 ver=1/1   slow first token 7595 ms
+PASS heldout4-ct6             memory   ttft= 2477 total=  2477 s= 0 ver=-     
+FAIL heldout4-wt4             research ttft=15297 total= 15838 s= 3 ver=1/1   slow first token 15297 ms
+FAIL heldout4-sf3             quick    ttft= 2646 total=  2705 s= 1 ver=-     expected no search, made 1 | judge: The assistant incorrectly claims it doesn't have a record of the first question, when the conversation history clearly shows
+FAIL heldout4-tp7             quick    ttft= 4070 total=  7475 s= 1 ver=1/1   judge: First sentence does not clearly state the claim is false and give the correct facts; it only says sources don't show a landing.; Answer does not explicit
+FAIL heldout4-rc2             quick    ttft= 3765 total=  8148 s= 2 ver=2/2   missing one of: On Sun 2 Aug you asked | judge: The answer claims no conversation about Wimbledon 2026 exists, but the conversation history clearly shows a 2026
+PASS heldout4-wt7             quick    ttft= 3769 total=  4327 s= 2 ver=1/1   
+FAIL heldout4-sf1             memory   ttft= 1654 total=  3556 s= 0 ver=-     judge: The answer incorrectly states the first question was about teaspoons; the first question in this session was 'How many tablespoons are in a quarter cup?'
+FAIL heldout4-rc4             quick    ttft= 3014 total=  3604 s= 1 ver=1/1   missing one of: can't find / cannot find / can not find / couldn't find / could not find / no record / don't see / do not see / don't have any / do not have any
+FAIL heldout4-yt4             research ttft=10359 total= 13541 s= 4 ver=5/5   slow first token 10359 ms | missing one of: can't find / cannot find / can not find / couldn't find / could not find / no record / don't see / do not see / don'
+FAIL heldout4-tp1             quick    ttft= 3764 total=  4787 s= 1 ver=1/1   judge: First sentence is evasive and does not clearly state the premise is false with correct facts; Answer contradicts itself: first paragraph says sources don
+PASS heldout4-fu2             quick    ttft= 3206 total=  3769 s= 2 ver=1/1   
+FAIL heldout4-wt5             research ttft=10573 total= 11182 s= 2 ver=1/1   slow first token 10573 ms
+FAIL heldout4-fu6             quick    ttft= 4091 total=  4847 s= 3 ver=0/1   judge: Answer states 3 minutes 31 seconds behind, but gold fact and cited source (euronews.com) confirm 6 minutes 26 seconds behind Remco Evenepoel; Incorrect t
+PASS heldout4-fu4             quick    ttft= 3325 total=  3913 s= 2 ver=1/1   
+FAIL heldout4-rc6             recheck  ttft= 3248 total=  3249 s= 0 ver=-     expected a search, none made | judge: Did not answer the world-fact part: winner's age (81) from current sources; Did not cite any sources for the Booker Prize 
+PASS heldout4-sc1             chat     ttft= 1119 total=  1123 s= 0 ver=-     
+PASS heldout4-cd4             memory   ttft= 1697 total=  1698 s= 0 ver=-     
+PASS heldout4-rc3             quick    ttft= 4385 total=  9429 s= 2 ver=1/1   
+FAIL heldout4-cw3             memory   ttft= 1577 total=  1578 s= 0 ver=-     expected a search, none made | judge: Did not answer the world-fact part (Super Bowl LX MVP Kenneth Walker III) despite gold facts and expectation requiring it;
+FAIL heldout4-cd5             memory   ttft=  575 total=  4530 s= 0 ver=-     missing one of: can't find / cannot find / can not find / couldn't find / could not find / no record / don't see / do not see / don't have any / do not have any
+PASS heldout4-wt3             research ttft= 3309 total= 25793 s= 3 ver=7/7   
+FAIL heldout4-yt2             recheck  ttft=10612 total= 12209 s= 7 ver=1/1   slow first token 10612 ms
+PASS heldout4-cw1             recheck  ttft= 5061 total= 13239 s= 6 ver=3/4   
+PASS resilience:exa-down       quick    ttft=3524 s=3 models={"planner":"openai/gpt-oss-20b","answerer":"groq/openai/gpt-oss-20b","finish":"stop out=115 in=3152"} 
+PASS resilience:groq-down      quick    ttft=4208 s=1 models={"planner":"nvidia/nemotron-3.5-bolt-e4b","answerer":"nvidia/nvidia/nemotron-3-ultra-550b-a55b","finish":"stop out=77 in=2652"} 
+
+# Real-world run (2026-11-12T19:38)
+
+- Cases graded: **45**, passed **22**, failed **23** (wall time 9 min)
+- First token p50 **3309 ms**, p95 **10573 ms**
+- Searches 61, search spend $0.000
+- by kind: social_compute 4/4 · conv_date 3/4 · conv_topic 3/4 · thirdparty_time 1/5 · session_firstlast 1/4 · conv_world 1/4 · youtold_world 1/5 · followup_chat 3/4 · world_time 2/5 · recheck_world 1/4 ·  2/2
+- by style: norecord 5/14 · match 8/13 · noise 7/16 · undefined 2/2
+- Mean judge score 3.67 / 5
+

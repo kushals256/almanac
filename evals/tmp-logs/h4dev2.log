@@ -1,0 +1,84 @@
+(node:73023) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+TRACE jev 2737 ms ok 2 questions
+TRACE needs {"msg":"What did I ask you on Tuesday?","planMs":617,"pastRef":"date","factual":false,"route0":"memory","why":["conv+planner","conv+rule","conv+time","world"],"cand":0,"adm":0,"ref":0.97,"convOnly":0.22,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-cd3             quick    ttft=10682 total= 11175 s= 1 ver=-     slow first token 10682 ms | expected no search, made 1
+TRACE jev 1459 ms ok 3 questions
+TRACE needs {"msg":"remind me which board games u recommended for a party of 8 people","planMs":648,"pastRef":"topic","factual":false,"route0":"memory","why":["conv+planner","conv+rule","world-convOnly"],"cand":1,"adm":1,"ref":0.96,"convOnly":0.9,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+PASS heldout4-ct2             memory   ttft= 2215 total=  2793 s= 0 ver=-     
+TRACE jev 756 ms ok 3 questions
+TRACE needs {"msg":"now that the world series wrapped up last month who got series MVP","planMs":1132,"pastRef":"none","factual":true,"route0":"quick","why":["conv+time","conv-jev","world","premise"],"cand":1,"adm":1,"ref":0.12,"convOnly":0.05,"premises":[["user","The 2026 World Series wrapped up last month (October 2026)"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"The 2026 World Series wrapped up last month (October 2026)","a":"user","t":"last month","s":"conflicting","e":[3,1],"x":[5],"d":[0,4]}] 871 ms 0 searches
+PASS heldout4-wt2             quick    ttft= 5248 total=  6810 s= 1 ver=3/3   
+TRACE jev 562 ms ok 6 questions
+TRACE needs {"msg":"My brother claims the Brewers lost the World Series last month. Did they?","planMs":1136,"pastRef":"none","factual":true,"route0":"quick","why":["world","premise"],"cand":4,"adm":0,"ref":0.03,"convOnly":0.02,"premises":[["third_party","The Brewers played in the World Series last month and lost"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"The Brewers played in the World Series last month and lost","a":"third_party","t":"last month","s":"contradicted","e":[],"x":[0,1,2,3,5],"d":[]}] 468 ms 0 searches
+FAIL heldout4-tp5             quick    ttft= 6007 total=  7087 s= 1 ver=1/1   slow first token 6007 ms | judge: First sentence does not clearly state the claim is false and give the correct facts; it says sources don't show they played an
+TRACE jev 496 ms ok 5 questions
+TRACE needs {"msg":"Last week you gave me a medal count for the Winter Olympics. Could you check it again and ","planMs":1080,"pastRef":"date","factual":true,"route0":"recheck","why":["conv+planner","conv+rule","world","premise"],"cand":3,"adm":0,"ref":0.88,"convOnly":0.03,"premises":[["user","The assistant previously provided a medal count for the Winter Olympics last week."],["presupposed","One country topped the Winter Olympics medal table."]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"The assistant previously provided a medal count for the Winter Olympics last week.","a":"user","t":"last week","s":"narrower","e":[],"x":[],"d":[8,7,3,9,1]},{"c":"One country topped the Winter Olympics medal table.","a":"presupposed","t":null,"s":"confirmed","e":[3,4],"x":[],"d":[8,7,9]}] 2786 ms 1 searches
+PASS heldout4-rc5             research ttft= 7543 total=  8562 s= 3 ver=1/1   
+TRACE jev 463 ms ok 2 questions
+TRACE needs {"msg":"Can you double-check what you told me about COP31's dates? And who is actually presiding o","planMs":1274,"pastRef":"last_question","factual":true,"route0":"recheck","why":["conv+planner","conv+rule","conv+last","conv+assistant_past","world","premise"],"cand":0,"adm":0,"ref":0.89,"convOnly":0.05,"premises":[["assistant_past","COP31 is happening in Antalya, Türkiye in 2026"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"COP31 is happening in Antalya, Türkiye in 2026","a":"assistant_past","t":null,"s":"unconfirmed","e":[],"x":[],"d":[]}] 2484 ms 1 searches
+FAIL heldout4-rc1             quick    ttft= 6906 total=  8109 s= 3 ver=2/2   slow first token 6906 ms | missing one of: On Fri 30 Oct you asked | judge: The assistant falsely claims it cannot find any conversation about COP31, but the co
+TRACE jev 446 ms ok 2 questions
+TRACE needs {"msg":"What did I ask you about Wimbledon before? And who won the women's final this year?","planMs":587,"pastRef":"topic","factual":true,"route0":"recheck","why":["conv+planner","conv+rule","conv+assistant_past","world","premise"],"cand":0,"adm":0,"ref":0.96,"convOnly":0.07,"premises":[["assistant_past","the user previously asked about Wimbledon"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"the user previously asked about Wimbledon","a":"assistant_past","s":"unconfirmed","e":[],"x":[],"d":[6]}] 2946 ms 1 searches
+FAIL heldout4-cw4             quick    ttft= 7503 total= 11703 s= 2 ver=1/1   slow first token 7503 ms
+TRACE jev 516 ms ok 3 questions
+TRACE needs {"msg":"Given that Brazil held its presidential runoff last month, what was the final vote split b","planMs":977,"pastRef":"none","factual":true,"route0":"quick","why":["world","premise"],"cand":1,"adm":0,"ref":0.03,"convOnly":0.02,"premises":[["presupposed","Brazil held its presidential runoff in October 2026"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"Brazil held its presidential runoff in October 2026","a":"presupposed","t":"last month","s":"confirmed","e":[9,4,6,5],"x":[],"d":[0]}] 425 ms 0 searches
+PASS heldout4-wt6             quick    ttft= 5001 total=  5519 s= 2 ver=1/1   
+TRACE jev 500 ms ok 2 questions
+TRACE needs {"msg":"What was the first thing I asked you at the start of this chat?","planMs":446,"pastRef":"first_question","factual":false,"route0":"memory","why":["conv+planner","conv+first","conv+time","world"],"cand":0,"adm":0,"ref":0.98,"convOnly":0.64,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-sf5             quick    ttft= 3007 total=  3638 s= 1 ver=-     expected no search, made 1
+TRACE jev 473 ms ok 2 questions
+TRACE needs {"msg":"who came second behind him?","planMs":1030,"pastRef":"last_question","factual":true,"route0":"quick","why":["conv+planner","conv+last","world"],"cand":1,"adm":1,"ref":0.24,"convOnly":0.07,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+PASS heldout4-fu1             quick    ttft= 3592 total=  4604 s= 2 ver=1/1   
+TRACE needs {"msg":"how much prize money does he get?","planMs":973,"pastRef":"none","factual":true,"route0":"quick","why":["world","premise"],"cand":0,"adm":0,"premises":[["presupposed","M. John Harrison won the 2026 Booker Prize"],["presupposed","The Booker Prize has a standard prize money award"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"M. John Harrison won the 2026 Booker Prize","a":"presupposed","t":null,"s":"confirmed","e":[6,5,7],"x":[],"d":[1,4]},{"c":"The Booker Prize has a standard prize money award","a":"presupposed","t":null,"s":"confirmed","e":[6,1,5,7],"x":[],"d":[4]}] 531 ms 0 searches
+PASS heldout4-fu3             quick    ttft= 5091 total=  5624 s= 2 ver=1/1   
+TRACE jev 516 ms ok 2 questions
+TRACE needs {"msg":"what did i ask you a minute ago","planMs":2018,"pastRef":"last_question","factual":false,"route0":"memory","why":["conv+planner","conv+rule","conv+last","conv+time","world"],"cand":0,"adm":0,"ref":0.98,"convOnly":0.62,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-sf4             quick    ttft= 4794 total=  5318 s= 1 ver=-     expected no search, made 1
+TRACE jev 603 ms ok 2 questions
+TRACE needs {"msg":"a coworker said Lamine Yamal won the Ballon d'Or a couple of weeks ago, true?","planMs":1590,"pastRef":"none","factual":true,"route0":"quick","why":["world","premise"],"cand":0,"adm":0,"ref":0.03,"convOnly":0.02,"premises":[["third_party","Lamine Yamal won the Ballon d'Or a couple of weeks ago"]],"plannerModel":"openai/gpt-oss-120b"}
+TRACE premise [{"c":"Lamine Yamal won the Ballon d'Or a couple of weeks ago","a":"third_party","t":"a couple of weeks ago","s":"contradicted","e":[],"x":[1],"d":[0,2,4,5]}] 458 ms 0 searches
+FAIL heldout4-tp2             quick    ttft= 5706 total=  6719 s= 1 ver=2/2   judge: First sentence does not clearly state the claim is false and give the correct winner (Harry Kane, 26 Oct 2026).; Answer incorrectly says the senior Ballo
+TRACE needs {"msg":"what's 17 times 23?","planMs":466,"pastRef":"none","factual":false,"route0":"chat","why":["world"],"cand":0,"adm":0,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-sc3             quick    ttft= 3352 total=  3386 s= 2 ver=-     expected no search, made 2 | missing one of: 391 | judge: Failed to answer simple arithmetic question; Incorrectly claimed inability to confirm 17×23=391
+TRACE jev 453 ms ok 5 questions
+TRACE needs {"msg":"Last week you mentioned that Verstappen won in Mexico City. Where did Kimi Antonelli finis","planMs":1380,"pastRef":"topic","factual":true,"route0":"recheck","why":["conv+planner","conv+rule","conv+assistant_past","world","premise"],"cand":3,"adm":0,"ref":0.74,"convOnly":0.02,"premises":[["assistant_past","Max Verstappen won the recent Formula 1 race in Mexico City"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"Max Verstappen won the recent Formula 1 race in Mexico City","a":"assistant_past","t":"last week","s":"confirmed","e":[0,1,2],"x":[],"d":[5,3]}] 434 ms 0 searches
+FAIL heldout4-yt5             quick    ttft= 6367 total=  7414 s= 1 ver=1/1   slow first token 6367 ms
+TRACE needs {"msg":"good morning!","planMs":0,"pastRef":"none","factual":false,"route0":"chat","why":["world-social/compute"],"cand":0,"adm":0,"premises":[],"plannerModel":"rule"}
+PASS heldout4-sc6             chat     ttft=  204 total=   230 s= 0 ver=-     
+TRACE jev 448 ms ok 3 questions
+TRACE needs {"msg":"yesterday i asked u a gardening question, what was it again","planMs":836,"pastRef":"date","factual":false,"route0":"memory","why":["conv+planner","world","premise"],"cand":1,"adm":0,"ref":0.96,"convOnly":0.2,"premises":[["user","The user asked a gardening question to the agent yesterday"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"The user asked a gardening question to the agent yesterday","a":"user","t":"yesterday","s":"unconfirmed","e":[],"x":[],"d":[]}] 2 ms 1 searches
+FAIL heldout4-cd6             quick    ttft= 4995 total=  5969 s= 1 ver=-     expected no search, made 1
+TRACE jev 486 ms ok 2 questions
+TRACE needs {"msg":"What did you tell me about picking a mattress firmness?","planMs":518,"pastRef":"topic","factual":false,"route0":"memory","why":["conv+planner","conv+rule","world"],"cand":0,"adm":0,"ref":0.96,"convOnly":0.15,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-ct3             quick    ttft= 4170 total=  5112 s= 1 ver=1/1   expected no search, made 1 | judge: The assistant invented a past conversation about mattress firmness that does not exist in the provided history. The history 
+TRACE jev 470 ms ok 2 questions
+TRACE needs {"msg":"You told me a Swedish runner won the NYC marathon on his debut. What was his finishing tim","planMs":998,"pastRef":"last_question","factual":true,"route0":"research","why":["conv+planner","conv+rule","conv+last","conv+assistant_past","world","premise"],"cand":0,"adm":0,"ref":0.65,"convOnly":0.03,"premises":[["assistant_past","Andreas Almgren won the NYC marathon on his marathon debut"]],"plannerModel":"qwen/qwen3.8-27b"}
+TRACE premise [{"c":"Andreas Almgren won the NYC marathon on his marathon debut","a":"assistant_past","t":null,"s":"confirmed","e":[4,1,0,7],"x":[],"d":[6]}] 451 ms 0 searches
+FAIL heldout4-yt1             research ttft= 5427 total=  6716 s= 2 ver=2/2   missing one of: On Mon 2 Nov you asked | judge: The answer incorrectly claims no prior conversation about the NYC Marathon exists, but the conversation history 
+TRACE jev 465 ms ok 3 questions
+TRACE needs {"msg":"we chatted last week about when the Booker would be announced — so who ended up winning?","planMs":740,"pastRef":"topic","factual":true,"route0":"research","why":["conv+planner","conv+time","conv-jev","world"],"cand":1,"adm":1,"ref":0.48,"convOnly":0.06,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+FAIL heldout4-cw2             research ttft= 5668 total=  6168 s= 2 ver=1/1   missing one of: On Thu 5 Nov you asked | judge: Missing conversation recall: the answer does not mention the earlier chat on 5 Nov 2026 about the announcement d
+TRACE needs {"msg":"What's the latest stable version of Python?","planMs":923,"pastRef":"none","factual":true,"route0":"quick","why":["world"],"cand":0,"adm":0,"premises":[],"plannerModel":"qwen/qwen3.8-27b"}
+PASS resilience:exa-down       quick    ttft=3669 s=2 models={"planner":"qwen/qwen3.8-27b","answerer":"groq/openai/gpt-oss-20b","finish":"stop out=160 in=2979"} 
+TRACE needs {"msg":"What's the latest stable version of Python?","planMs":2494,"pastRef":"none","factual":false,"route0":"quick","why":["world"],"cand":0,"adm":0,"premises":[],"plannerModel":"nvidia/nemotron-3.5-bolt-e4b"}
+FAIL resilience:groq-down      quick    ttft=7423 s=1 models={"planner":"nvidia/nemotron-3.5-bolt-e4b","answerer":"nvidia/nvidia/nemotron-3-ultra-550b-a55b","finish":"stop out=68 in=2652"} slow first token 7423 ms
+
+# Real-world run (2026-11-12T19:12)
+
+- Cases graded: **22**, passed **8**, failed **14** (wall time 5 min)
+- First token p50 **5248 ms**, p95 **7543 ms**
+- Searches 32, search spend $0.000
+- by kind: conv_date 0/2 · conv_topic 1/2 · world_time 2/2 · thirdparty_time 0/2 · recheck_world 1/2 · conv_world 0/2 · session_firstlast 0/2 · followup_chat 2/2 · social_compute 1/2 · youtold_world 0/2 ·  1/2
+- by style: norecord 1/6 · match 3/7 · noise 3/7 · undefined 1/2
+- Mean judge score 3.60 / 5
+

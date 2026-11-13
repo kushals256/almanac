@@ -1,0 +1,56 @@
+hist brief-crm                research ttft= 3179 total=  4958 s= 9 ver=4/8   
+FAIL brief-crm                recheck  ttft= 9609 total= 11925 s=21 ver=4/5   judge: The answer claims '0 of 5 changed' but marks HubSpot and Zoho as 'Unverifiable' with no current pricing, contradicting the verdict.; HubSpot and Zoho row
+FAIL planted-wrong-postgres   recheck  ttft= 2868 total=  4734 s= 8 ver=3/3   judge: Neon Launch pricing marked 'Unverifiable' instead of showing it differs from the earlier $5/month claim; the earlier figure was wrong (usage-based, no fl
+FAIL planted-wrong-ai-pricing recheck  ttft= 2528 total=  4431 s= 7 ver=5/5   judge: The answer claims the user asked about Claude Sonnet API pricing on 2 November, but the conversation history shows no such prior query; this appears to b
+PASS planted-correct-node     recheck  ttft= 2244 total=  3952 s= 4 ver=1/1   
+hist laptop-last-thursday     research ttft= 4773 total=  5983 s= 9 ver=3/4   
+FAIL laptop-last-thursday     recheck  ttft= 7192 total=  8776 s= 6 ver=2/2   judge: The answer claims to reference a conversation from Thu 5 Nov 2026, but the user's current date is Thu 12 Nov 2026, making 'Last Thursday' refer to Nov 5.
+hist timezone-la              quick    ttft= 1242 total=  2024 s= 2 ver=3/3   
+PASS timezone-la              memory   ttft=  253 total=   254 s= 0 ver=-     
+PASS two-weeks-ago            memory   ttft=  798 total=  1451 s= 0 ver=-     
+FAIL two-weeks-ago            quick    ttft= 1701 total=  2071 s= 1 ver=-     route quick (expected memory) | expected no search, made 1
+FAIL long-chat-phone          research ttft= 3745 total=  5023 s= 9 ver=4/5   judge: Pixel 10a does not exist as of Nov 2026; Pixel 9a is the current mid-range model; OnePlus Nord 6 does not exist; Nord 4/CE 4 are current models
+FAIL long-chat-phone          research ttft= 4467 total=  5959 s= 7 ver=7/8   judge: Answer invents non-existent products: Pixel 10a, Galaxy A37, Galaxy S26 FE do not exist as of Nov 2026; Pixel 9a is the current mid-range model; Citation
+PASS long-chat-phone          quick    ttft= 3642 total=  4662 s= 3 ver=4/4   
+PASS long-chat-phone          quick    ttft= 2868 total=  3543 s= 3 ver=1/1   
+PASS long-chat-phone          quick    ttft= 2927 total=  3039 s= 1 ver=-     
+FAIL long-chat-phone          quick    ttft= 2276 total=  4534 s= 1 ver=0/1   1 unsupported claim(s) | missing one of: Android / under $600 | judge: The assistant failed to recall the first question of the conversation as expected (Androi
+PASS breadth                  quick    ttft= 1732 total=  2273 s= 2 ver=1/1   
+PASS breadth                  quick    ttft= 3245 total=  3777 s= 2 ver=1/1   
+PASS breadth                  quick    ttft= 4221 total=  4909 s= 2 ver=1/2   
+PASS breadth                  quick    ttft= 2915 total=  3481 s= 2 ver=1/2   
+FAIL breadth                  quick    ttft= 2217 total=  2777 s= 2 ver=1/1   judge: iOS 27.2.1 does not exist as of November 2026; the current major version is iOS 18.x; Answer invents a future major version number without credible suppo
+FAIL breadth                  quick    ttft= 2159 total=  2811 s= 2 ver=2/2   judge: The 2026 FIFA World Cup has not taken place yet; it is scheduled for June–July 2026 but the final is on 19 July 2026, which is in the future relative to 
+PASS breadth                  chat     ttft=  462 total=   775 s= 0 ver=-     
+PASS breadth                  chat     ttft=  712 total=  1173 s= 0 ver=-     
+FAIL breadth                  chat     ttft= 1731 total=  1746 s= 1 ver=-     expected no search, made 1
+PASS breadth                  chat     ttft=  548 total=   571 s= 0 ver=-     
+PASS breadth                  quick    ttft= 1530 total=  2114 s= 2 ver=1/1   
+FAIL breadth                  quick    ttft= 1738 total=  2325 s= 2 ver=1/1   judge: iPhone 17 does not exist as of November 2026; latest model is iPhone 16 series; Answer invents a specific price for a non-existent product
+FAIL breadth                  quick    ttft= 3692 total=  4247 s= 2 ver=0/1   judge: Answer gives a single specific price and date without showing the range of options or airlines; Citation [6] refers to a source not clearly identified in
+PASS breadth                  quick    ttft= 2465 total=  3069 s= 2 ver=1/1   
+FAIL breadth                  quick    ttft= 1982 total=  2901 s= 3 ver=0/1   1 unsupported claim(s) | judge: Invented event name 'Surprise and Shine' and product lineup (foldable iPhone Duo, iPhone 18 Pro, Watch Series 12/Ultra 4, AirPod
+PASS breadth                  research ttft= 3004 total=  4106 s= 2 ver=2/4   
+PASS breadth                  research ttft= 3405 total=  5093 s= 8 ver=4/8   
+PASS breadth                  quick    ttft= 1406 total=  2041 s= 2 ver=2/2   
+PASS breadth                  quick    ttft= 1378 total=  2168 s= 2 ver=1/1   
+PASS breadth                  quick    ttft= 2630 total=  3271 s= 2 ver=3/3   
+PASS breadth                  quick    ttft= 1997 total=  2529 s= 2 ver=1/1   
+FAIL breadth                  quick    ttft= 2160 total=  2778 s= 2 ver=1/1   judge: The claim that Nvidia's board is moving to oust CEO Jensen Huang is highly implausible and likely fabricated; no credible source would report this as a t
+PASS breadth                  chat     ttft= 2064 total=  2102 s= 0 ver=-     
+FAIL breadth                  research ttft= 4480 total=  5953 s= 4 ver=0/4   2 unsupported claim(s)
+FAIL adversarial              recheck  ttft= 8316 total=  9876 s= 6 ver=1/1   judge: Answer does not address the user's question about Netflix's ad-supported tier; instead it references unrelated past conversations about robot vacuums and
+PASS adversarial              memory   ttft=  265 total=   282 s= 0 ver=-     
+PASS adversarial              chat     ttft=  962 total=  1029 s= 0 ver=-     
+PASS adversarial              chat     ttft= 1600 total=  1691 s= 1 ver=-     
+PASS resilience:exa-down       quick    ttft=2918 s=2 models={"planner":"qwen/qwen3.8-27b","answerer":"groq/qwen/qwen3.8-27b","finish":"stop out=93 in=3060"} 
+PASS resilience:groq-down      quick    ttft=3330 s=1 models={"planner":"nvidia/nemotron-3.5-bolt-e4b","answerer":"nvidia/nvidia/nemotron-3-ultra-550b-a55b","finish":"stop out=48 in=2903"} 
+
+# Real-world run (2026-11-12T11:13)
+
+- Cases graded: **44**, passed **27**, failed **17** (wall time 9 min)
+- First token p50 **2276 ms**, p95 **7192 ms**
+- Searches 149, search spend $0.859
+- Mean judge score 3.81 / 5
+
+exit 0

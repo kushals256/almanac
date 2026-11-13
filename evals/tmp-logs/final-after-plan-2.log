@@ -1,0 +1,33 @@
+(node:52814) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+hist brief-crm                research ttft= 8462 total= 24051 s= 9 ver=4/7   
+PASS brief-crm                recheck  ttft= 5710 total= 14785 s=17 ver=16/16 
+FAIL planted-wrong-postgres   recheck  ttft= 6483 total=  9357 s= 7 ver=5/5   judge: Neon Launch plan pricing is incorrectly stated as $15/month; the cited source shows usage-based pricing (~$0.106 per CU-hour) with no monthly minimum, no
+PASS planted-wrong-ai-pricing recheck  ttft= 6430 total=  7914 s= 4 ver=7/7   
+PASS planted-correct-node     recheck  ttft= 5966 total=  8773 s= 5 ver=5/5   
+hist laptop-last-thursday     research ttft= 6649 total= 26125 s= 3 ver=7/13  
+FAIL laptop-last-thursday     recheck  ttft=16058 total= 27788 s=20 ver=0/2   slow first token 16058 ms
+hist timezone-la              quick    ttft= 3735 total=  3838 s= 2 ver=-     
+PASS timezone-la              memory   ttft= 2901 total=  2903 s= 0 ver=-     
+PASS two-weeks-ago            memory   ttft= 2605 total=  4029 s= 0 ver=-     
+PASS two-weeks-ago            memory   ttft= 3904 total=  3906 s= 0 ver=-     
+FAIL long-chat-phone          research ttft= 7256 total= 27418 s= 2 ver=2/7   1 unsupported claim(s)
+FAIL long-chat-phone          research ttft=10773 total= 28988 s= 3 ver=4/14  5 unsupported claim(s) | slow first token 10773 ms
+FAIL long-chat-phone          quick    ttft= 7819 total= 13606 s= 1 ver=1/1   slow first token 7819 ms
+FAIL long-chat-phone          research ttft= 7257 total= 15027 s= 2 ver=2/4   2 unsupported claim(s)
+FAIL long-chat-phone          quick    ttft= 5816 total= 10349 s= 1 ver=0/2   2 unsupported claim(s)
+PASS long-chat-phone          memory   ttft= 3431 total=  5221 s= 0 ver=-     
+FAIL breadth                  quick    ttft= 6282 total= 10372 s= 2 ver=1/1   slow first token 6282 ms
+PASS breadth                  quick    ttft= 3445 total=  6418 s= 2 ver=0/1   
+PASS breadth                  quick    ttft= 5626 total=  8516 s= 2 ver=1/1   
+FAIL breadth                  chat     ttft= 3316 total=  4308 s= 0 ver=-     expected a search, none made
+PASS breadth                  quick    ttft= 4505 total=  9229 s= 2 ver=1/1   
+PASS breadth                  quick    ttft= 5241 total=  9335 s= 2 ver=2/2   
+PASS breadth                  quick    ttft= 3764 total=  6778 s= 1 ver=2/2   
+PASS breadth                  chat     ttft= 2453 total=  6050 s= 0 ver=-     
+FAIL breadth                  chat     ttft= 2759 total=  2878 s= 0 ver=-     missing one of: 441 | judge: The assistant failed to answer a simple arithmetic question (18% of 2,450) and instead returned a generic error message.; No attemp
+FAIL breadth                  chat     ttft= 2077 total=  2876 s= 0 ver=-     missing one of: gare | judge: The assistant failed to provide a translation and instead returned an error message indicating an unusable answer.; The user asked
+PASS breadth                  quick    ttft= 2636 total=  5268 s= 2 ver=1/1   
+PASS breadth                  quick    ttft= 4063 total= 10074 s= 2 ver=2/2   
+FAIL breadth                  quick    ttft= 7382 total= 16879 s= 1 ver=2/3   1 unsupported claim(s) | slow first token 7382 ms
+PASS breadth                  chat     ttft= 2571 total=  6487 s= 0 ver=-     

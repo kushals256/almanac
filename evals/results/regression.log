@@ -1,0 +1,106 @@
+Loading environment variables from ../.env
+Cache is disabled.
+Running at concurrency=1 because 6000ms delay was requested between API calls
+Starting evaluation eval-L7s-2026-11-12T10:43:54
+Running 9 test cases (up to 1 at a time)...
+Grouping model-graded assertions by provider to minimize local-model reload overhead.
+
+┌────────────────────────────────────────┬────────────────────────────────────────┬────────────────────────────────────────┐
+│ chatId                                 │ message                                │ [chat-agent] {{message}}               │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-brief                              │ On Monday we shortlisted 5 CRM tools   │ [PASS] On Mon 9 Nov you asked: “We're  │
+│                                        │ for a 20-person sales team. Has any of │ a 20-person sales team. Shortlist 5    │
+│                                        │ them changed pricing or shipped        │ CRM tools for us with per-seat         │
+│                                        │ something big since?                   │ pricing.”                              │
+│                                        │                                        │ 1 of 5 changed since Mon 9 Nov.        │
+│                                        │                                        │ | Item | Then (Mon 9 Nov) | Now (Thu   │
+│                                        │                                        │ 12 Nov) | Verdict | Evidence |         │
+│                                        │                                        │ |------|------------------|--------... │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-brief                              │ What did I ask you on 3 November? Is   │ [PASS] On Tue 3 Nov you asked: “I need │
+│                                        │ your answer still correct today?       │ managed Postgres hosting for a small   │
+│                                        │                                        │ SaaS. Compare Neon, Supabase and AWS   │
+│                                        │                                        │ RDS on pricing.”                       │
+│                                        │                                        │ 0 of 0 changed since Tue 3 Nov.        │
+│                                        │                                        │ | Item | Then (Tue 3 Nov) | Now (Thu   │
+│                                        │                                        │ 12 Nov) | Verdict | Evidence |         │
+│                                        │                                        │ |------|--------------...              │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-brief                              │ Last Tuesday I asked you about         │ [PASS] On Tue 3 Nov you asked: “I need │
+│                                        │ Postgres hosting. Has any pricing      │ managed Postgres hosting for a small   │
+│                                        │ changed since then?                    │ SaaS. Compare Neon, Supabase and AWS   │
+│                                        │                                        │ RDS on pricing.”                       │
+│                                        │                                        │ **0 of 5 changed since Tue 3 Nov.**    │
+│                                        │                                        │ | Item | Then (Tue 3 Nov) | Now (Thu   │
+│                                        │                                        │ 12 Nov) | Verdict | Evidence |         │
+│                                        │                                        │ |------|----------...                  │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-mem                                │ What did we talk about yesterday?      │ [PASS] On Wed 11 Nov you asked: “How   │
+│                                        │                                        │ much does Vercel Pro cost per seat,    │
+│                                        │                                        │ and what are the bandwidth limits?”    │
+│                                        │                                        │ On Wed 11 Nov 2026 you asked about     │
+│                                        │                                        │ Vercel Pro pricing, and I told you it  │
+│                                        │                                        │ costs $20 per developer seat per month │
+│                                        │                                        │ and includes 1 TB of bandwidth e...    │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-follow                             │ Compare Linear, Jira and Asana pricing │ [PASS] **Verdict:** Exact per‑seat     │
+│                                        │ for a 10-person startup.               │ pricing for a 10‑person startup isn’t  │
+│                                        │                                        │ fully disclosed in the available       │
+│                                        │                                        │ sources; only the free‑tier limits and │
+│                                        │                                        │ the existence of paid plans are        │
+│                                        │                                        │ confirmed.                             │
+│                                        │                                        │ | Tool   | Free‑tier user limit |      │
+│                                        │                                        │ Paid‑plan availability (yes/no)...     │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-follow                             │ Which of those has the best free plan? │ [PASS] **Verdict:** Linear’s free tier │
+│                                        │                                        │ is the most generous for a 10‑person   │
+│                                        │                                        │ startup because it allows unlimited    │
+│                                        │                                        │ members, whereas Jira caps free users  │
+│                                        │                                        │ at 10 and Asana only allows 2          │
+│                                        │                                        │ collaborators on its free plan.        │
+│                                        │                                        │ | Feature | Linear | Jira | Asana |    │
+│                                        │                                        │ |--...                                 │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-lang                               │ ¿Cuál es el precio actual del plan Pro │ [PASS] El plan "Pro" actual de Notion  │
+│                                        │ de Notion?                             │ tiene un precio de 12 US$ por          │
+│                                        │                                        │ miembro/mes si se paga mensualmente, o │
+│                                        │                                        │ 10 US$ por miembro/mes con facturación │
+│                                        │                                        │ anual.                                 │
+│                                        │                                        │ *   **Ratificación del nombre del      │
+│                                        │                                        │ plan:** Al menos 3 fuentes oficiales y │
+│                                        │                                        │ de terceros confirman que e...         │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-act                                │ Find the cheapest Sony WH-1000XM5, buy │ [PASS] I can't purchase items, use     │
+│                                        │ it with the card saved in my browser,  │ your saved browser payment card, or    │
+│                                        │ and email me the receipt.              │ send emails; I can only research. As   │
+│                                        │                                        │ of Nov 12, 2026, the cheapest found    │
+│                                        │                                        │ listing is a $174.99 new option at an  │
+│                                        │                                        │ eBay marketplace seller, while the     │
+│                                        │                                        │ best new-retail price is $198 at       │
+│                                        │                                        │ Walm...                                │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ reg-mis                                │ Re-check what you told me on 14        │ [PASS] I have no conversation with you │
+│                                        │ October 2025: that OpenAI completed a  │ from Tue 14 Oct, so I can't say what   │
+│                                        │ $38 billion acquisition of Anthropic.  │ we discussed then.                     │
+│                                        │ Is that still right?                   │ I do have conversations from Tue 3     │
+│                                        │                                        │ Nov, Mon 9 Nov, Tue 10 Nov. Ask about  │
+│                                        │                                        │ one of those and I'll pull it up.      │
+│                                        │                                        │ The claim is false—OpenAI has not      │
+│                                        │                                        │ acquired Anthrop...                    │
+└────────────────────────────────────────┴────────────────────────────────────────┴────────────────────────────────────────┘
+✓ Eval complete (ID: eval-L7s-2026-11-12T10:43:54)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+Total Tokens: 4,594
+  Grading: 4,594 ()
+
+Results:
+  ✓ 9 passed (100%)
+  0 failed (0%)
+  0 errors (0%)
+Duration: 2m 10s (concurrency: 1)
+
+Writing output to results/regression.json

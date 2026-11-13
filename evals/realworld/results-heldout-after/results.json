@@ -1,0 +1,1770 @@
+[
+ {
+  "scenario": "heldout",
+  "label": "memory|casual",
+  "at": "2026-11-12T05:00:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m1-casual",
+  "msg": "wat we discuss on 31 oct?",
+  "history": false,
+  "sources": [],
+  "text": "On Sat 31 Oct you asked: “How much free credit does AWS Activate give early-stage startups?”\n\nI replied that AWS Activate Founders provides $500 in credits, while the Portfolio program can give up to $5,000 [no citation needed].",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 645,
+  "totalMs": 1123,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=81 in=1127"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "memory|unusual",
+  "at": "2026-11-12T05:01:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m1-unusual",
+  "msg": "Which topics came up during the October 31st conversation?",
+  "history": false,
+  "sources": [],
+  "text": "On Sat 31 Oct you asked: “How much free credit does AWS Activate give early-stage startups?”\n\nDuring the Oct 31 2026 conversation you asked about the free credit offered by AWS Activate for early‑stage startups, and the answer covered the two main programs: AWS Activate Founders ($500 credit) and AWS Activate Portfolio (up to $5,000 credit).",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 708,
+  "totalMs": 1465,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=116 in=1131"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|casual",
+  "at": "2026-11-12T05:02:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m2-casual",
+  "msg": "what did i ask u the monday before last?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 2 Nov you asked: “What's the cheapest way to fly from Bengaluru to Singapore in December?”\n\nI answered that budget carriers such as IndiGo and Scoot start around ₹9,000–₹12,000 one‑way in December if booked early.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 588,
+  "totalMs": 1079,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=98 in=1138"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:03:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m2-unusual",
+  "msg": "Which inquiry did I make on the Monday preceding the most recent one?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\n\nand I replied that it starts at ₹1,14,900 in India.",
+  "checks": [
+   "missing one of: Singapore",
+   "judge: Wrong date: the Monday before the most recent Monday (10 Nov) was 2 Nov, not 9 Nov; Wrong question: 2 Nov was about Bengaluru→Singapore flights, not MacBook Air"
+  ],
+  "route": "memory",
+  "ttftMs": 519,
+  "totalMs": 1326,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=128 in=1130"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Wrong date: the Monday before the most recent Monday (10 Nov) was 2 Nov, not 9 Nov",
+    "Wrong question: 2 Nov was about Bengaluru→Singapore flights, not MacBook Air M5 price",
+    "Failed to recall correct conversation history from 2 Nov"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|casual",
+  "at": "2026-11-12T05:04:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m3-casual",
+  "msg": "what did i ask 3 days ago",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\n\nI answered that the MacBook Air M5 starts at ₹1,14,900 in India.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 538,
+  "totalMs": 1105,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=70 in=1125"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:05:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m3-unusual",
+  "msg": "What was my query from Monday the 9th?",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\n\n",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 627,
+  "totalMs": 1253,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=59 in=1139"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|casual",
+  "at": "2026-11-12T05:06:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m4-casual",
+  "msg": "what'd i ask last wknd?",
+  "history": false,
+  "sources": [],
+  "text": "On Sat 7 Nov you asked: “Recommend a good health insurance plan in India for a family of four.”\n\nI suggested HDFC ERGO Optima Secure and Niva Bupa ReAssure 2.0 as strong family‑floater options, costing roughly ₹25,000–₹35,000 per year for ₹10 lakh coverage.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 477,
+  "totalMs": 1069,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=132 in=1157"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:07:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m4-unusual",
+  "msg": "Which query came from me on the weekend of 7–8 November?",
+  "history": false,
+  "sources": [],
+  "text": "On Sat 7 Nov you asked: “Recommend a good health insurance plan in India for a family of four.”\n\n",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 614,
+  "totalMs": 1245,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=79 in=1165"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|casual",
+  "at": "2026-11-12T05:08:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m5-casual",
+  "msg": "what did i ask u tuesday?",
+  "history": false,
+  "sources": [],
+  "text": "On Tue 10 Nov you asked: “What is the current repo rate set by the RBI?”\n\nI answered that the RBI repo rate is 6.5 % (as of that date).",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 687,
+  "totalMs": 1132,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=86 in=1116"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "time|unusual",
+  "at": "2026-11-12T05:09:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-m5-unusual",
+  "msg": "Remind me of my query from Tuesday the 10th.",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about repo rate set by the RBI.\n\nI do have conversations from Mon 9 Nov, Tue 10 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "judge: The assistant incorrectly claims it cannot find the conversation from Tuesday 10 Nov, even though the conversation history explicitly shows that on Tue 10 Nov t"
+  ],
+  "route": "memory",
+  "ttftMs": 1836,
+  "totalMs": 1837,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant incorrectly claims it cannot find the conversation from Tuesday 10 Nov, even though the conversation history explicitly shows that on Tue 10 Nov the user asked about the RBI repo rate and the assistant answered it.",
+    "The assistant fails to recall the specific query from Tuesday the 10th as requested, despite the information being present in the provided conversation history.",
+    "The response contradicts the documented conversation history, indicating a failure to use the available context."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:10:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t1-casual",
+  "msg": "did we ever chat abt container orchestration?",
+  "history": false,
+  "sources": [],
+  "text": "I don’t recall any prior chat about container orchestration. If you’d like to dive into that now, just let me know!",
+  "checks": [
+   "route chat (expected memory)",
+   "missing one of: Kubernetes / Compose",
+   "judge: The assistant failed to find the 5 Nov Kubernetes vs Docker Compose conversation that exists in the conversation history; The assistant incorrectly states it do"
+  ],
+  "route": "chat",
+  "ttftMs": 1002,
+  "totalMs": 1046,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=63 in=973"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The assistant failed to find the 5 Nov Kubernetes vs Docker Compose conversation that exists in the conversation history",
+    "The assistant incorrectly states it doesn't recall any prior chat about container orchestration when there is a clear record of such a conversation on 5 Nov",
+    "The assistant did not search or check the conversation history before responding"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:11:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t1-unusual",
+  "msg": "Was container orchestration ever a topic in our history, such as the 5 Nov Kubernetes vs Docker Compose chat?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 5 Nov you asked: “Should I use Kubernetes or Docker Compose for a 3-service side project?”\n\nand I replied that Docker Compose is simpler for a single‑machine setup, while Kubernetes only makes sense for multi‑node scaling.",
+  "checks": [
+   "judge: The conversation history provided does not contain any entry for 5 Nov or a Kubernetes vs Docker Compose discussion. The assistant invented a conversation that "
+  ],
+  "route": "memory",
+  "ttftMs": 827,
+  "totalMs": 1521,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=80 in=1147"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The conversation history provided does not contain any entry for 5 Nov or a Kubernetes vs Docker Compose discussion. The assistant invented a conversation that is not in the supplied history.",
+    "The answer claims a specific past query and response that are absent from the CONVERSATION HISTORY, violating consistency with the provided context."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:12:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t2-casual",
+  "msg": "what did u rec for fam health insurance?",
+  "history": false,
+  "sources": [],
+  "text": "On Sat 7 Nov you asked: “Recommend a good health insurance plan in India for a family of four.”\n\nI suggested HDFC ERGO Optima Secure and Niva Bupa ReAssure 2.0, both family‑floater plans that typically cost about ₹25,000–₹35,000 per year and provide roughly ₹10 lakh coverage.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 885,
+  "totalMs": 1556,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=94 in=1136"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:13:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t2-unusual",
+  "msg": "Which plan was suggested earlier for my household's medical coverage?",
+  "history": false,
+  "sources": [],
+  "text": "I can't find any conversation of ours about health insurance plan suggestion for family of four.\n\nI do have conversations from Mon 9 Nov, Tue 10 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.",
+  "checks": [
+   "missing one of: HDFC / Niva / Optima",
+   "judge: Answer contradicts conversation history which clearly shows 7 Nov health insurance recommendation; Assistant claims no conversation about health insurance when "
+  ],
+  "route": "memory",
+  "ttftMs": 645,
+  "totalMs": 646,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "openai/gpt-oss-20b"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer contradicts conversation history which clearly shows 7 Nov health insurance recommendation",
+    "Assistant claims no conversation about health insurance when history shows multiple references to it",
+    "Fails to recall information that was explicitly discussed in previous turns"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|casual",
+  "at": "2026-11-12T05:14:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t3-casual",
+  "msg": "did i ever ask u bout guitar lessons?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 12 Nov you asked: “did we ever chat abt container orchestration?”\nOn Thu 12 Nov you asked: “Was container orchestration ever a topic in our history, such as the 5 Nov Kubernetes vs Docker Compose chat?”\n\nI don’t see any prior conversation where you asked about guitar lessons.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 455,
+  "totalMs": 1239,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=71 in=1241"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "topic|unusual",
+  "at": "2026-11-12T05:15:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-t3-unusual",
+  "msg": "Was the topic of guitar instruction ever brought up by me?",
+  "history": false,
+  "sources": [],
+  "text": "On Thu 12 Nov you asked: “did i ever ask u bout guitar lessons?”\nOn Thu 12 Nov you asked: “Was container orchestration ever a topic in our history, such as the 5 Nov Kubernetes vs Docker Compose chat?”\nOn Thu 12 Nov you asked: “Which topics came up during the October 31st conversation?”\n\nI don’t see any prior conversation where you asked about guitar lessons.",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 541,
+  "totalMs": 1189,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=98 in=1513"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "list|casual",
+  "at": "2026-11-12T05:16:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-l1-casual",
+  "msg": "list everything i asked u this month",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 2 Nov you asked: “What's the cheapest way to fly from Bengaluru to Singapore in December?”\nOn Thu 5 Nov you asked: “Should I use Kubernetes or Docker Compose for a 3-service side project?”\nOn Sat 7 Nov you asked: “Recommend a good health insurance plan in India for a family of four.”\nOn Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\nOn Tue 10 Nov you asked: “What is the current repo rate set by the RBI?”\nOn Thu 12 Nov you asked: “wat we discuss on 31 oct?”\nOn Thu 12 Nov you asked: “Which topics came up during the October 31st conversation?”\nOn Thu 12 Nov you asked: “what did i ask u the monday before last?”\nOn Thu 12 Nov you asked: “Which inquiry did I make on the Monday preceding the most recent one?”\nOn Thu 12 Nov you asked: “what did i ask 3 days ago”\nOn Thu 12 Nov you asked: “What was my query from Monday the 9th?”\nOn Thu 12 Nov you asked: “what'd i ask last wknd?”\nOn Thu 12 Nov you asked: “Which query came from me on the weekend of 7–8 November?”\nOn Thu 12 Nov you asked: “what did i ask u tuesday?”\nOn Thu 12 Nov you asked: “Remind me of my query from Tuesday the 10th.”\n\n- Mon 2 Nov 2026: “What’s the cheapest way to fly from Bengaluru to Singapore in December?”  \n- Thu 5 Nov 2026: “Should I use Kubernetes or Docker Compose for a 3‑service side project?”  \n- Sat 7 Nov 2026: “Recommend a good health insurance plan in India for a family of four.”  \n- Mon 9 Nov 2026: “What’s the price of the MacBook Air M5 in India?”  \n- Tue 10 Nov 2026: “What is the current repo rate set by the RBI?”  \n- Thu 12 Nov 2026: “wat we discuss on 31 oct?”  \n- Thu 12 Nov 2026: “Which topics came up during the October 31st conversation?”  \n- Thu 12 Nov 2026: “what did i ask u the monday before last?”  \n- Thu 12 Nov 2026: “Which inquiry did I make on the Monday preceding the most recent one?”  \n- Thu 12 Nov 2026: “what d’d i ask last wknd?”  \n- Thu 12 Nov 2026: “Which query came from me on the weekend of 7–8 November?”  \n- Thu 12 Nov 2026: “what did i ask u tuesday?”  \n- Thu 12 Nov 2026: “Remind me of my query from Tuesday the 10th.”  \n- Thu 12 Nov 2026: “did we ever chat abt container orchestration?”  \n- Thu 12 Nov 2026: “Was container orchestration ever a topic in our history, such as the 5 Nov Kubernetes vs Docker Compose chat?”  \n- Thu 12 Nov 2026: “what did u rec for fam health insurance?”  \n- Thu 12 Nov 2026: “Which plan was suggested earlier for my household's medical coverage?”  \n- Thu 12 Nov 2026: “did i ever ask u bout guitar lessons?”",
+  "checks": [],
+  "route": "memory",
+  "ttftMs": 694,
+  "totalMs": 2335,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=481 in=3160"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "list|unusual",
+  "at": "2026-11-12T05:17:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-l1-unusual",
+  "msg": "Provide a complete record of my inquiries from November.",
+  "history": false,
+  "sources": [],
+  "text": "On Mon 2 Nov you asked: “What's the cheapest way to fly from Bengaluru to Singapore in December?”\nOn Thu 5 Nov you asked: “Should I use Kubernetes or Docker Compose for a 3-service side project?”\nOn Sat 7 Nov you asked: “Recommend a good health insurance plan in India for a family of four.”\nOn Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\nOn Tue 10 Nov you asked: “What is the current repo rate set by the RBI?”\nOn Thu 12 Nov you asked: “wat we discuss on 31 oct?”\nOn Thu 12 Nov you asked: “Which topics came up during the October 31st conversation?”\nOn Thu 12 Nov you asked: “what did i ask u the monday before last?”\nOn Thu 12 Nov you asked: “Which inquiry did I make on the Monday preceding the most recent one?”\nOn Thu 12 Nov you asked: “what did i ask 3 days ago”\nOn Thu 12 Nov you asked: “What was my query from Monday the 9th?”\nOn Thu 12 Nov you asked: “what'd i ask last wknd?”\nOn Thu 12 Nov you asked: “Which query came from me on the weekend of 7–8 November?”\nOn Thu 12 Nov you asked: “what did i ask u tuesday?”\nOn Thu 12 Nov you asked: “Remind me of my query from Tuesday the 10th.”\n\nOn Thu 5 Nov 2026 you asked: “Should I use Kubernetes or Docker Compose for a 3‑service side project?”  \n\nOn Mon 9 Nov 2026 you asked: “What’s the price of the MacBook Air M5 in India?”  \n\nOn Tue 10 Nov 2026 you asked: “What is the current repo rate set by the RBI?”  \n\nOn Sat 7 Nov 2026 you asked: “Recommend a good health insurance plan in India for a family of four.”  \n\nOn Thu 12 Nov 2026 you asked multiple follow‑up checks, e.g., “wat we discuss on 31 Oct?” and “Which topics came up during the October 31st conversation?” (referring back to the Oct 31 2026 AWS Activate credit query).  \n\nThese are all the November inquiries recorded in our conversation history.",
+  "checks": [
+   "expected no search, made 1"
+  ],
+  "route": "memory",
+  "ttftMs": 1219,
+  "totalMs": 2659,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=252 in=3162"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|casual",
+  "at": "2026-11-12T05:18:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r1-casual",
+  "msg": "is the aws credit amt u said on 31 oct still right",
+  "history": false,
+  "sources": [
+   "startground.com 2026-05-03",
+   "startupperks.co 2026-09-26",
+   "cloudapicredits.com 2026-11-02",
+   "cloudapicredits.com 2026-11-04",
+   "aptixlabs.com 2026-11-05",
+   "uk.finance.yahoo.com 2026-11-09",
+   "stackcredits.com 2026-11-11",
+   "cloud-credits.org (fetched)",
+   "aws.amazon.com (fetched)",
+   "aws.amazon.com (fetched)",
+   "pages.awscloud.com (fetched)",
+   "aws.amazon.com (fetched)"
+  ],
+  "text": "On Sat 31 Oct you asked: “How much free credit does AWS Activate give early-stage startups?”\n\n**2 of 2 changed since Sat 31 Oct.** Both Founders and Portfolio credit amounts have increased compared to the values quoted on 31 Oct.\n\n| Item | Then (Sat 31 Oct) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| AWS Activate Founders credits | $500 in credits | $1,000 in credits | Changed | [1][8][10] |\n| AWS Activate Portfolio credits | up to $5,000 | up to $100,000 in credits | Changed | [1][10][11] |\n\nNo notable launches or pricing announcements since Sat 31 Oct in the sources I checked.",
+  "checks": [],
+  "verification": {
+   "verified": 2,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [],
+  "route": "recheck",
+  "ttftMs": 2867,
+  "totalMs": 4649,
+  "searches": 8,
+  "costUsd": 0.042,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=2 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T05:19:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r1-unusual",
+  "msg": "Has the AWS credit figure provided on October 31st remained accurate?",
+  "history": false,
+  "sources": [
+   "aws.amazon.com 2026-06-04",
+   "usage.ai 2026-06-30",
+   "cloudapicredits.com 2026-11-02",
+   "press.aboutamazon.com 2026-11-09",
+   "github.com 2026-11-12",
+   "spheron.network (fetched)",
+   "cloudroutehq.com (fetched)",
+   "aws.amazon.com (fetched)",
+   "aws.amazon.com (fetched)",
+   "aws.amazon.com (fetched)",
+   "creditbase.in (fetched)",
+   "creditforstartups.com (fetched)"
+  ],
+  "text": "On Sat 31 Oct you asked: “How much free credit does AWS Activate give early-stage startups?”\n\n**1 of 1 changed since Sat 31 Oct.** AWS Activate Founders now starts at $1,000 instead of $500, while the Portfolio tier remains capped at $200,000 rather than $5,000.\n\n| Item | Then (Sat 31 Oct) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| AWS Activate Founders tier credits | $500 in credits; Portfolio gives up to $5,000 | $1,000 in credits; selected startups may qualify for up to $5,000 | Changed | [10][12] |\n\nNo notable launches or pricing announcements since Sat 31 Oct in the sources I checked.",
+  "checks": [
+   "judge: Answer claims AWS Activate Founders tier changed from $500 to $1,000 and Portfolio tier from $5,000 to $200,000, but cited sources [10][12] are not provided in "
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Sat 31 Oct. AWS Activate Founders now starts at $1,000 instead of $500, while the Portfolio tier remains capped at $200,000 rather than $5,000."
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2872,
+  "totalMs": 5097,
+  "searches": 5,
+  "costUsd": 0.028,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer claims AWS Activate Founders tier changed from $500 to $1,000 and Portfolio tier from $5,000 to $200,000, but cited sources [10][12] are not provided in the context; cannot verify these figures against the listed search results.",
+    "Table states 'Portfolio gives up to $5,000' on 31 Oct and 'capped at $200,000' now, which contradicts known AWS Activate structure (Portfolio tier is typically up to $100k, not $5k or $200k).",
+    "Answer says '1 of 1 changed' but describes two tier changes; inconsistent counting.",
+    "No citations from the provided search results (aws.amazon.com 2026-06-04, usage.ai 2026-06-30, cloudapicredits.com 2026-11-02, press.aboutamazon.com 2026-11-09, github.com 2026-11-12, etc.) are referenced; the answer uses unexplained [10][12].",
+    "Does not clearly answer whether the 31 Oct figure remained accurate — it asserts changes without verifiable evidence."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|casual",
+  "at": "2026-11-12T05:20:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r2-casual",
+  "msg": "did the repo rate u gave change since 10 nov?",
+  "history": false,
+  "sources": [
+   "finnovate.in 2025-08-04",
+   "rbi.org.in 2026-10-07",
+   "fuelprice.co.in 2026-11-02",
+   "flash24.org 2026-11-06",
+   "bfsi.economictimes.indiatimes.com 2026-11-11",
+   "business-standard.com 2026-11-12",
+   "rbi.org.in (fetched)",
+   "bankbazaar.com (fetched)",
+   "alphave.in (fetched)",
+   "nsearchives.nseindia.com (fetched)"
+  ],
+  "text": "I can't find any conversation of ours about RBI repo rate.\n\nI do have conversations from Mon 9 Nov, Tue 10 Nov, Thu 12 Nov. Ask about one of those and I'll pull it up.\n\nThe RBI repo rate remained at 5.50 % on 12 Nov 2026, unchanged since 10 Nov 2026 [7] (as of 12 Nov 2026).",
+  "checks": [
+   "route quick (expected recheck)",
+   "judge: The assistant claims no prior conversation about repo rate, but the user's question implies one existed on 10 Nov; the conversation history shows a gap — the as"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 4,
+    "status": "weak",
+    "score": 0.22,
+    "missingNumbers": [],
+    "text": "The RBI repo rate remained at 5.50 % on 12 Nov 2026, unchanged since 10 Nov 2026 (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 1324,
+  "totalMs": 2520,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=97 in=2793"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "The assistant claims no prior conversation about repo rate, but the user's question implies one existed on 10 Nov; the conversation history shows a gap — the assistant should have checked 10 Nov specifically.",
+    "The answer cites a repo rate of 5.50% as of 12 Nov 2026, but the expectation states the earlier answer said 6.5% — this discrepancy is not addressed or explained.",
+    "The assistant fails to confirm whether the rate changed since 10 Nov relative to the prior answer (6.5%), instead giving a new figure without comparison.",
+    "Sources cited (e.g., [7]) are not verifiable from the provided source list; the assistant uses a citation not in the allowed sources.",
+    "The response does not fulfill the expectation: it does not check the current RBI repo rate against the earlier 6.5% claim with a proper citation from the provided sources."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T05:21:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r2-unusual",
+  "msg": "Is the repo rate figure provided on November 10th still current?",
+  "history": false,
+  "sources": [
+   "rbi.org.in 2026-10-07",
+   "fuelprice.co.in 2026-11-02",
+   "bfsi.economictimes.indiatimes.com 2026-11-11",
+   "newspointapp.com 2026-11-11",
+   "pramanique.com 2026-11-12",
+   "docstox.com 2026-11-12",
+   "business-standard.com 2026-11-12",
+   "rbi.org.in (fetched)",
+   "rbi.org.in (fetched)",
+   "bankbazaar.com (fetched)",
+   "rbintel.com (fetched)",
+   "alphave.in (fetched)"
+  ],
+  "text": "On Tue 10 Nov you asked: “What is the current repo rate set by the RBI?”\n\n**1 of 1 changed since Tue 10 Nov.** The repo rate has fallen from 6.5% to 5.50%.\n\n| Item | Then (Tue 10 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| RBI repo rate | 6.5% | 5.50% | Changed | [8] |\n\n**Since Tue 10 Nov:**\n- 2026-11-12: RBI announced an Overnight Variable Rate Reverse Repo (VRRR) auction [5]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 2,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Tue 10 Nov. The repo rate has fallen from 6.5% to 5.50%."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.28,
+    "missingNumbers": [],
+    "text": "RBI repo rate | 6.5% | 5.50% | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 2021,
+  "totalMs": 7078,
+  "searches": 4,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|casual",
+  "at": "2026-11-12T05:22:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r3-casual",
+  "msg": "macbook air m5 india price from 9 nov still good?",
+  "history": false,
+  "sources": [
+   "apple.com 2026-03-03",
+   "business-standard.com 2026-03-04",
+   "smartprix.com 2026-06-30",
+   "smartprix.com 2026-07-28",
+   "bivashvlog.com 2026-10-05",
+   "apple.com (fetched)",
+   "apple.com (fetched)",
+   "whydud.com (fetched)",
+   "amazon.in (fetched)",
+   "gadgets360.com (fetched)"
+  ],
+  "text": "The 13‑inch MacBook Air M5 in India is still listed at ₹149,900 (₹23,317 / month for 6 mo No‑Cost EMI) as of 12 Nov 2026, so the price remained unchanged since the 9 Nov 2026 update [6].",
+  "checks": [
+   "1 unsupported claim(s)",
+   "slow first token 6498 ms",
+   "route quick (expected recheck)",
+   "judge: Answer claims price is ₹149,900 but expectation was to check against ₹1,14,900; Citation [6] not found in provided sources list"
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.16,
+    "missingNumbers": [],
+    "text": "The 13‑inch MacBook Air M5 in India is still listed at ₹149,900 (₹23,317 / month for 6 mo No‑Cost EMI) as of 12 Nov 2026, so the price remained unchanged since the 9 Nov 2026 update ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 6498,
+  "totalMs": 7072,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=136 in=3030"
+  },
+  "judge": {
+   "pass": false,
+   "score": 2,
+   "issues": [
+    "Answer claims price is ₹149,900 but expectation was to check against ₹1,14,900",
+    "Citation [6] not found in provided sources list",
+    "No verification against the specific ₹1,14,900 figure mentioned in expectation",
+    "Sources list includes apple.com, business-standard.com, smartprix.com, bivashvlog.com, whydud.com, amazon.in, gadgets360.com but answer doesn't reference any of these specifically"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "recheck|unusual",
+  "at": "2026-11-12T05:23:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-r3-unusual",
+  "msg": "Does the November 9th MacBook Air M5 India quote remain valid?",
+  "history": false,
+  "sources": [
+   "indiatoday.in 2026-09-25",
+   "gadgetsnow.indiatimes.com 2026-11-02",
+   "cashify.in 2026-11-02",
+   "petematheson.com 2026-11-11",
+   "macprices.net 2026-11-11",
+   "gadgets360.com (fetched)",
+   "pricehunt.com (fetched)",
+   "apple.com (fetched)",
+   "apple.com (fetched)",
+   "gadgetsnow.indiatimes.com (fetched)",
+   "amazon.in (fetched)",
+   "apple.com (fetched)"
+  ],
+  "text": "On Mon 9 Nov you asked: “What's the price of the MacBook Air M5 in India?”\n\n**1 of 1 changed since Mon 9 Nov.** The price has increased to ₹119,900.\n\n| Item | Then (Mon 9 Nov) | Now (Thu 12 Nov) | Verdict | Evidence |\n|---|---|---|---|---|\n| MacBook Air M5 in India | ₹1,14,900 | ₹119,900 | Changed | [10] |\n\n**Since Mon 9 Nov:**\n- 2026-11-11: Black Friday MacBook deals featuring the MacBook Air M5 were published. [4]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 2,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 2,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "1 of 1 changed since Mon 9 Nov. The price has increased to ₹119,900."
+   },
+   {
+    "id": "c1",
+    "line": 6,
+    "status": "weak",
+    "score": 0.29,
+    "missingNumbers": [],
+    "text": "MacBook Air M5 in India | ₹1,14,900 | ₹119,900 | Changed |"
+   }
+  ],
+  "route": "recheck",
+  "ttftMs": 4957,
+  "totalMs": 9606,
+  "searches": 3,
+  "costUsd": 0.021,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "structured rows=1 dropped=0"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|casual",
+  "at": "2026-11-12T05:24:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f1-casual",
+  "msg": "whos elronds dad in tolkiens lore?",
+  "history": false,
+  "sources": [
+   "fictionhorizon.com 2022-09-17",
+   "cultureslate.com 2022-09-23",
+   "cbr.com 2024-03-30",
+   "tolkiengateway.net 2026-06-04",
+   "en.wikipedia.org 2026-08-10",
+   "en.wikipedia.org 2026-10-17",
+   "wikidata.org (fetched)",
+   "silmarillionwritersguild.org (fetched)",
+   "glossaria.net (fetched)",
+   "bookreadfree.com (fetched)"
+  ],
+  "text": "Elrond's father is Eärendil the Mariner [4].\n\nEärendil married Elwing, and their twin sons were Elrond and Elros [4]. Eärendil himself was the son of Tuor and Idril, making him a Half-elven who later became a beacon of hope in the sky [1] [6].",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 1802,
+  "totalMs": 2594,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=78 in=2827"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|unusual",
+  "at": "2026-11-12T05:25:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f1-unusual",
+  "msg": "What is the name of the sire of Elrond within Tolkien's mythology?",
+  "history": false,
+  "sources": [
+   "fictionhorizon.com 2022-09-17",
+   "cultureslate.com 2022-09-23",
+   "tolkiengateway.net 2026-06-04",
+   "en.wikipedia.org 2026-06-04",
+   "silmarillionwritersguild.org (fetched)",
+   "lotr.fandom.com (fetched)",
+   "glossaria.net (fetched)",
+   "bookreadfree.com (fetched)",
+   "hallofbeorn.com (fetched)",
+   "arwen-undomiel.com (fetched)"
+  ],
+  "text": "Elrond’s sire is the half‑elf mariner **Eärendil**[3][4] (as of 12 Nov 2026).  \n\nEärendil is the father of both Elrond and his twin brother Elros.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3215,
+  "totalMs": 3746,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=93 in=2790"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|casual",
+  "at": "2026-11-12T05:26:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f2-casual",
+  "msg": "how many world series the astros won",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-10-31",
+   "en.wikipedia.org 2026-11-05",
+   "baseball-reference.com (fetched)",
+   "statmuse.com (fetched)",
+   "statmuse.com (fetched)",
+   "espn.com (fetched)",
+   "baseball-reference.com (fetched)",
+   "statmuse.com (fetched)",
+   "espn.com (fetched)",
+   "stadiumtalk.com (fetched)"
+  ],
+  "text": "The Houston Astros have won two World Series titles, in 2017 and 2022 (as of 12 Nov 2026) [3][9].",
+  "checks": [],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.38,
+    "missingNumbers": [],
+    "text": "The Houston Astros have won two World Series titles, in 2017 and 2022 (as of 12 Nov 2026) ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3062,
+  "totalMs": 3589,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=72 in=3003"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|unusual",
+  "at": "2026-11-12T05:27:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f2-unusual",
+  "msg": "what's the total count of fall classic championships captured by houston",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-09-15",
+   "big12.co 2026-10-01",
+   "en.wikipedia.org 2026-10-25",
+   "uhcougars.com (fetched)",
+   "uhcougars.com (fetched)",
+   "uhcougars.com (fetched)",
+   "uhcougars.com (fetched)",
+   "sports-reference.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "winsipedia.com (fetched)"
+  ],
+  "text": "I couldn’t find a reliable source that lists how many “Fall Classic” championships the Houston Cougars have won, so I can’t confirm a total count at this time.",
+  "checks": [
+   "judge: Answer incorrectly addresses Houston Cougars instead of Houston Astros; User asked about 'fall classic championships captured by houston' which refers to MLB Wo"
+  ],
+  "route": "quick",
+  "ttftMs": 3325,
+  "totalMs": 3370,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=72 in=2757"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "Answer incorrectly addresses Houston Cougars instead of Houston Astros",
+    "User asked about 'fall classic championships captured by houston' which refers to MLB World Series titles for the Astros",
+    "Previous conversation (ho-f2-casual) confirms Astros have 2 World Series titles (2017, 2022)",
+    "Answer claims no reliable source found, but sources were provided in search results and conversation history",
+    "Fails to answer the user's actual question about Houston Astros World Series count"
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|casual",
+  "at": "2026-11-12T05:28:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f3-casual",
+  "msg": "which movie won best picture at the last oscars",
+  "history": false,
+  "sources": [
+   "time.com 2026-03-13",
+   "reuters.com 2026-03-15",
+   "apnews.com 2026-03-15",
+   "bbc.com 2026-03-15",
+   "npr.org 2026-03-15",
+   "abcnews.com 2026-03-16",
+   "deadline.com 2026-03-16",
+   "nytimes.com 2026-03-16",
+   "vulture.com 2026-03-16",
+   "oscars.org (fetched)"
+  ],
+  "text": "“One Battle After Another” won Best Picture at the most recent Oscars (the 98th Academy Awards, March 15 2026) [2] (as of 12 Nov 2026).",
+  "checks": [
+   "judge: The answer claims 'One Battle After Another' won Best Picture at the 98th Academy Awards on March 15, 2026, but the cited sources (Time, Reuters, AP, BBC, NPR, "
+  ],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.75,
+    "missingNumbers": [
+     "98"
+    ],
+    "text": "“One Battle After Another” won Best Picture at the most recent Oscars (the 98th Academy Awards, March 15 2026) (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 2941,
+  "totalMs": 3705,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=88 in=2165"
+  },
+  "judge": {
+   "pass": false,
+   "score": 1,
+   "issues": [
+    "The answer claims 'One Battle After Another' won Best Picture at the 98th Academy Awards on March 15, 2026, but the cited sources (Time, Reuters, AP, BBC, NPR, ABC, Deadline, NYT, Vulture, Oscars.org) are all dated March 13-16, 2026, which would be the 97th Academy Awards (for 2025 films). The 98th Academy Awards would be in 2027. The answer appears to hallucinate both the film title and the ceremony year.",
+    "No credible source confirms a film titled 'One Battle After Another' winning Best Picture at any Oscars ceremony.",
+    "The answer does not correctly identify the most recent actual Best Picture winner (which would be the 97th Academy Awards winner, likely 'Anora' based on real-world knowledge, but the assistant should rely on the provided sources)."
+   ]
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "factual|unusual",
+  "at": "2026-11-12T05:29:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-f3-unusual",
+  "msg": "What took home the top prize at the latest Academy Awards ceremony?",
+  "history": false,
+  "sources": [
+   "time.com 2026-03-13",
+   "reuters.com 2026-03-15",
+   "bloomberg.com 2026-03-15",
+   "forbes.com 2026-03-15",
+   "pagesix.com 2026-03-16",
+   "reuters.com 2026-03-16",
+   "youtube.com 2026-03-16",
+   "editorial.rottentomatoes.com 2026-03-16",
+   "en.wikipedia.org 2026-10-14",
+   "oscars.org (fetched)"
+  ],
+  "text": "**Best Picture (the top prize) went to “One Battle After Another.”**[1][2]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "research",
+  "ttftMs": 3585,
+  "totalMs": 4191,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=62 in=2666"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "action|casual",
+  "at": "2026-11-12T05:30:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-a1-casual",
+  "msg": "order cheapest airpods pls & email receipt",
+  "history": false,
+  "sources": [
+   "jenny.airreps.info 2021-11-20",
+   "joe.co.uk 2026-11-10",
+   "nextgenerationl.com (fetched)",
+   "lucaskick.com (fetched)",
+   "carousell.sg (fetched)",
+   "dmvcomputerman.com (fetched)",
+   "iasbook.com (fetched)",
+   "store.zumi.media (fetched)",
+   "dijithal.com (fetched)",
+   "amazon.com (fetched)"
+  ],
+  "text": "I can’t place orders or send emails, but I can tell you the lowest price I found for a pair of Apple AirPods as of 12 Nov 2026. The cheapest new AirPods listed in the sources is the AirPods 2 th Generation at $39.95 on dmvcomputerman.com[6].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2134,
+  "totalMs": 2713,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=85 in=2866"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "action|unusual",
+  "at": "2026-11-12T05:31:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-a1-unusual",
+  "msg": "procure the most affordable AirPods available and forward the proof of purchase to my inbox",
+  "history": false,
+  "sources": [],
+  "text": "I can't make purchases or send emails for you. I can help you find the current lowest price for AirPods across retailers so you can buy them yourself.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 808,
+  "totalMs": 863,
+  "searches": 0,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=32 in=1037"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "action|casual",
+  "at": "2026-11-12T05:32:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-a2-casual",
+  "msg": "add reminder rbi policy meetng next week pls",
+  "history": false,
+  "sources": [],
+  "text": "I can’t set reminders or take actions outside this chat. If you want, I can confirm the RBI’s next scheduled policy meeting date for next week based on its public calendar—just ask and I’ll look it up.",
+  "checks": [],
+  "route": "chat",
+  "ttftMs": 1510,
+  "totalMs": 1602,
+  "searches": 1,
+  "costUsd": 0.004,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/qwen/qwen3.8-27b",
+   "finish": "stop out=46 in=1048"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "action|unusual",
+  "at": "2026-11-12T05:33:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-a2-unusual",
+  "msg": "Schedule a calendar alert for the upcoming Reserve Bank of India policy session.",
+  "history": false,
+  "sources": [
+   "upstox.com 2026-03-23",
+   "timesofindia.indiatimes.com 2026-03-23",
+   "policypulsemedia.com 2026-03-23",
+   "etnownews.com 2026-04-04",
+   "rbi.org.in (fetched)",
+   "macroindex.org (fetched)",
+   "rbi.org.in (fetched)",
+   "rbi.org.in (fetched)",
+   "rbi.org.in (fetched)",
+   "rbi.org.in (fetched)"
+  ],
+  "text": "I’m unable to set calendar alerts, but here’s the schedule for the RBI’s next policy session:\n\n- **RBI Monetary Policy Committee (MPC) meeting**  \n  **Date:** April 6–8 2026  \n  **Source:** RBI press release, March 23 2026 [10] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 4,
+    "status": "weak",
+    "score": 0.4,
+    "missingNumbers": [],
+    "text": "Source: RBI press release, March 23 2026 (as of 12 Nov 2026)."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3405,
+  "totalMs": 3964,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=94 in=2895"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|casual",
+  "at": "2026-11-12T05:34:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p1-casual",
+  "msg": "why did google shut down youtube this year",
+  "history": false,
+  "sources": [
+   "economictimes.indiatimes.com 2025-12-19",
+   "techradar.com 2026-02-18",
+   "tomsguide.com 2026-02-18",
+   "ustrends.net 2026-02-18",
+   "english.factcrescendo.com 2026-02-19",
+   "m.economictimes.com 2026-10-28",
+   "blog.google 2026-10-30",
+   "9to5google.com 2026-11-05",
+   "ppc.land 2026-11-06",
+   "support.google.com (fetched)"
+  ],
+  "text": "YouTube was not shut down in 2026; it experienced a temporary global outage in February 2026 due to a recommendation‑system failure, and a separate loading‑issue incident in October 2026, but the service remained operational[2][6].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 3165,
+  "totalMs": 3758,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "openai/gpt-oss-20b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=93 in=2551"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|unusual",
+  "at": "2026-11-12T05:35:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p1-unusual",
+  "msg": "What caused Google to close YouTube in the current year?",
+  "history": false,
+  "sources": [
+   "aventurauniversal.com 2026-02-02",
+   "9to5google.com 2026-02-18",
+   "techradar.com 2026-02-18",
+   "tomsguide.com 2026-02-18",
+   "ainvest.com 2026-02-18",
+   "timesofindia.indiatimes.com 2026-02-18",
+   "ustrends.net 2026-02-18",
+   "english.factcrescendo.com 2026-02-19",
+   "ainvest.com 2026-09-07",
+   "economictimes.indiatimes.com (fetched)"
+  ],
+  "text": "YouTube’s service interruption in 2026 was caused by a fault in its recommendations system, which prevented videos from appearing across the homepage, app, YouTube Music, Kids and TV surfaces [2][3] (as of 12 Nov 2026).",
+  "checks": [],
+  "verification": {
+   "verified": 0,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 0,
+    "status": "weak",
+    "score": 0.49,
+    "missingNumbers": [],
+    "text": "YouTube’s service interruption in 2026 was caused by a fault in its recommendations system, which prevented videos from appearing across the homepage, app, YouTube Music, Kids and TV surfaces (as of 1"
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 2890,
+  "totalMs": 3512,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=102 in=2538"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|casual",
+  "at": "2026-11-12T05:36:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p2-casual",
+  "msg": "when did tesla drop the model z",
+  "history": false,
+  "sources": [
+   "teslatap.com 2019-06-30",
+   "topspeed.com 2019-09-13",
+   "driving.ca 2021-03-14",
+   "neftinwestlakemazda.com 2024-08-07",
+   "tech-insiderhub.blogspot.com 2025-03-19",
+   "axios.com 2026-01-28",
+   "electrek.co 2026-11-09",
+   "evbriefs.com (fetched)",
+   "en.wikipedia.org (fetched)",
+   "cloud.tencent.com.cn (fetched)"
+  ],
+  "text": "Tesla has not announced that it dropped the Model Z; no source reports a discontinuation of that vehicle as of 12 Nov 2026. [4][5]",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 4499,
+  "totalMs": 5257,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=100 in=2543"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|unusual",
+  "at": "2026-11-12T05:37:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p2-unusual",
+  "msg": "What is the launch date for Tesla's Model Z?",
+  "history": false,
+  "sources": [
+   "topelectricsuv.com 2026-11-05",
+   "electrek.co 2026-11-09",
+   "tesla-universe-site.vercel.app (fetched)",
+   "tesla.com (fetched)",
+   "evbriefs.com (fetched)",
+   "autoevolution.com (fetched)",
+   "tesla.com (fetched)",
+   "merchantsfleet.com (fetched)",
+   "lucensoftware.com (fetched)",
+   "cloud.tencent.com.cn (fetched)"
+  ],
+  "text": "Tesla’s Model Z does not have a confirmed launch date; sources only mention it as a planned MPV announced in 2025 without specifying when it will be released[5].",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 1
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2583,
+  "totalMs": 3133,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=83 in=2633"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|casual",
+  "at": "2026-11-12T05:38:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p3-casual",
+  "msg": "colleague claims eu banned all crypto in 2026 — true?",
+  "history": false,
+  "sources": [
+   "coindesk.com 2026-04-27",
+   "walkersglobal.com 2026-08-14",
+   "eutoday.net 2026-08-25",
+   "euronews.com 2026-09-22",
+   "coinburn.com 2026-11-08",
+   "tokenpost.com 2026-11-09",
+   "eur-lex.europa.eu (fetched)",
+   "atlanticcouncil.org (fetched)",
+   "identomat.com (fetched)",
+   "finance.ec.europa.eu (fetched)"
+  ],
+  "text": "No – the EU did not ban all crypto services in 2026.  \nIn 2026 the EU introduced a series of sanctions that prohibited transactions with specific Russian‑linked crypto platforms and the central bank’s digital ruble, but only a handful of non‑EU service providers were added to the blacklist[3]. The EU also extended transaction bans to 14 crypto‑related platforms in various third‑country jurisdictions[2]. However, the EU did not issue a blanket ban on all crypto‑asset activities or on the entire crypto industry[3][2]. The MiCA regulation remains in force, and most crypto services continue to operate under its framework, with compliance required but not prohibited[9].",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 4
+  },
+  "flagged": [
+   {
+    "id": "c0",
+    "line": 1,
+    "status": "unsupported",
+    "score": 0.14,
+    "missingNumbers": [],
+    "text": "In 2026 the EU introduced a series of sanctions that prohibited transactions with specific Russian‑linked crypto platforms and the central bank’s digital ruble, but only a handful of non‑EU service pr"
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 4288,
+  "totalMs": 4950,
+  "searches": 2,
+  "costUsd": 0.011,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=186 in=2546"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": false
+ },
+ {
+  "scenario": "heldout",
+  "label": "premise|unusual",
+  "at": "2026-11-12T05:39:00.000Z",
+  "tz": "Asia/Kolkata",
+  "session": "ho-p3-unusual",
+  "msg": "I'm hearing from a coworker that the European Union completely outlawed every cryptocurrency last year. Can anyone verify if this actually happened?",
+  "history": false,
+  "sources": [
+   "morganlewis.com 2026-02-01",
+   "paybis.com 2026-05-29",
+   "finance.ec.europa.eu (fetched)",
+   "lw.com (fetched)",
+   "bitomat.com (fetched)",
+   "eba.europa.eu (fetched)",
+   "esma.europa.eu (fetched)",
+   "esma.europa.eu (fetched)",
+   "cliffordchance.com (fetched)",
+   "eur-lex.europa.eu (fetched)"
+  ],
+  "text": "The EU has **not** outlawed all cryptocurrencies; crypto remains legal to buy, hold, and trade across the bloc, with regulation (MiCA) governing service providers rather than banning the assets themselves[2].  \n\n- MiCA entered full force in December 2024 and sets rules for crypto‑asset service providers, not a blanket prohibition on crypto assets[1][9].  \n- Both Bitcoin and Ethereum are explicitly legal to own and trade in all EU member states[2].",
+  "checks": [],
+  "verification": {
+   "verified": 3,
+   "weak": 0,
+   "unsupported": 0,
+   "total": 3
+  },
+  "flagged": [],
+  "route": "quick",
+  "ttftMs": 2865,
+  "totalMs": 3593,
+  "searches": 3,
+  "costUsd": 0.018,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-120b",
+   "finish": "stop out=155 in=2475"
+  },
+  "judge": {
+   "pass": true,
+   "score": 5,
+   "issues": []
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:exa-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-exa-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "mostlypython.com (fetched)",
+   "devguide.python.org (fetched)",
+   "python.org (fetched)",
+   "discuss.python.org (fetched)",
+   "python.org (fetched)",
+   "en.wikipedia.org (fetched)",
+   "liquidweb.com (fetched)",
+   "medium.com (fetched)",
+   "herodevs.com (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published Oct 25 2026[5] (as of 12 Nov 2026).  \nThe release page lists it as the newest source download, and the source‑releases list shows 3.15.1 and earlier versions.",
+  "checks": [],
+  "verification": {
+   "verified": 1,
+   "weak": 1,
+   "unsupported": 0,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 1,
+    "status": "weak",
+    "score": null,
+    "missingNumbers": [],
+    "reason": "figure stated without a citation",
+    "text": "The release page lists it as the newest source download, and the source‑releases list shows 3.15.1 and earlier versions."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 3333,
+  "totalMs": 3941,
+  "searches": 2,
+  "costUsd": 0,
+  "models": {
+   "planner": "qwen/qwen3.8-27b",
+   "answerer": "groq/openai/gpt-oss-20b",
+   "finish": "stop out=111 in=2627"
+  },
+  "pass": true
+ },
+ {
+  "scenario": "resilience:groq-down",
+  "at": "2026-11-12T10:00:00Z",
+  "tz": "Asia/Kolkata",
+  "session": "res-groq-down",
+  "msg": "What's the latest stable version of Python?",
+  "history": false,
+  "sources": [
+   "en.wikipedia.org 2026-10-11",
+   "liquidweb.com (fetched)",
+   "mostlypython.com (fetched)",
+   "medium.com (fetched)",
+   "discuss.python.org (fetched)",
+   "python.org (fetched)",
+   "python.org (fetched)",
+   "docs.python.org (fetched)",
+   "python.org (fetched)",
+   "devguide.python.org (fetched)"
+  ],
+  "text": "Python 3.15.2 is the latest stable release, published 25 Oct 2026 [7] (as of 12 Nov 2026). It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release [6].",
+  "checks": [
+   "1 unsupported claim(s)"
+  ],
+  "verification": {
+   "verified": 1,
+   "weak": 0,
+   "unsupported": 1,
+   "total": 2
+  },
+  "flagged": [
+   {
+    "id": "c1",
+    "line": 0,
+    "status": "unsupported",
+    "score": 0.12,
+    "missingNumbers": [],
+    "text": "It's a bug-fix release in the 3.15 series; 3.16 is still in pre-release ."
+   }
+  ],
+  "route": "quick",
+  "ttftMs": 5930,
+  "totalMs": 7884,
+  "searches": 1,
+  "costUsd": 0.007,
+  "models": {
+   "planner": "none",
+   "answerer": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+   "finish": "stop out=70 in=3077"
+  },
+  "pass": false
+ }
+]
