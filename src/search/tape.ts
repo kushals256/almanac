@@ -63,9 +63,9 @@ export function withTape(router: SearchRouter, mode: Mode, dir: string): { route
   return { router: proxy, stats };
 }
 
-/** SEARCH_TAPE=record|replay (SEARCH_TAPE_DIR, default evals/tapes/default); anything else → the router as is. */
+/** SEARCH_TAPE=record|replay (SEARCH_TAPE_DIR, default data/tapes/default); anything else → the router as is. */
 export function tapeFromEnv(router: SearchRouter, env: NodeJS.ProcessEnv = process.env): { router: SearchRouter; stats: TapeStats | null } {
   const mode = env.SEARCH_TAPE;
   if (mode !== "record" && mode !== "replay") return { router, stats: null };
-  return withTape(router, mode, env.SEARCH_TAPE_DIR ?? "evals/tapes/default");
+  return withTape(router, mode, env.SEARCH_TAPE_DIR ?? "data/tapes/default");
 }
